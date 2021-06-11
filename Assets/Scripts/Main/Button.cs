@@ -7,6 +7,7 @@ public class Button : MonoBehaviour
 {
     [SerializeField]
     private Image image;
+    private Sprite btnSprite;
     private int level;
     private float percent;
     private int click_Money;
@@ -29,9 +30,10 @@ public class Button : MonoBehaviour
         this.mainButtonData = mainButtonData;
         image.sprite = mainButtonData.sprite;
         this.level = mainButtonData.level;
-        this.percent = mainButtonData.percent;
+        //this.percent = mainButtonData.percent;
         this.click_Money = mainButtonData.money;
         this.click_Number = mainButtonData.number;
+        this.btnName = mainButtonData.name;
 
         levelText.text = string.Format("Level {0}", level);
         //percentText.text = string.Format("{0}%", percent);
