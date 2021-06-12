@@ -19,3 +19,21 @@ MonoBehaviour:
     percent: 70
     money: 50
     number: 1
+  - name: "\uAC00\uCC3D\uB825"
+    sprite: {fileID: 21300000, guid: 77e221677f1ce0949a77acef8d0ca5a4, type: 3}
+    level: 0
+    percent: 70
+    money: 340
+    number: 1
+  - name: "\uACE0\uC74C"
+    sprite: {fileID: 21300000, guid: 77e221677f1ce0949a77acef8d0ca5a4, type: 3}
+    level: 0
+    percent: 70
+    money: 1000
+    number: 1
+  - name: "\uC800\uC74C"
+    sprite: {fileID: 21300000, guid: 77e221677f1ce0949a77acef8d0ca5a4, type: 3}
+    level: 0
+    percent: 70
+    money: 50
+    number: 1

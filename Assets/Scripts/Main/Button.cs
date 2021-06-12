@@ -7,11 +7,13 @@ public class Button : MonoBehaviour
 {
     [SerializeField]
     private Image image;
+    [SerializeField]
+    private Image buttonImage;
     private Sprite btnSprite;
     private int level;
     private float percent;
-    private int click_Money;
-    private int click_Number;
+    private int money;
+    private int number;
     private string btnName;
 
     [SerializeField]
@@ -20,6 +22,8 @@ public class Button : MonoBehaviour
     private Text percentText;
     [SerializeField]
     private Text clickText;
+    [SerializeField]
+    private Text moneyText;
     [SerializeField]
     private Text nameText;
 
@@ -31,14 +35,21 @@ public class Button : MonoBehaviour
         image.sprite = mainButtonData.sprite;
         this.level = mainButtonData.level;
         //this.percent = mainButtonData.percent;
-        this.click_Money = mainButtonData.money;
-        this.click_Number = mainButtonData.number;
+        this.money = mainButtonData.money;
+        this.number = mainButtonData.number;
         this.btnName = mainButtonData.name;
 
         levelText.text = string.Format("Level {0}", level);
         //percentText.text = string.Format("{0}%", percent);
-        clickText.text = string.Format("click+{0} {0}원", click_Number, click_Money);
+        clickText.text = string.Format("click+{0}", number);
+        moneyText.text = string.Format("{0}원", money);
         nameText.text = string.Format("{0}", btnName);
-        //이미지 바뀌느 거 추가하기
+        image.color = new Color(1f, 1f, 1f, 1f);
+
+        if(GameManager.Instance.money < money)
+        {
+            buttonImage.color = new Color(0f, 0f, 0f, 0.5f);
+            image.color = new Color(0.5f, 0.5f, 0.5f, 1f);
+        }
     }
 }

@@ -21,6 +21,22 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject settingImage;
 
+    [Header("버튼 오브젝트")]
+    [SerializeField]
+    private GameObject mainBtn;
+    [SerializeField]
+    private GameObject statusBtn;
+    [SerializeField]
+    private GameObject storeBtn;
+    [SerializeField]
+    private GameObject settingBtn;
+
+    private Image mainBtnimage, statusBtnimage, storeBtnimage, settingBtnimage;
+
+    private List<GameObject> btnImages = new List<GameObject>();
+    private List<Image> btnObjs = new List<Image>();
+
+
     private bool isClick = false;
     public int money { get; private set; } = 0;
     private void Awake()
@@ -32,6 +48,7 @@ public class GameManager : MonoBehaviour
     {
         money = PlayerPrefs.GetInt("Money", 0);
         UpdateUI();
+        SetBtnList();
     }
 
     public void UpdateUI()
@@ -48,37 +65,61 @@ public class GameManager : MonoBehaviour
 
     public void OnClickMain()
     {
-        statusImage.SetActive(false);
-        storeImage.SetActive(false);
-        settingImage.SetActive(false);
-
-        mainImage.SetActive(true);
+        BtnActive(mainImage);
     }
 
     public void OnClickStatus()
     {
-        mainImage.SetActive(false);
-        storeImage.SetActive(false);
-        settingImage.SetActive(false);
-
-        statusImage.SetActive(true);
+        BtnActive(statusImage);
     }
 
     public void OnClickStore()
     {
-        statusImage.SetActive(false);
-        mainImage.SetActive(false);
-        settingImage.SetActive(false);
-
-        storeImage.SetActive(true);
+        BtnActive(storeImage);
     }
 
     public void OnClickSetting()
     {
-        statusImage.SetActive(false);
-        storeImage.SetActive(false);
-        mainImage.SetActive(false);
+        BtnActive(settingImage);
+    }
 
-        settingImage.SetActive(true);
+    private void BtnActive(GameObject image)
+    {
+        for (int i = 0; i < btnImages.Count; i++)
+        {
+            if (image == btnImages[i])
+            {
+                btnImages[i].SetActive(true);
+                btnObjs[i].color = new Color(0.8f, 0.8f, 0.8f, 1f);
+            }
+            else
+            {
+                btnImages[i].SetActive(false);
+                btnObjs[i].color = new Color(1f, 1f, 1f, 1f);
+            }
+        }
+    }
+
+    private void SetBtnList()
+    {
+        SetBtnGetComponent();
+
+        btnImages.Add(mainImage);
+        btnImages.Add(storeImage);
+        btnImages.Add(statusImage);
+        btnImages.Add(settingImage);
+
+        btnObjs.Add(mainBtnimage);
+        btnObjs.Add(storeBtnimage);
+        btnObjs.Add(statusBtnimage);
+        btnObjs.Add(settingBtnimage);
+    }
+
+    private void SetBtnGetComponent()
+    {
+        mainBtnimage = mainBtn.GetComponent<Image>();
+        statusBtnimage = statusBtn.GetComponent<Image>();
+        storeBtnimage = storeBtn.GetComponent<Image>();
+        settingBtnimage = settingBtn.GetComponent<Image>();
     }
 }

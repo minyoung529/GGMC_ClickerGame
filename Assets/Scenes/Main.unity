@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 519513651}
   - component: {fileID: 519513650}
   m_Layer: 5
-  m_Name: SettomgButton
+  m_Name: SettingButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1096,6 +1096,10 @@ MonoBehaviour:
   statusImage: {fileID: 1941490575}
   storeImage: {fileID: 2022163781}
   settingImage: {fileID: 547748524}
+  mainBtn: {fileID: 1237227819}
+  statusBtn: {fileID: 893896225}
+  storeBtn: {fileID: 1514367543}
+  settingBtn: {fileID: 519513648}
 --- !u!4 &1310303820
 Transform:
   m_ObjectHideFlags: 0
