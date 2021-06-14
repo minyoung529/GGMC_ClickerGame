@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainButtonManager : MonoBehaviour
 {
@@ -17,11 +18,12 @@ public class MainButtonManager : MonoBehaviour
         SetUp_MainBtns();
     }
 
+    //setup main button
     private void SetUp_MainBtns()
     {
         mainButons = new List<MainButtonData>();
 
-        for(int i = 0; i< MainButtonDataSO.mainBtnDatas.Length; i++)
+        for (int i = 0; i < MainButtonDataSO.mainBtnDatas.Length; i++)
         {
             MainButtonData mainbtns = MainButtonDataSO.mainBtnDatas[i];
             mainButons.Add(mainbtns);
@@ -34,9 +36,8 @@ public class MainButtonManager : MonoBehaviour
         for (int i = 0; i < mainButons.Count; i++)
         {
             var btnObj = Instantiate(mainButtonPrefab, mainButtonPosition.transform);
-            var Button = btnObj.GetComponent<Button>();
-            Button.Setup(mainButons[i]);
+            var button = btnObj.GetComponent<Buttons>();
+            button.Setup(mainButons[i]);
         }
     }
-
 }

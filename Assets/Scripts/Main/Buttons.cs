@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Button : MonoBehaviour
+public class Buttons : MonoBehaviour
 {
+    #region º¯¼ö
     [SerializeField]
     private Image image;
     [SerializeField]
     private Image buttonImage;
-    private Sprite btnSprite;
-    private int level;
-    private float percent;
-    private int money;
-    private int number;
-    private string btnName;
+
+    public Sprite btnSprite;
+    public int level;
+    public float percent;
+    public int money;
+    public int number;
+    public string btnName;
 
     [SerializeField]
     private Text levelText;
@@ -28,6 +30,7 @@ public class Button : MonoBehaviour
     private Text nameText;
 
     public MainButtonData mainButtonData;
+    #endregion
 
     public void Setup(MainButtonData mainButtonData)
     {
@@ -46,10 +49,15 @@ public class Button : MonoBehaviour
         nameText.text = string.Format("{0}", btnName);
         image.color = new Color(1f, 1f, 1f, 1f);
 
-        if(GameManager.Instance.money < money)
+        if(PlayerPrefs.GetInt("Money") < money)
         {
             buttonImage.color = new Color(0f, 0f, 0f, 0.5f);
             image.color = new Color(0.5f, 0.5f, 0.5f, 1f);
         }
+    }
+
+    private void OnMouseDown()
+    {
+        int playerMoney = PlayerPrefs.GetInt("Money");
     }
 }

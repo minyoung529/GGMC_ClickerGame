@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
 
 
     private bool isClick = false;
-    public int money { get; private set; } = 0;
+    public int money;
     private void Awake()
     {
         Instance = this;
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        money = PlayerPrefs.GetInt("Money", 0);
+        money = PlayerPrefs.GetInt("Money");
         UpdateUI();
         SetBtnList();
     }
