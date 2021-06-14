@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,21 +7,23 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [Header("�ؽ�Ʈ")]
+    [Header("텍스트")]
     [SerializeField]
     private Text moneyText;
+    [SerializeField]
+    private Text statusText;
 
-    [Header("�޴� �̹���")]
+    [Header("메뉴 이미지")]
     [SerializeField]
     private GameObject mainImage;
     [SerializeField]
-    private GameObject statusImage;
+    public GameObject statusImage;
     [SerializeField]
     private GameObject storeImage;
     [SerializeField]
     private GameObject settingImage;
 
-    [Header("��ư ������Ʈ")]
+    [Header("버튼 오브젝트")]
     [SerializeField]
     private GameObject mainBtn;
     [SerializeField]
@@ -53,7 +55,8 @@ public class GameManager : MonoBehaviour
 
     public void UpdateUI()
     {
-        moneyText.text = string.Format("{0}��", money);
+        moneyText.text = string.Format("₩:{0}원", money);
+        statusText.text = string.Format("이름: 이미녕\n자본금: {0}원\n악기:는 거꾸로해도 기악\n현재상태: 거지음악가", money);
     }
 
     public void AddMoney(int addScore)

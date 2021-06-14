@@ -8,6 +8,7 @@ public class ClickArea : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if(!GameManager.Instance.statusImage.activeSelf)
         GameManager.Instance.AddMoney(money);
     }
 }
