@@ -11,12 +11,11 @@ public class Buttons : MonoBehaviour
     [SerializeField]
     private Image buttonImage;
 
-    public Sprite btnSprite;
-    public int level;
-    public float percent;
-    public int money;
-    public int number;
-    public string btnName;
+    private int level = 0;
+    private float percent;
+    private int money;
+    private int number;
+    private string btnName;
 
     [SerializeField]
     private Text levelText;
@@ -28,9 +27,20 @@ public class Buttons : MonoBehaviour
     private Text moneyText;
     [SerializeField]
     private Text nameText;
+    private ClickArea ca = null;
 
     public MainButtonData mainButtonData;
     #endregion
+
+    private void Start()
+    {
+        ca = FindObjectOfType<ClickArea>();
+    }
+
+    private void OnMouseDown()
+    {
+        Lock();
+    }
 
     public void Setup(MainButtonData mainButtonData)
     {
@@ -48,16 +58,29 @@ public class Buttons : MonoBehaviour
         moneyText.text = string.Format("{0}¿ø", money);
         nameText.text = string.Format("{0}", btnName);
         image.color = new Color(1f, 1f, 1f, 1f);
+    }
 
-        if(PlayerPrefs.GetInt("Money") < money)
+    public void Lock()
+    {
+        if (PlayerPrefs.GetInt("Money") < money)
         {
             buttonImage.color = new Color(0f, 0f, 0f, 0.5f);
             image.color = new Color(0.5f, 0.5f, 0.5f, 1f);
         }
+
+        else
+            buttonImage.color = new Color(0.5f, 0.5f, 0.5f, 1f);
     }
 
-    private void OnMouseDown()
+    public void Rhythm()
     {
-        int playerMoney = PlayerPrefs.GetInt("Money");
+        if (GameManager.Instance.money - mainButtonData.money < 0) return;
+
+        GameManager.Instance.Min(money);
+        mainButtonData.money += 10;
+        mainButtonData.level += 1;
+        mainButtonData.number += 1;
+        ca.money += 1;
+        Setup(this.mainButtonData);
     }
 }

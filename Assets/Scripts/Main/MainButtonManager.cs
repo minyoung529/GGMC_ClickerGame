@@ -8,18 +8,16 @@ public class MainButtonManager : MonoBehaviour
     [SerializeField]
     MainButtonDataSO MainButtonDataSO;
     [SerializeField]
-    GameObject mainButtonPrefab;
-    [SerializeField]
     GameObject mainButtonPosition;
     private List<MainButtonData> mainButons;
-
+    private List<GameObject> buttonsChild;
     private void Start()
     {
         SetUp_MainBtns();
     }
 
     //setup main button
-    private void SetUp_MainBtns()
+    public void SetUp_MainBtns()
     {
         mainButons = new List<MainButtonData>();
 
@@ -28,14 +26,14 @@ public class MainButtonManager : MonoBehaviour
             MainButtonData mainbtns = MainButtonDataSO.mainBtnDatas[i];
             mainButons.Add(mainbtns);
         }
-        Instantiate_MainBtn();
+        Update_MainBtn();
     }
 
-    public void Instantiate_MainBtn()
+    public void Update_MainBtn()
     {
         for (int i = 0; i < mainButons.Count; i++)
         {
-            var btnObj = Instantiate(mainButtonPrefab, mainButtonPosition.transform);
+            var btnObj = mainButtonPosition.transform.GetChild(i);
             var button = btnObj.GetComponent<Buttons>();
             button.Setup(mainButons[i]);
         }

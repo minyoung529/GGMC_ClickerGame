@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    private MainButtonManager mainButtonManager;
 
     [Header("텍스트")]
     [SerializeField]
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        mainButtonManager = FindObjectOfType<MainButtonManager>();
         money = PlayerPrefs.GetInt("Money");
         UpdateUI();
         SetBtnList();
@@ -124,5 +126,13 @@ public class GameManager : MonoBehaviour
         statusBtnimage = statusBtn.GetComponent<Image>();
         storeBtnimage = storeBtn.GetComponent<Image>();
         settingBtnimage = settingBtn.GetComponent<Image>();
+    }
+
+    public void Min(int minmoney)
+    {
+        money -= minmoney;
+        //Debug.Log(money);
+        mainButtonManager.SetUp_MainBtns();
+        UpdateUI();
     }
 }
