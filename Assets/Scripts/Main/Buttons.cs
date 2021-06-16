@@ -12,10 +12,11 @@ public class Buttons : MonoBehaviour
     private Image buttonImage;
 
     private int level = 0;
-    private float percent;
+    private int click;
     private int money;
     private int number;
     private string btnName;
+    private int plusMoney;
 
     [SerializeField]
     private Text levelText;
@@ -29,12 +30,15 @@ public class Buttons : MonoBehaviour
     private Text nameText;
     private ClickArea ca = null;
 
+    private int oneClickMoney;
+
     public MainButtonData mainButtonData;
     #endregion
 
     private void Start()
     {
         ca = FindObjectOfType<ClickArea>();
+        oneClickMoney = PlayerPrefs.GetInt("test1");
     }
 
     private void OnMouseDown()
@@ -47,10 +51,11 @@ public class Buttons : MonoBehaviour
         this.mainButtonData = mainButtonData;
         image.sprite = mainButtonData.sprite;
         this.level = mainButtonData.level;
-        //this.percent = mainButtonData.percent;
+        this.click = mainButtonData.click;
         this.money = mainButtonData.money;
         this.number = mainButtonData.number;
         this.btnName = mainButtonData.name;
+        this.plusMoney = mainButtonData.plusMoney;
 
         levelText.text = string.Format("Level {0}", level);
         //percentText.text = string.Format("{0}%", percent);
@@ -74,13 +79,23 @@ public class Buttons : MonoBehaviour
 
     public void Rhythm()
     {
-        if (GameManager.Instance.money - mainButtonData.money < 0) return;
+        if (GameManager.Instance.playerMoney - mainButtonData.money < 0) return;
 
         GameManager.Instance.Min(money);
-        mainButtonData.money += 10;
+
+        mainButtonData.money += plusMoney;
         mainButtonData.level += 1;
-        mainButtonData.number += 1;
-        ca.money += 1;
+        mainButtonData.number += click;
+
+        PlusOnClickMoney(click);
+
         Setup(this.mainButtonData);
+    }
+
+    private void PlusOnClickMoney(int clickCount)
+    {
+        oneClickMoney += clickCount;
+        PlayerPrefs.SetInt("test1", oneClickMoney);
+        GameManager.Instance.UpdateUI();
     }
 }

@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     private Text moneyText;
     [SerializeField]
     private Text statusText;
+    [SerializeField]
+    private Text oneClickText;
 
     [Header("메뉴 이미지")]
     [SerializeField]
@@ -39,9 +41,9 @@ public class GameManager : MonoBehaviour
     private List<GameObject> btnImages = new List<GameObject>();
     private List<Image> btnObjs = new List<Image>();
 
+    public int oneClickMoney;
+    public int playerMoney;
 
-    private bool isClick = false;
-    public int money;
     private void Awake()
     {
         Instance = this;
@@ -50,21 +52,25 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         mainButtonManager = FindObjectOfType<MainButtonManager>();
-        money = PlayerPrefs.GetInt("Money");
+        playerMoney = PlayerPrefs.GetInt("Money");
+        oneClickMoney = PlayerPrefs.GetInt("test1");
         UpdateUI();
         SetBtnList();
     }
 
     public void UpdateUI()
     {
-        moneyText.text = string.Format("₩:{0}원", money);
-        statusText.text = string.Format("이름: 이미녕\n자본금: {0}원\n악기:는 거꾸로해도 기악\n현재상태: 거지음악가", money);
+        oneClickMoney = PlayerPrefs.GetInt("test1");
+
+        moneyText.text = string.Format("₩:{0}원", playerMoney);
+        statusText.text = string.Format("이름: 이미녕\n자본금: {0}원\n악기:는 거꾸로해도 기악\n현재상태: 거지음악가", playerMoney);
+        oneClickText.text = string.Format("Click-{0}", oneClickMoney);
     }
 
     public void AddMoney(int addScore)
     {
-        money += addScore;
-        PlayerPrefs.SetInt("Money", money);
+        playerMoney += addScore;
+        PlayerPrefs.SetInt("Money", playerMoney);
         UpdateUI();
     }
 
@@ -130,7 +136,7 @@ public class GameManager : MonoBehaviour
 
     public void Min(int minmoney)
     {
-        money -= minmoney;
+        playerMoney -= minmoney;
         //Debug.Log(money);
         mainButtonManager.SetUp_MainBtns();
         UpdateUI();

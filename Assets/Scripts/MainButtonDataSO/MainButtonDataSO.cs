@@ -8,7 +8,8 @@ public class MainButtonData
     public string name;
     public Sprite sprite;
     public int level;
-    public float percent;
+    public int plusMoney;
+    public int click;
     public int money;
     public int number;
 }

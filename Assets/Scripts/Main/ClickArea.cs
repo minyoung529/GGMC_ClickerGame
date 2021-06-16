@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class ClickArea : MonoBehaviour
 {
-    public int money = 1;
+    private int money;
+
+    private void Start()
+    {
+        money = PlayerPrefs.GetInt("test1");
+    }
 
     private void OnMouseDown()
     {
-        if(!GameManager.Instance.statusImage.activeSelf)
-        GameManager.Instance.AddMoney(money);
-        GameManager.Instance.AddMoney(1000);
+        money = PlayerPrefs.GetInt("test1");
 
+        if (!GameManager.Instance.statusImage.activeSelf)
+        GameManager.Instance.AddMoney(money);
+
+        GameManager.Instance.UpdateUI();
     }
 }
