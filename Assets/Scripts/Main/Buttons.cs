@@ -40,7 +40,17 @@ public class Buttons : MonoBehaviour
     {
         ca = FindObjectOfType<ClickArea>();
         oneClickMoney = PlayerPrefs.GetInt("test1");
-        SetPrefs(PlayerPrefs.GetString("Test1"));
+        
+        if(gameObject.CompareTag("Rhythm"))
+        {
+            SetPrefs(PlayerPrefs.GetString("Test1"));
+        }
+
+        else if (gameObject.CompareTag("Instrument"))
+        {
+            SetPrefs(PlayerPrefs.GetString("Test2"));
+        }
+
         Debug.Log(money);
 
         SetButtonText();
@@ -81,6 +91,7 @@ public class Buttons : MonoBehaviour
             case "연주 실력":
                 PlayerPrefs.SetString("Test2", InsertData(level, money, number));
                 SetPrefs(PlayerPrefs.GetString("Test2"));
+                Debug.Log(PlayerPrefs.GetString("Test2"));
                 break;
         }
     }
