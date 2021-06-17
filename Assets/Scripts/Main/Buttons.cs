@@ -12,7 +12,7 @@ public class Buttons : MonoBehaviour
     [SerializeField]
     private Image buttonImage;
 
-    private int level = 0;
+    private int level = 1;
     private int click;
     private int money;
     private int number;
@@ -29,7 +29,6 @@ public class Buttons : MonoBehaviour
     private Text moneyText;
     [SerializeField]
     private Text nameText;
-    private ClickArea ca = null;
 
     private int oneClickMoney;
 
@@ -38,21 +37,10 @@ public class Buttons : MonoBehaviour
 
     private void Start()
     {
-        ca = FindObjectOfType<ClickArea>();
         oneClickMoney = PlayerPrefs.GetInt("test1");
-        
-        if(gameObject.CompareTag("Rhythm"))
-        {
-            SetPrefs(PlayerPrefs.GetString("Test1"));
-        }
 
-        else if (gameObject.CompareTag("Instrument"))
-        {
-            SetPrefs(PlayerPrefs.GetString("Test2"));
-        }
-
-        Debug.Log(money);
-
+        Setup(mainButtonData);
+        SetUpData();
         SetButtonText();
     }
 
@@ -91,11 +79,52 @@ public class Buttons : MonoBehaviour
             case "연주 실력":
                 PlayerPrefs.SetString("Test2", InsertData(level, money, number));
                 SetPrefs(PlayerPrefs.GetString("Test2"));
-                Debug.Log(PlayerPrefs.GetString("Test2"));
+                break;
+
+            case "발성법":
+                PlayerPrefs.SetString("Test3", InsertData(level, money, number));
+                SetPrefs(PlayerPrefs.GetString("Test3"));
+                break;
+
+            case "폐활량":
+                PlayerPrefs.SetString("Test4", InsertData(level, money, number));
+                SetPrefs(PlayerPrefs.GetString("Test4"));
+                break;
+
+            case "음역대 강화":
+                PlayerPrefs.SetString("Test5", InsertData(level, money, number));
+                SetPrefs(PlayerPrefs.GetString("Test5"));
                 break;
         }
     }
 
+    private void SetUpData()
+    {
+        if (gameObject.CompareTag("Rhythm"))
+        {
+            SetPrefs(PlayerPrefs.GetString("Test1", "1,5,1"));
+        }
+
+        else if (gameObject.CompareTag("Instrument"))
+        {
+            SetPrefs(PlayerPrefs.GetString("Test2", "1,35,5"));
+        }
+
+        else if (gameObject.CompareTag("Vocalization"))
+        {
+            SetPrefs(PlayerPrefs.GetString("Test3", "1,80,10"));
+        }
+
+        else if (gameObject.CompareTag("Breathing"))
+        {
+            SetPrefs(PlayerPrefs.GetString("Test4", "1,560,50"));
+        }
+
+        else if (gameObject.CompareTag("Pitch"))
+        {
+            SetPrefs(PlayerPrefs.GetString("Test5", "1,1120,100"));
+        }
+    }
     private string InsertData(int level, int money, int number)
     {
         int[] data = new int[3];
@@ -146,7 +175,7 @@ public class Buttons : MonoBehaviour
             buttonImage.color = new Color(0.5f, 0.5f, 0.5f, 1f);
     }
 
-    public void Rhythm()
+    public void Buy()
     {
         if (GameManager.Instance.playerMoney - money < 0) return;
 

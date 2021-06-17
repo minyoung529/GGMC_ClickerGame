@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Rhythm
   - Instrument
+  - Vocalization
+  - Breathing
+  - Pitch
   layers:
   - Default
   - TransparentFX
