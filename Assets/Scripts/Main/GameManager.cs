@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     private MainButtonManager mainButtonManager;
+    public Player player;
 
     [Header("텍스트")]
     [SerializeField]
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
     private GameObject settingBtn;
 
     private Image mainBtnimage, statusBtnimage, storeBtnimage, settingBtnimage;
+    private bool isActive;
 
     private List<GameObject> btnImages = new List<GameObject>();
     private List<Image> btnObjs = new List<Image>();
@@ -52,6 +54,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         mainButtonManager = FindObjectOfType<MainButtonManager>();
+        player = FindObjectOfType<Player>();
         playerMoney = PlayerPrefs.GetInt("Money");
         oneClickMoney = PlayerPrefs.GetInt("test1");
         UpdateUI();
@@ -77,21 +80,25 @@ public class GameManager : MonoBehaviour
     public void OnClickMain()
     {
         BtnActive(mainImage);
+        player.PlayerActive();
     }
 
     public void OnClickStatus()
     {
         BtnActive(statusImage);
+        player.PlayerInactive();
     }
 
     public void OnClickStore()
     {
         BtnActive(storeImage);
+        player.PlayerInactive();
     }
 
     public void OnClickSetting()
     {
         BtnActive(settingImage);
+        player.PlayerInactive();
     }
 
     private void BtnActive(GameObject image)
@@ -137,7 +144,6 @@ public class GameManager : MonoBehaviour
     public void Min(int minmoney)
     {
         playerMoney -= minmoney;
-        //Debug.Log(money);
         UpdateUI();
     }
 }
