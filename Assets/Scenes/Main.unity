@@ -630,7 +630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 311168111068645079, guid: 6d4df3794de40dd4b8b4b99cd369fd2b, type: 3}
       propertyPath: m_Text
-      value: "\uAC00\uCC3D\uB825"
+      value: "\uC5F0\uC8FC \uC2E4\uB825"
       objectReference: {fileID: 0}
     - target: {fileID: 311168112084306826, guid: 6d4df3794de40dd4b8b4b99cd369fd2b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2298,6 +2298,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197713673}
   m_CullTransparentMesh: 1
+--- !u!114 &1218282287 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -7491547321232526312, guid: 6d4df3794de40dd4b8b4b99cd369fd2b, type: 3}
+  m_PrefabInstance: {fileID: 1952019625}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d8a58c8745dff49b859ca7054bcde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1237227819
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,7 +5048,19 @@ PrefabInstance:
     - target: {fileID: 311168112084306826, guid: 6d4df3794de40dd4b8b4b99cd369fd2b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1778628946}
+      objectReference: {fileID: 1218282287}
+    - target: {fileID: 311168112084306826, guid: 6d4df3794de40dd4b8b4b99cd369fd2b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Rhythm
+      objectReference: {fileID: 0}
+    - target: {fileID: 311168112084306826, guid: 6d4df3794de40dd4b8b4b99cd369fd2b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Buttons, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 311168112084306826, guid: 6d4df3794de40dd4b8b4b99cd369fd2b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 311168112084306828, guid: 6d4df3794de40dd4b8b4b99cd369fd2b, type: 3}
       propertyPath: m_Name
       value: Button (2)

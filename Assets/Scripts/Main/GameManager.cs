@@ -138,7 +138,6 @@ public class GameManager : MonoBehaviour
     {
         playerMoney -= minmoney;
         //Debug.Log(money);
-        mainButtonManager.SetUp_MainBtns();
         UpdateUI();
     }
 }
