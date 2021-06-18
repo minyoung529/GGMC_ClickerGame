@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -99,6 +100,11 @@ public class GameManager : MonoBehaviour
     {
         BtnActive(settingImage);
         player.PlayerInactive();
+    }
+
+    public void OnClickAudition()
+    {
+        SceneManager.LoadScene("Audition");
     }
 
     private void BtnActive(GameObject image)
