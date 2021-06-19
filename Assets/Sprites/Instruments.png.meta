@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2a3bdc4d52ef86c438ce3eb8bdf930f9
+guid: 48faf1dd8e8c6454d92f578516c1954b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6832360858393411312
-    second: Instrument_Castanets_0
+      213: -3928469265979851222
+    second: Instruments_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,22 +106,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Instrument_Castanets_0
+      name: Instruments_0
       rect:
         serializedVersion: 2
-        x: 392
-        y: 137
-        width: 460
-        height: 460
+        x: 309
+        y: 178
+        width: 339
+        height: 339
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fe72d5500c61de50800000000000000
-      internalID: 6832360858393411312
+      spriteID: a2e3b3a34064b79c0800000000000000
+      internalID: -3928469265979851222
       vertices: []
       indices: 
       edges: []
