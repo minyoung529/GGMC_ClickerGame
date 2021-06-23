@@ -10,33 +10,62 @@ public class MainButtonManager : MonoBehaviour
     MainButtonDataSO MainButtonDataSO;
     [SerializeField]
     GameObject mainButtonPosition;
-    private List<MainButtonData> mainButons;
-    private List<GameObject> buttonsChild;
+    private List<MainButtonData> mainButtons;
+
+    [SerializeField]
+    InstrumentSO storeButtonDataSO;
+    [SerializeField]
+    GameObject storeButtonPosition;
+    private List<Instrument> storeButtons;
     private void Start()
     {
         SetUp_MainBtns();
+        SetUp_StoreBtns();
     }
 
-    //setup main button
     public void SetUp_MainBtns()
     {
-        mainButons = new List<MainButtonData>();
+        mainButtons = new List<MainButtonData>();
 
         for (int i = 0; i < MainButtonDataSO.mainBtnDatas.Length; i++)
         {
             MainButtonData mainbtns = MainButtonDataSO.mainBtnDatas[i];
-            mainButons.Add(mainbtns);
+            mainButtons.Add(mainbtns);
         }
+
         Update_MainBtn();
     }
 
     public void Update_MainBtn()
     {
-        for (int i = 0; i < mainButons.Count; i++)
+        for (int i = 0; i < mainButtons.Count; i++)
         {
             var btnObj = mainButtonPosition.transform.GetChild(i);
             var button = btnObj.GetComponent<Buttons>();
-            button.Setup(mainButons[i]);
+            button.Setup(mainButtons[i]);
+        }
+    }
+
+    public void SetUp_StoreBtns()
+    {
+        storeButtons = new List<Instrument>();
+
+        for (int i = 0; i < storeButtonDataSO.instruments.Length; i++)
+        {
+            Instrument storeInsts = storeButtonDataSO.instruments[i];
+            storeButtons.Add(storeInsts);
+        }
+
+        Update_StoreBtn();
+    }
+
+    public void Update_StoreBtn()
+    {
+        for (int i = 0; i < storeButtons.Count; i++)
+        {
+            var btnObj = storeButtonPosition.transform.GetChild(i);
+            var button = btnObj.GetComponent<InstButtons>();
+            button.Setup(storeButtons[i]);
         }
     }
 }

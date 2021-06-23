@@ -38,6 +38,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject settingBtn;
 
+    [Header("스토어")]
+    [SerializeField]
+    private GameObject buyPopupImage;
+
     private Image mainBtnimage, statusBtnimage, storeBtnimage, settingBtnimage;
     private bool isActive;
 
@@ -45,6 +49,7 @@ public class GameManager : MonoBehaviour
     private List<Image> btnObjs = new List<Image>();
 
     public int oneClickMoney;
+    public int moneyPerSec;
     public int playerMoney;
 
     private void Awake()
@@ -65,9 +70,11 @@ public class GameManager : MonoBehaviour
     public void UpdateUI()
     {
         oneClickMoney = PlayerPrefs.GetInt("test1");
+        moneyPerSec = PlayerPrefs.GetInt("test234", 0);
+
 
         moneyText.text = string.Format("₩:{0}원", playerMoney);
-        statusText.text = string.Format("이름: 이미녕\n자본금: {0}원\n악기:는 거꾸로해도 기악\n현재상태: 거지음악가", playerMoney);
+        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n초당 획든 돈:{1}원\n자본금: {2}원\n악기:는 거꾸로해도 기악\n현재상태: 거지음악가", oneClickMoney, moneyPerSec, playerMoney);
         oneClickText.text = string.Format("Click-{0}", oneClickMoney);
     }
 
@@ -151,5 +158,10 @@ public class GameManager : MonoBehaviour
     {
         playerMoney -= minmoney;
         UpdateUI();
+    }
+
+    public void buyPopupActive()
+    {
+        buyPopupImage.SetActive(false);
     }
 }

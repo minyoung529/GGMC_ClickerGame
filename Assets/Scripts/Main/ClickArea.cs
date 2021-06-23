@@ -13,6 +13,7 @@ public class ClickArea : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log("sdf");
         money = PlayerPrefs.GetInt("test1");
 
         if (!GameManager.Instance.statusImage.activeSelf)
