@@ -14,7 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instruments:
   - instName: "\uD0EC\uBC84\uB9B0"
-    sprite: {fileID: -3928469265979851222, guid: 48faf1dd8e8c6454d92f578516c1954b, type: 3}
+    instSprite: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     money: 20000
     moneyPerSec: 2
     popular: 0
+    info: "\uCA0D\uADF8\uB791 \uCE6D\uCE6D \uCA0D\uADF8\uB791 \uCE6D\uCE6D \uD0EC\uBC84\uB9B0\uC774\uB2E4.
+      \uC2DC\uB04C\uC2DC\uB04C \uBC85\uC801\uBC85\uC801\uD558\uB2E4."
+  - instName: "\uAE30\uD0C0"
+    instSprite: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
+    money: 50000
+    moneyPerSec: 7
+    popular: 1
+    info: "\uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC88B\uC544
+      \uAE30\uD0C0 \uC88B\uC544!!!!!!!!"
