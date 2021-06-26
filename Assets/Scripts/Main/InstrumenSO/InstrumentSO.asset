@@ -14,16 +14,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instruments:
   - instName: "\uD0EC\uBC84\uB9B0"
-    instSprite: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
+    instSprite: {fileID: -6900752059787176320, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
     money: 20000
     moneyPerSec: 2
     popular: 0
     info: "\uCA0D\uADF8\uB791 \uCE6D\uCE6D \uCA0D\uADF8\uB791 \uCE6D\uCE6D \uD0EC\uBC84\uB9B0\uC774\uB2E4.
       \uC2DC\uB04C\uC2DC\uB04C \uBC85\uC801\uBC85\uC801\uD558\uB2E4."
   - instName: "\uAE30\uD0C0"
-    instSprite: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
+    instSprite: {fileID: -2143216839651712309, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
     money: 50000
     moneyPerSec: 7
     popular: 1
+    info: "\uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC88B\uC544
+      \uAE30\uD0C0 \uC88B\uC544!!!!!!!!"
+  - instName: "\uC77C\uB809 \uAE30\uD0C0"
+    instSprite: {fileID: 3962615822470558121, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+    money: 50000
+    moneyPerSec: 13
+    popular: 3
+    info: "\uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC88B\uC544
+      \uAE30\uD0C0 \uC88B\uC544!!!!!!!!"
+  - instName: "\uB514\uC9C0\uD138 \uD53C\uC544\uB178"
+    instSprite: {fileID: -4607247260255624812, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+    money: 280000
+    moneyPerSec: 28
+    popular: 4
+    info: "\uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC88B\uC544
+      \uAE30\uD0C0 \uC88B\uC544!!!!!!!!"
+  - instName: "\uC2E0\uB514\uC0AC\uC774\uC800"
+    instSprite: {fileID: 1355766626887272186, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+    money: 410000
+    moneyPerSec: 41
+    popular: 6
+    info: "\uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC88B\uC544
+      \uAE30\uD0C0 \uC88B\uC544!!!!!!!!"
+  - instName: "\uB4DC\uB7FC"
+    instSprite: {fileID: -7223477442975868896, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+    money: 800000
+    moneyPerSec: 70
+    popular: 10
     info: "\uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC124\uBA85 \uAE30\uD0C0 \uC88B\uC544
       \uAE30\uD0C0 \uC88B\uC544!!!!!!!!"

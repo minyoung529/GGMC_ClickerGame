@@ -6,14 +6,8 @@ public class ClickArea : MonoBehaviour
 {
     private int money;
 
-    private void Start()
-    {
-        money = PlayerPrefs.GetInt("test1");
-    }
-
     private void OnMouseDown()
     {
-        Debug.Log("sdf");
         money = PlayerPrefs.GetInt("test1");
 
         if (!GameManager.Instance.statusImage.activeSelf)

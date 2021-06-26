@@ -44,7 +44,6 @@ public class InstButtons : MonoBehaviour
 
     public void OnClickBuy()
     {
-        Debug.Log(btnName);
         BuyPopup.SetActive(true);
 
         nameText.text = string.Format("{0}", btnName);

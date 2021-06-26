@@ -61,17 +61,16 @@ public class GameManager : MonoBehaviour
     {
         mainButtonManager = FindObjectOfType<MainButtonManager>();
         player = FindObjectOfType<Player>();
-        playerMoney = PlayerPrefs.GetInt("Money");
-        oneClickMoney = PlayerPrefs.GetInt("test1");
+        playerMoney = PlayerPrefs.GetInt("Money", 0);
+        oneClickMoney = PlayerPrefs.GetInt("onc2",1);
         UpdateUI();
         SetBtnList();
     }
 
     public void UpdateUI()
     {
-        oneClickMoney = PlayerPrefs.GetInt("test1");
+        oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
         moneyPerSec = PlayerPrefs.GetInt("test234", 0);
-
 
         moneyText.text = string.Format("₩:{0}원", playerMoney);
         statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n초당 획든 돈:{1}원\n자본금: {2}원\n악기:는 거꾸로해도 기악\n현재상태: 거지음악가", oneClickMoney, moneyPerSec, playerMoney);
@@ -163,5 +162,20 @@ public class GameManager : MonoBehaviour
     public void buyPopupActive()
     {
         buyPopupImage.SetActive(false);
+    }
+
+    public void ClickArea()
+    {
+        oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
+        Debug.Log(oneClickMoney);
+        Debug.Log(playerMoney);
+
+
+        if (mainImage.activeSelf)
+        {
+            AddMoney(oneClickMoney);
+        }
+
+        UpdateUI();
     }
 }

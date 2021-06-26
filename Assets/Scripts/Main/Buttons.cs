@@ -37,7 +37,7 @@ public class Buttons : MonoBehaviour
 
     private void Start()
     {
-        oneClickMoney = PlayerPrefs.GetInt("test1");
+        oneClickMoney = PlayerPrefs.GetInt("onc2");
 
         Setup(mainButtonData);
         SetUpData();
@@ -72,28 +72,28 @@ public class Buttons : MonoBehaviour
         switch (btnName)
         {
             case "리듬감":
-                PlayerPrefs.SetString("Test1", InsertData(level, money, number));
-                SetPrefs(PlayerPrefs.GetString("Test1"));
+                PlayerPrefs.SetString("test111", InsertData(level, money, number));
+                SetPrefs(PlayerPrefs.GetString("test111"));
                 break;
 
             case "연주 실력":
-                PlayerPrefs.SetString("Test2", InsertData(level, money, number));
-                SetPrefs(PlayerPrefs.GetString("Test2"));
+                PlayerPrefs.SetString("Test22", InsertData(level, money, number));
+                SetPrefs(PlayerPrefs.GetString("Test22"));
                 break;
 
             case "발성법":
-                PlayerPrefs.SetString("Test3", InsertData(level, money, number));
-                SetPrefs(PlayerPrefs.GetString("Test3"));
+                PlayerPrefs.SetString("Test33", InsertData(level, money, number));
+                SetPrefs(PlayerPrefs.GetString("Test33"));
                 break;
 
             case "폐활량":
-                PlayerPrefs.SetString("Test4", InsertData(level, money, number));
-                SetPrefs(PlayerPrefs.GetString("Test4"));
+                PlayerPrefs.SetString("Test44", InsertData(level, money, number));
+                SetPrefs(PlayerPrefs.GetString("Test44"));
                 break;
 
             case "음역대 강화":
-                PlayerPrefs.SetString("Test5", InsertData(level, money, number));
-                SetPrefs(PlayerPrefs.GetString("Test5"));
+                PlayerPrefs.SetString("Test55", InsertData(level, money, number));
+                SetPrefs(PlayerPrefs.GetString("Test55"));
                 break;
         }
     }
@@ -102,27 +102,27 @@ public class Buttons : MonoBehaviour
     {
         if (gameObject.CompareTag("Rhythm"))
         {
-            SetPrefs(PlayerPrefs.GetString("Test1", "1,5,1"));
+            SetPrefs(PlayerPrefs.GetString("test111", "1,5,1"));
         }
 
         else if (gameObject.CompareTag("Instrument"))
         {
-            SetPrefs(PlayerPrefs.GetString("Test2", "1,35,5"));
+            SetPrefs(PlayerPrefs.GetString("Test22", "1,35,5"));
         }
 
         else if (gameObject.CompareTag("Vocalization"))
         {
-            SetPrefs(PlayerPrefs.GetString("Test3", "1,80,10"));
+            SetPrefs(PlayerPrefs.GetString("Test33", "1,80,10"));
         }
 
         else if (gameObject.CompareTag("Breathing"))
         {
-            SetPrefs(PlayerPrefs.GetString("Test4", "1,560,50"));
+            SetPrefs(PlayerPrefs.GetString("Test44", "1,560,50"));
         }
 
         else if (gameObject.CompareTag("Pitch"))
         {
-            SetPrefs(PlayerPrefs.GetString("Test5", "1,1120,100"));
+            SetPrefs(PlayerPrefs.GetString("Test55", "1,1120,100"));
         }
     }
     private string InsertData(int level, int money, int number)
@@ -183,7 +183,7 @@ public class Buttons : MonoBehaviour
 
         money += plusMoney;
         level++;
-        number += click;
+        //number += click;
 
         SaveData_MainBtn();
         PlusOnClickMoney(click);
@@ -193,7 +193,7 @@ public class Buttons : MonoBehaviour
     private void PlusOnClickMoney(int clickCount)
     {
         oneClickMoney += clickCount;
-        PlayerPrefs.SetInt("test1", oneClickMoney);
+        PlayerPrefs.SetInt("onc2", oneClickMoney);
         GameManager.Instance.UpdateUI();
     }
 }
