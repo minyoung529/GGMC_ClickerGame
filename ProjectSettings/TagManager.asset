@@ -9,6 +9,10 @@ TagManager:
   - Vocalization
   - Breathing
   - Pitch
+  - Tambourine
+  - Guitar
+  - EGuitar
+  - EPiano
   layers:
   - Default
   - TransparentFX

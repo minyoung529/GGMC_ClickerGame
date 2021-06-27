@@ -5,9 +5,4 @@ using UnityEngine;
 public class BuyPopup : MonoBehaviour
 {
     public InstButtons instButtons;
-
-    public void Setup()
-    {
-
-    }
 }

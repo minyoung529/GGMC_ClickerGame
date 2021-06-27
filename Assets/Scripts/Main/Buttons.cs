@@ -183,7 +183,6 @@ public class Buttons : MonoBehaviour
 
         money += plusMoney;
         level++;
-        //number += click;
 
         SaveData_MainBtn();
         PlusOnClickMoney(click);

@@ -145,3 +145,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240752da22620e14da210c23afeb7384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inst:
+    instName: 
+    instSprite: {fileID: 0}
+    money: 0
+    moneyPerSec: 0
+    popular: 0
+    info: 
+  BuyPopup: {fileID: 0}
+  nameText: {fileID: 0}
+  infoText: {fileID: 0}
+  detailText: {fileID: 0}
+  moneyText: {fileID: 0}
+  instImage: {fileID: 2914323101972667786}
+  buttonImage: {fileID: 2914323101972667786}
+  isSold: {fileID: 4222414267994576128, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+  contents: {fileID: 0}

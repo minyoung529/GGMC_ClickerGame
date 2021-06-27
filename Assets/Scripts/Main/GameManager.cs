@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    private MainButtonManager mainButtonManager;
     public Player player;
 
     [Header("텍스트")]
@@ -42,15 +41,22 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject buyPopupImage;
 
+    [Header("내 정보")]
+    [SerializeField]
+    private GameObject instPanel;
+    [SerializeField]
+    private GameObject micPanel;
+
     private Image mainBtnimage, statusBtnimage, storeBtnimage, settingBtnimage;
     private bool isActive;
 
     private List<GameObject> btnImages = new List<GameObject>();
     private List<Image> btnObjs = new List<Image>();
 
-    public int oneClickMoney;
-    public int moneyPerSec;
+    private int oneClickMoney;
+    private int moneyPerSec;
     public int playerMoney;
+    private int popular;
 
     private void Awake()
     {
@@ -59,12 +65,20 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        mainButtonManager = FindObjectOfType<MainButtonManager>();
         player = FindObjectOfType<Player>();
         playerMoney = PlayerPrefs.GetInt("Money", 0);
         oneClickMoney = PlayerPrefs.GetInt("onc2",1);
+        popular = PlayerPrefs.GetInt("p1", 0);
         UpdateUI();
         SetBtnList();
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            AddMoney(10000);
+        }
     }
 
     public void UpdateUI()
@@ -73,13 +87,13 @@ public class GameManager : MonoBehaviour
         moneyPerSec = PlayerPrefs.GetInt("test234", 0);
 
         moneyText.text = string.Format("₩:{0}원", playerMoney);
-        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n초당 획든 돈:{1}원\n자본금: {2}원\n악기:는 거꾸로해도 기악\n현재상태: 거지음악가", oneClickMoney, moneyPerSec, playerMoney);
+        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n초당 획든 돈:{1}원\n자본금: {2}원\n악기:는 거꾸로해도 기악\n현재상태: 거지음악가\n인기도:{3}", oneClickMoney, moneyPerSec, playerMoney, popular);
         oneClickText.text = string.Format("Click-{0}", oneClickMoney);
     }
 
-    public void AddMoney(int addScore)
+    public void AddMoney(int addMoney)
     {
-        playerMoney += addScore;
+        playerMoney += addMoney;
         PlayerPrefs.SetInt("Money", playerMoney);
         UpdateUI();
     }
@@ -157,6 +171,7 @@ public class GameManager : MonoBehaviour
     {
         playerMoney -= minmoney;
         UpdateUI();
+        PlayerPrefs.SetInt("Money", playerMoney);
     }
 
     public void buyPopupActive()
@@ -177,5 +192,17 @@ public class GameManager : MonoBehaviour
         }
 
         UpdateUI();
+    }
+    
+    public void InstPanel()
+    {
+        instPanel.SetActive(true);
+        micPanel.SetActive(false);
+    }
+
+    public void MICPanel()
+    {
+        micPanel.SetActive(true);
+        instPanel.SetActive(false);
     }
 }
