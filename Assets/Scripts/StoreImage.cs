@@ -7,11 +7,8 @@ public class StoreImage : MonoBehaviour
     [SerializeField]
     GameObject buyPopUp;
 
-
     private void OnMouseUp()
     {
-        Debug.Log("sdf");
-
         if (buyPopUp.activeSelf)
         {
             buyPopUp.SetActive(false);

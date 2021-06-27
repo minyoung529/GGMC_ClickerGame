@@ -18,7 +18,7 @@ public class InstButtons : MonoBehaviour
     private int originPopular;
 
     [SerializeField]
-    GameObject BuyPopup;
+    GameObject BuyPopup, instContents;
     [SerializeField]
     Text nameText, infoText, detailText, moneyText;
     [SerializeField]

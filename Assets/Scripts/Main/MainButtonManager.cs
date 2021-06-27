@@ -17,6 +17,10 @@ public class MainButtonManager : MonoBehaviour
     [SerializeField]
     GameObject storeButtonPosition;
     private List<Instrument> storeButtons;
+
+    [SerializeField]
+    GameObject statusInstButtonPos;
+    private List<Instrument> statusInstBtn;
     private void Start()
     {
         SetUp_MainBtns();
@@ -57,6 +61,7 @@ public class MainButtonManager : MonoBehaviour
         }
 
         Update_StoreBtn();
+        Update_Status_Inst_Btn();
     }
 
     public void Update_StoreBtn()
@@ -65,6 +70,16 @@ public class MainButtonManager : MonoBehaviour
         {
             var btnObj = storeButtonPosition.transform.GetChild(i);
             var button = btnObj.GetComponent<InstButtons>();
+            button.Setup(storeButtons[i]);
+        }
+    }
+
+    public void Update_Status_Inst_Btn()
+    {
+        for (int i = 0; i < storeButtons.Count; i++)
+        {
+            var btnObj = statusInstButtonPos.transform.GetChild(i+1);
+            var button = btnObj.GetComponent<Status_Inst_Btn>();
             button.Setup(storeButtons[i]);
         }
     }
