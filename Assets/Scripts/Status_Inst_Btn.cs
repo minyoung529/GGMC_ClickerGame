@@ -34,7 +34,7 @@ public class Status_Inst_Btn : MonoBehaviour
         ChangeSprite();
     }
 
-    private void ChangeSprite()
+    public void ChangeSprite()
     {
         if(btnName == "탬버린" && PlayerPrefs.GetString("inst11") == "isSold")
         {
@@ -42,6 +42,26 @@ public class Status_Inst_Btn : MonoBehaviour
         }
 
         else if (btnName == "기타" && PlayerPrefs.GetString("inst22") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "일렉 기타" && PlayerPrefs.GetString("inst33") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "디지털 피아노" && PlayerPrefs.GetString("inst44") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "신디사이저" && PlayerPrefs.GetString("inst55") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "드럼" && PlayerPrefs.GetString("inst66") == "isSold")
         {
             btnImage.sprite = instSprite;
         }

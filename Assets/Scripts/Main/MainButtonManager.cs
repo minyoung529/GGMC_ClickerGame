@@ -78,9 +78,21 @@ public class MainButtonManager : MonoBehaviour
     {
         for (int i = 0; i < storeButtons.Count; i++)
         {
-            var btnObj = statusInstButtonPos.transform.GetChild(i+1);
+            var btnObj = statusInstButtonPos.transform.GetChild(i + 1);
             var button = btnObj.GetComponent<Status_Inst_Btn>();
             button.Setup(storeButtons[i]);
+        }
+    }
+
+    public void ChangeInstSprite()
+    {
+        for (int i = 0; i < storeButtons.Count; i++)
+        {
+            var statusInstBtn = statusInstButtonPos.transform.GetChild(i + 1);
+            var storeInstBtn = storeButtonPosition.transform.GetChild(i);
+
+            statusInstBtn.GetComponent<Status_Inst_Btn>().ChangeSprite();
+            storeInstBtn.GetComponent<InstButtons>().CheckData();
         }
     }
 }

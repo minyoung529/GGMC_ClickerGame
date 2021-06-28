@@ -109,7 +109,7 @@ public class InstButtons : MonoBehaviour
         CheckData();
     }
 
-    private void CheckData()
+    public void CheckData()
     {
         if (PlayerPrefs.GetString("inst11") == "isSold" && gameObject.transform == contents.transform.GetChild(0))
         {
