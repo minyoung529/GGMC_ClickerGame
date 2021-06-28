@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: InstrumentSO
   m_EditorClassIdentifier: 
   instruments:
+  - instName: "\uCE90\uC2A4\uD130\uB124\uCE20"
+    instSprite: {fileID: 7996517855592476747, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+    money: 0
+    moneyPerSec: 1
+    popular: 0
+    info: "\uB531\uB532\uAD6C\uB9AC"
   - instName: "\uD0EC\uBC84\uB9B0"
     instSprite: {fileID: -6900752059787176320, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
     money: 20000

@@ -21,12 +21,12 @@ public class MainButtonManager : MonoBehaviour
     [SerializeField]
     GameObject statusInstButtonPos;
     private List<Instrument> statusInstBtn;
+
     private void Start()
     {
         SetUp_MainBtns();
         SetUp_StoreBtns();
     }
-
     public void SetUp_MainBtns()
     {
         mainButtons = new List<MainButtonData>();
@@ -53,11 +53,15 @@ public class MainButtonManager : MonoBehaviour
     public void SetUp_StoreBtns()
     {
         storeButtons = new List<Instrument>();
+        statusInstBtn = new List<Instrument>();
 
         for (int i = 0; i < storeButtonDataSO.instruments.Length; i++)
         {
-            Instrument storeInsts = storeButtonDataSO.instruments[i];
+            Instrument statusInsts = storeButtonDataSO.instruments[i];
+            if (i == storeButtonDataSO.instruments.Length - 1) continue;
+            Instrument storeInsts = storeButtonDataSO.instruments[i + 1];
             storeButtons.Add(storeInsts);
+            statusInstBtn.Add(statusInsts);
         }
 
         Update_StoreBtn();
@@ -78,9 +82,9 @@ public class MainButtonManager : MonoBehaviour
     {
         for (int i = 0; i < storeButtons.Count; i++)
         {
-            var btnObj = statusInstButtonPos.transform.GetChild(i + 1);
+            var btnObj = statusInstButtonPos.transform.GetChild(i);
             var button = btnObj.GetComponent<Status_Inst_Btn>();
-            button.Setup(storeButtons[i]);
+            button.Setup(statusInstBtn[i]);
         }
     }
 
@@ -88,7 +92,7 @@ public class MainButtonManager : MonoBehaviour
     {
         for (int i = 0; i < storeButtons.Count; i++)
         {
-            var statusInstBtn = statusInstButtonPos.transform.GetChild(i + 1);
+            var statusInstBtn = statusInstButtonPos.transform.GetChild(i);
             var storeInstBtn = storeButtonPosition.transform.GetChild(i);
 
             statusInstBtn.GetComponent<Status_Inst_Btn>().ChangeSprite();

@@ -6,7 +6,13 @@ using UnityEngine.UI;
 public class Status_Inst_Btn : MonoBehaviour
 {
     [SerializeField]
-    Image btnImage;
+    Image btnImage, playerInstImage;
+    [SerializeField]
+    Sprite enabled;
+    [SerializeField]
+    GameObject choosePopup;
+    [SerializeField]
+    Text chooseText;
 
     private string btnName;
     private int money;
@@ -65,5 +71,12 @@ public class Status_Inst_Btn : MonoBehaviour
         {
             btnImage.sprite = instSprite;
         }
+    }
+
+    public void SelectChoose()
+    {
+        if (btnImage.sprite == enabled) return;
+        choosePopup.SetActive(false);
+        playerInstImage.sprite = instSprite;
     }
 }
