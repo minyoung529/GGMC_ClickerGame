@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 311168112084306827}
   - component: {fileID: 311168112084306826}
   - component: {fileID: -7491547321232526312}
+  - component: {fileID: 5578061713269172657}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -464,12 +465,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 311168110706534689}
   buttonImage: {fileID: 311168112084306827}
-  btnSprite: {fileID: 0}
-  level: 0
-  percent: 0
-  money: 0
-  number: 0
-  btnName: 
   levelText: {fileID: 311168112630749243}
   percentText: {fileID: 0}
   clickText: {fileID: 311168111973364557}
@@ -479,9 +474,25 @@ MonoBehaviour:
     name: 
     sprite: {fileID: 0}
     level: 0
-    percent: 0
+    plusMoney: 0
+    click: 0
     money: 0
     number: 0
+--- !u!114 &5578061713269172657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311168112084306828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &311168112630749245
 GameObject:
   m_ObjectHideFlags: 0

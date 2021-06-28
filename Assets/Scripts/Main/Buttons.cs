@@ -37,7 +37,7 @@ public class Buttons : MonoBehaviour
 
     private void Start()
     {
-        oneClickMoney = PlayerPrefs.GetInt("onc2");
+        oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
 
         Setup(mainButtonData);
         SetUpData();
@@ -191,6 +191,8 @@ public class Buttons : MonoBehaviour
 
     private void PlusOnClickMoney(int clickCount)
     {
+        oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
+
         oneClickMoney += clickCount;
         PlayerPrefs.SetInt("onc2", oneClickMoney);
         GameManager.Instance.UpdateUI();
