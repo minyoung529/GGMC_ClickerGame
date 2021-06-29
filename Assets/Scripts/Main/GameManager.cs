@@ -6,16 +6,14 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    #region
     public static GameManager Instance;
     public Player player;
+    public string playerInstrument;
 
     [Header("텍스트")]
     [SerializeField]
-    private Text moneyText;
-    [SerializeField]
-    private Text statusText;
-    [SerializeField]
-    private Text oneClickText;
+    private Text moneyText, timeText, statusText, oneClickText, plusMoneyText;
 
     [Header("메뉴 이미지")]
     [SerializeField]
@@ -47,16 +45,21 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject micPanel;
 
+    private StatusPlayerInst statusPlayerInst;
+    private MainPlayerInst mainPlayerInst;
+
     private Image mainBtnimage, statusBtnimage, storeBtnimage, settingBtnimage;
-    private bool isActive;
 
     private List<GameObject> btnImages = new List<GameObject>();
     private List<Image> btnObjs = new List<Image>();
 
     private int oneClickMoney;
-    private int moneyPerSec;
     public int playerMoney;
     private int popular;
+    private int timeMoney;
+
+    private float timer = 0;
+    #endregion
 
     private void Awake()
     {
@@ -66,11 +69,18 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<Player>();
+        statusPlayerInst = FindObjectOfType<StatusPlayerInst>();
+        mainPlayerInst = FindObjectOfType<MainPlayerInst>();
+
+        timeMoney = PlayerPrefs.GetInt("tm", 1);
         playerMoney = PlayerPrefs.GetInt("Money", 0);
         oneClickMoney = PlayerPrefs.GetInt("onc2",1);
         popular = PlayerPrefs.GetInt("p1", 0);
+        playerInstrument = PlayerPrefs.GetString("pi", "캐스터네츠");
         UpdateUI();
         SetBtnList();
+
+        statusImage.SetActive(false);
     }
 
     private void Update()
@@ -79,16 +89,23 @@ public class GameManager : MonoBehaviour
         {
             AddMoney(10000);
         }
+
+        TimePerMoney();
     }
 
     public void UpdateUI()
     {
         oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
-        moneyPerSec = PlayerPrefs.GetInt("test234", 0);
+        timeMoney = PlayerPrefs.GetInt("tm", 1);
+        playerInstrument = PlayerPrefs.GetString("pi", "캐스터네츠");
+
+        statusPlayerInst.ChangeSprite();
+        mainPlayerInst.ChangeSprite();
 
         moneyText.text = string.Format("₩:{0}원", playerMoney);
-        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n초당 획든 돈:{1}원\n자본금: {2}원\n악기:는 거꾸로해도 기악\n현재상태: 거지음악가\n인기도:{3}", oneClickMoney, moneyPerSec, playerMoney, popular);
+        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n초당 획든 돈:{1}원\n자본금: {2}원\n악기:는 거꾸로해도 기악\n현재상태: 거지음악가\n인기도:{3}", oneClickMoney, timeMoney, playerMoney, popular);
         oneClickText.text = string.Format("Click-{0}", oneClickMoney);
+        timeText.text = string.Format("5Sec-{0}", timeMoney);
     }
 
     public void AddMoney(int addMoney)
@@ -204,5 +221,31 @@ public class GameManager : MonoBehaviour
     {
         micPanel.SetActive(true);
         instPanel.SetActive(false);
+    }
+
+    public void statusInst_ChangeSprite()
+    {
+        statusPlayerInst.ChangeSprite();
+    }
+
+    private void TimePerMoney()
+    {
+        timeMoney = PlayerPrefs.GetInt("tm", 1);
+
+        timer += Time.deltaTime;
+        if (timer >= 5)
+        {
+            StartCoroutine(PlusMoney());
+            AddMoney(timeMoney);
+            timer = 0;
+        }
+    }
+
+    IEnumerator PlusMoney()
+    {
+        plusMoneyText.text = string.Format("+{0}", timeMoney);
+        yield return new WaitForSeconds(0.5f);
+        plusMoneyText.text = string.Format(" ");
+        yield break;
     }
 }

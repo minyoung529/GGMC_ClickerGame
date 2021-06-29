@@ -8,11 +8,13 @@ public class Status_Inst_Btn : MonoBehaviour
     [SerializeField]
     Image btnImage, playerInstImage;
     [SerializeField]
-    Sprite enabled;
+    Sprite instEnabled;
     [SerializeField]
     GameObject choosePopup;
     [SerializeField]
     Text chooseText;
+    [SerializeField]
+    SpriteRenderer playerInst;
 
     private string btnName;
     private int money;
@@ -75,8 +77,11 @@ public class Status_Inst_Btn : MonoBehaviour
 
     public void SelectChoose()
     {
-        if (btnImage.sprite == enabled) return;
+        if (btnImage.sprite == instEnabled) return;
         choosePopup.SetActive(false);
-        playerInstImage.sprite = instSprite;
+
+        PlayerPrefs.SetString("pi", btnName);
+        PlayerPrefs.SetInt("tm", moneyPS);
+        GameManager.Instance.UpdateUI();
     }
 }

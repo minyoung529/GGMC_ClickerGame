@@ -173,9 +173,9 @@ public class InstButtons : MonoBehaviour
         GameManager.Instance.Min(productMoney);
         originPopular += popular;
         PlayerPrefs.SetInt("p1", originPopular);
-        GameManager.Instance.UpdateUI();
 
         ChangeData(productName);
         CheckData();
+        GameManager.Instance.UpdateUI();
     }
 }
