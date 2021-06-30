@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb9164012b17da4082e29a2c3c0283d, type: 3}
+  m_Name: MICSO
+  m_EditorClassIdentifier: 
+  mics:
+  - micName: "\uB178\uB798\uBC29 \uB9C8\uC774\uD06C"
+    micSprite: {fileID: 8452619466554995066, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 0
+    moneyPerSec: 0
+    popular: 0
+    info: 
+  - micName: "\uB2E4\uC774\uB098\uBBF9 \uB9C8\uC774\uD06C"
+    micSprite: {fileID: 7451204014267456462, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 50000
+    moneyPerSec: 5
+    popular: 1
+    info: 
+  - micName: GG157
+    micSprite: {fileID: 4972750709050344076, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 130000
+    moneyPerSec: 13
+    popular: 3
+    info: 
+  - micName: "\uCF58\uB374\uC11C \uB9C8\uC774"
+    micSprite: {fileID: 2787171706449710577, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 280000
+    moneyPerSec: 28
+    popular: 4
+    info: 
+  - micName: "\uB9C8\uC774\uC2A4\uD2B8\uB85C"
+    micSprite: {fileID: 280514421296183019, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 410000
+    moneyPerSec: 41
+    popular: 4
+    info: 
+  - micName: 
+    micSprite: {fileID: 8624745011601708625, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 800000
+    moneyPerSec: 70
+    popular: 10
+    info: 

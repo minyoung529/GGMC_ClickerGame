@@ -35,6 +35,9 @@ TextureImporter:
   - first:
       213: 8011564304408957791
     second: IntrumentsImage_10
+  - first:
+      213: 893734521221130209
+    second: IntrumentsImage_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -362,6 +365,27 @@ TextureImporter:
       bones: []
       spriteID: f53de7ba94bce2f60800000000000000
       internalID: 8011564304408957791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_11
+      rect:
+        serializedVersion: 2
+        x: 2282
+        y: 54
+        width: 463
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7a3e4dfce276c00800000000000000
+      internalID: 893734521221130209
       vertices: []
       indices: 
       edges: []
