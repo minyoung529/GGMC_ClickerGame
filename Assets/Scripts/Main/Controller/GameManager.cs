@@ -72,8 +72,8 @@ public class GameManager : MonoBehaviour
         oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
         popular = PlayerPrefs.GetInt("p1", 0);
         playerInstrument = PlayerPrefs.GetString("pi", "캐스터네츠");
-        UpdateUI();
         SetBtnList();
+        UpdateUI();
     }
 
     private void Update()
@@ -88,6 +88,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdateUI()
     {
+        Debug.Log("sd");
         oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
         timeMoney = PlayerPrefs.GetInt("tm", 1);
         playerInstrument = PlayerPrefs.GetString("pi", "캐스터네츠");
@@ -121,18 +122,21 @@ public class GameManager : MonoBehaviour
     {
         mainCamera.transform.position = new Vector2(-15f, 0f);
         player.PlayerInactive();
+        clickCnt *= 2;
     }
 
     public void OnClickStore()
     {
         mainCamera.transform.position = new Vector2(-10f, 0f);
         player.PlayerInactive();
+        clickCnt *= 2;
     }
 
     public void OnClickSetting()
     {
         mainCamera.transform.position = new Vector2(-5f, 0f);
         player.PlayerInactive();
+        clickCnt += 1000;
     }
 
     public void OnClickAudition()

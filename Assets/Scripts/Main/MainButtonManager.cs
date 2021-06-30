@@ -16,10 +16,12 @@ public class MainButtonManager : MonoBehaviour
     InstrumentSO storeButtonDataSO;
     [SerializeField]
     GameObject storeButtonPosition;
+    [SerializeField]
     private List<Instrument> storeButtons;
 
     [SerializeField]
     GameObject statusInstButtonPos;
+    [SerializeField]
     private List<Instrument> statusInstBtn;
 
     private void Start()
@@ -55,13 +57,16 @@ public class MainButtonManager : MonoBehaviour
         storeButtons = new List<Instrument>();
         statusInstBtn = new List<Instrument>();
 
+        Debug.Log(storeButtonDataSO.instruments.Length);
         for (int i = 0; i < storeButtonDataSO.instruments.Length; i++)
         {
             Instrument statusInsts = storeButtonDataSO.instruments[i];
-            if (i == storeButtonDataSO.instruments.Length - 1) continue;
-            Instrument storeInsts = storeButtonDataSO.instruments[i + 1];
-            storeButtons.Add(storeInsts);
             statusInstBtn.Add(statusInsts);
+
+            if (i == storeButtonDataSO.instruments.Length-1) continue;
+            Instrument storeInsts = storeButtonDataSO.instruments[i + 1];
+
+            storeButtons.Add(storeInsts);
         }
 
         Update_StoreBtn();
@@ -80,7 +85,7 @@ public class MainButtonManager : MonoBehaviour
 
     public void Update_Status_Inst_Btn()
     {
-        for (int i = 0; i < storeButtons.Count; i++)
+        for (int i = 0; i < statusInstBtn.Count; i++)
         {
             var btnObj = statusInstButtonPos.transform.GetChild(i);
             var button = btnObj.GetComponent<Status_Inst_Btn>();

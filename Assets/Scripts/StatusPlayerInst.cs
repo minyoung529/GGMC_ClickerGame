@@ -9,8 +9,7 @@ public class StatusPlayerInst : MonoBehaviour
     Sprite cas, tam, gui, egui, epia, syn, drum;
 
     Image image;
-
-    private void Start()
+    private void Awake()
     {
         image = GetComponent<Image>();
         ChangeSprite();
