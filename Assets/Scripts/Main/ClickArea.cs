@@ -10,7 +10,6 @@ public class ClickArea : MonoBehaviour
     {
         money = PlayerPrefs.GetInt("test1");
 
-        if (!GameManager.Instance.statusImage.activeSelf)
         GameManager.Instance.AddMoney(money);
 
         GameManager.Instance.UpdateUI();

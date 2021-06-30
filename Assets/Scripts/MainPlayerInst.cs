@@ -9,9 +9,12 @@ public class MainPlayerInst : MonoBehaviour
 
     SpriteRenderer spriteRenderer;
 
+    private void Awake()
+    {
+        spriteRenderer= GetComponent<SpriteRenderer>();
+    }
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
         ChangeSprite();
     }
 
@@ -24,6 +27,7 @@ public class MainPlayerInst : MonoBehaviour
                 break;
 
             case "ÅÆ¹ö¸°":
+                if (!spriteRenderer) return;
                 spriteRenderer.sprite = tam;
                 break;
 

@@ -15,15 +15,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Text moneyText, timeText, statusText, oneClickText, plusMoneyText;
 
-    [Header("메뉴 이미지")]
     [SerializeField]
-    private GameObject mainImage;
-    [SerializeField]
-    public GameObject statusImage;
-    [SerializeField]
-    private GameObject storeImage;
-    [SerializeField]
-    private GameObject settingImage;
+    Camera mainCamera;
 
     [Header("버튼 오브젝트")]
     [SerializeField]
@@ -54,6 +47,7 @@ public class GameManager : MonoBehaviour
     private List<Image> btnObjs = new List<Image>();
 
     private int oneClickMoney;
+    private int clickCnt = 0;
     public int playerMoney;
     private int popular;
     private int timeMoney;
@@ -74,18 +68,16 @@ public class GameManager : MonoBehaviour
 
         timeMoney = PlayerPrefs.GetInt("tm", 1);
         playerMoney = PlayerPrefs.GetInt("Money", 0);
-        oneClickMoney = PlayerPrefs.GetInt("onc2",1);
+        oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
         popular = PlayerPrefs.GetInt("p1", 0);
         playerInstrument = PlayerPrefs.GetString("pi", "캐스터네츠");
         UpdateUI();
         SetBtnList();
-
-        statusImage.SetActive(false);
     }
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             AddMoney(10000);
         }
@@ -117,25 +109,28 @@ public class GameManager : MonoBehaviour
 
     public void OnClickMain()
     {
-        BtnActive(mainImage);
+        if (clickCnt == 2005)
+            moneyText.text = string.Format("유하준 왔다감");
+        mainCamera.transform.position = Vector2.zero;
         player.PlayerActive();
+        clickCnt++;
     }
 
     public void OnClickStatus()
     {
-        BtnActive(statusImage);
+        mainCamera.transform.position = new Vector2(5f, 0f);
         player.PlayerInactive();
     }
 
     public void OnClickStore()
     {
-        BtnActive(storeImage);
+        mainCamera.transform.position = new Vector2(10f, 0f);
         player.PlayerInactive();
     }
 
     public void OnClickSetting()
     {
-        BtnActive(settingImage);
+        mainCamera.transform.position = new Vector2(15f, 0f);
         player.PlayerInactive();
     }
 
@@ -164,11 +159,6 @@ public class GameManager : MonoBehaviour
     private void SetBtnList()
     {
         SetBtnGetComponent();
-
-        btnImages.Add(mainImage);
-        btnImages.Add(storeImage);
-        btnImages.Add(statusImage);
-        btnImages.Add(settingImage);
 
         btnObjs.Add(mainBtnimage);
         btnObjs.Add(storeBtnimage);
@@ -199,18 +189,11 @@ public class GameManager : MonoBehaviour
     public void ClickArea()
     {
         oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
-        Debug.Log(oneClickMoney);
-        Debug.Log(playerMoney);
-
-
-        if (mainImage.activeSelf)
-        {
-            AddMoney(oneClickMoney);
-        }
+        AddMoney(oneClickMoney);
 
         UpdateUI();
     }
-    
+
     public void InstPanel()
     {
         instPanel.SetActive(true);
