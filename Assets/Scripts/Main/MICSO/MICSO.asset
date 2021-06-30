@@ -18,34 +18,38 @@ MonoBehaviour:
     money: 0
     moneyPerSec: 0
     popular: 0
-    info: 
+    info: "\uB178\uB798\uBC29 \uB9C8\uC774\uD06C\uC774\uB2E4. \uB178\uB798\uBC29\uC5D0\uC11C
+      \uC8FC\uC6CC\uC654\uB2E4."
   - micName: "\uB2E4\uC774\uB098\uBBF9 \uB9C8\uC774\uD06C"
     micSprite: {fileID: 7451204014267456462, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
     money: 50000
     moneyPerSec: 5
     popular: 1
-    info: 
+    info: "\uB2E4\uC774\uB098\uBBF9 \uB9C8\uC774\uD06C. \uC5ED\uB3D9\uC801\uC778
+      \uB9C8\uC774\uD06C\uC774\uB2E4."
   - micName: GG157
     micSprite: {fileID: 4972750709050344076, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
     money: 130000
     moneyPerSec: 13
     popular: 3
-    info: 
-  - micName: "\uCF58\uB374\uC11C \uB9C8\uC774"
+    info: '157157 157157 157 175 175175 '
+  - micName: "\uCF58\uB374\uC11C \uB9C8\uC774\uD06C"
     micSprite: {fileID: 2787171706449710577, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
     money: 280000
     moneyPerSec: 28
     popular: 4
-    info: 
-  - micName: "\uB9C8\uC774\uC2A4\uD2B8\uB85C"
+    info: "\uCF54\uB124\uB374\uC11C \uB9C8\uC774\uD06C\uC774\uB2E4. \uCF54\uCF54\uCF54
+      \uCF54\uC9C0\uB9C8!"
+  - micName: "\uC778\uC774\uC5B4 \uB9C8\uC774\uD06C"
     micSprite: {fileID: 280514421296183019, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
     money: 410000
     moneyPerSec: 41
     popular: 4
-    info: 
-  - micName: 
+    info: "\uC778\uC774\uC5B4 \uB9C8\uC774\uD06C\uC774\uB2E4. \uC778\u3147\uC774\uC5B4
+      \uB9C8\uC774\uD06C\uC774\uB2E4. \uC778\u3134\uC774\u3153!"
+  - micName: "\uB9C8\uC774\uC2A4\uD2B8\uB85C"
     micSprite: {fileID: 8624745011601708625, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
     money: 800000
     moneyPerSec: 70
     popular: 10
-    info: 
+    info: "\uB9C8\uC774\uC2A4\uD2C0\uB294 \u3134\uC601\uC5B4\uB85C \uB9C8\uC774\uC2A4\uD2B8\uB85C"

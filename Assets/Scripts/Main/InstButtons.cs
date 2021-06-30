@@ -36,7 +36,6 @@ public class InstButtons : MonoBehaviour
 
     public void Setup(Instrument instData)
     {
-        Debug.Log("sdf");
         this.inst = instData;
         this.btnName = instData.instName;
         this.money = instData.money;

@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     [Header("스토어")]
     [SerializeField]
     private GameObject buyPopupImage;
+    [SerializeField]
+    private GameObject buyMICPopupImage;
 
     [Header("내 정보")]
     [SerializeField]
@@ -40,6 +42,8 @@ public class GameManager : MonoBehaviour
 
     private StatusPlayerInst statusPlayerInst;
     private MainPlayerInst mainPlayerInst;
+    private StatusPlayerMIC statusPlayerMIC;
+    private MainPlayerMIC mainPlayerMIC;
 
     [SerializeField]
     private Image mainBtnimage, statusBtnimage, storeBtnimage, settingBtnimage;
@@ -66,6 +70,8 @@ public class GameManager : MonoBehaviour
         player = FindObjectOfType<Player>();
         statusPlayerInst = FindObjectOfType<StatusPlayerInst>();
         mainPlayerInst = FindObjectOfType<MainPlayerInst>();
+        statusPlayerMIC = FindObjectOfType<StatusPlayerMIC>();
+        mainPlayerMIC = FindObjectOfType<MainPlayerMIC>();
 
         timeMoney = PlayerPrefs.GetInt("tm", 1);
         playerMoney = PlayerPrefs.GetInt("Money", 0);
@@ -88,13 +94,11 @@ public class GameManager : MonoBehaviour
 
     public void UpdateUI()
     {
-        Debug.Log("sd");
         oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
         timeMoney = PlayerPrefs.GetInt("tm", 1);
         playerInstrument = PlayerPrefs.GetString("pi", "캐스터네츠");
 
-        statusPlayerInst.ChangeSprite();
-        mainPlayerInst.ChangeSprite();
+        ChangeSprite();
 
         moneyText.text = string.Format("₩:{0}원", playerMoney);
         statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n초당 획든 돈:{1}원\n자본금: {2}원\n악기:는 거꾸로해도 기악\n현재상태: 거지음악가\n인기도:{3}", oneClickMoney, timeMoney, playerMoney, popular);
@@ -107,6 +111,14 @@ public class GameManager : MonoBehaviour
         playerMoney += addMoney;
         PlayerPrefs.SetInt("Money", playerMoney);
         UpdateUI();
+    }
+
+    private void ChangeSprite()
+    {
+        statusPlayerInst.ChangeSprite();
+        mainPlayerInst.ChangeSprite();
+        statusPlayerMIC.ChangeSprite();
+        mainPlayerMIC.ChangeSprite();
     }
 
     public void OnClickMain()
@@ -173,7 +185,9 @@ public class GameManager : MonoBehaviour
     public void buyPopupActive()
     {
         buyPopupImage.SetActive(false);
+        buyMICPopupImage.SetActive(false);
     }
+
 
     public void ClickArea()
     {

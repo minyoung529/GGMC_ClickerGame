@@ -31,7 +31,6 @@ public class MICButtons : MonoBehaviour
     void Start()
     {
         SetUpData();
-        buttonImage.sprite = micSprite;
     }
 
     public void Setup(MIC mic)
@@ -49,28 +48,24 @@ public class MICButtons : MonoBehaviour
     {
         switch (btnName)
         {
-            case "탬버린":
+            case "다이나믹 마이크":
                 PlayerPrefs.GetString("mic1", "isSell");
                 break;
 
-            case "기타":
+            case "GG157":
                 PlayerPrefs.GetString("mic2", "isSell");
                 break;
 
-            case "일렉 기타":
+            case "콘덴서 마이크":
                 PlayerPrefs.GetString("mic3", "isSell");
                 break;
 
-            case "디지털 피아노":
+            case "인이어 마이크":
                 PlayerPrefs.GetString("mic4", "isSell");
                 break;
 
-            case "신디사이저":
+            case "마이스트로":
                 PlayerPrefs.GetString("mic5", "isSell");
-                break;
-
-            case "드럼":
-                PlayerPrefs.GetString("mic6", "isSell");
                 break;
         }
         CheckData();
@@ -159,6 +154,8 @@ public class MICButtons : MonoBehaviour
         string productName;
         productMoney = int.Parse(moneyText.text);
         productName = nameText.text;
+
+        Debug.Log(productMoney);
 
         if (GameManager.Instance.playerMoney - productMoney <= 0) return;
 

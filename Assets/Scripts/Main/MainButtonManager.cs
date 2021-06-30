@@ -132,8 +132,14 @@ public class MainButtonManager : MonoBehaviour
             var statusInstBtn = statusInstButtonPos.transform.GetChild(i);
             var storeInstBtn = storeButtonPosition.transform.GetChild(i);
 
+            var statusMICBtn = statusMICButtonsPos.transform.GetChild(i);
+            var storeMICBtn = storeMICButtonPosition.transform.GetChild(i);
+
             statusInstBtn.GetComponent<Status_Inst_Btn>().ChangeSprite();
             storeInstBtn.GetComponent<InstButtons>().CheckData();
+
+            statusMICBtn.GetComponent<Status_MIC_Btn>().ChangeSprite();
+            storeMICBtn.GetComponent<MICButtons>().CheckData();
         }
     }
 }
