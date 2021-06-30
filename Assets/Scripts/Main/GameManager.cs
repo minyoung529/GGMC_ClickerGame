@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     private StatusPlayerInst statusPlayerInst;
     private MainPlayerInst mainPlayerInst;
 
+    [SerializeField]
     private Image mainBtnimage, statusBtnimage, storeBtnimage, settingBtnimage;
 
     private List<GameObject> btnImages = new List<GameObject>();
@@ -111,26 +112,26 @@ public class GameManager : MonoBehaviour
     {
         if (clickCnt == 2005)
             moneyText.text = string.Format("유하준 왔다감");
-        mainCamera.transform.position = Vector2.zero;
+        mainCamera.transform.position = new Vector2(-20f, 0f);
         player.PlayerActive();
         clickCnt++;
     }
 
     public void OnClickStatus()
     {
-        mainCamera.transform.position = new Vector2(5f, 0f);
+        mainCamera.transform.position = new Vector2(-15f, 0f);
         player.PlayerInactive();
     }
 
     public void OnClickStore()
     {
-        mainCamera.transform.position = new Vector2(10f, 0f);
+        mainCamera.transform.position = new Vector2(-10f, 0f);
         player.PlayerInactive();
     }
 
     public void OnClickSetting()
     {
-        mainCamera.transform.position = new Vector2(15f, 0f);
+        mainCamera.transform.position = new Vector2(-5f, 0f);
         player.PlayerInactive();
     }
 
@@ -144,34 +145,18 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < btnImages.Count; i++)
         {
             if (image == btnImages[i])
-            {
-                btnImages[i].SetActive(true);
                 btnObjs[i].color = new Color(0.8f, 0.8f, 0.8f, 1f);
-            }
             else
-            {
-                btnImages[i].SetActive(false);
                 btnObjs[i].color = new Color(1f, 1f, 1f, 1f);
-            }
         }
     }
 
     private void SetBtnList()
     {
-        SetBtnGetComponent();
-
         btnObjs.Add(mainBtnimage);
         btnObjs.Add(storeBtnimage);
         btnObjs.Add(statusBtnimage);
         btnObjs.Add(settingBtnimage);
-    }
-
-    private void SetBtnGetComponent()
-    {
-        mainBtnimage = mainBtn.GetComponent<Image>();
-        statusBtnimage = statusBtn.GetComponent<Image>();
-        storeBtnimage = storeBtn.GetComponent<Image>();
-        settingBtnimage = settingBtn.GetComponent<Image>();
     }
 
     public void Min(int minmoney)
