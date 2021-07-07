@@ -180,8 +180,8 @@ public class MainButtonManager : MonoBehaviour
             var statusMusicBtn = statusMICPos.transform.GetChild(i);
             var storeMusicBtn = storeMusicPos.transform.GetChild(i);
 
-            statusMusicPos.GetComponent<Status_Music_Btn>().ChangeSprite();
-            storeMusicPos.GetComponent<MusicButtons>().CheckData();
+            statusMusicBtn.GetComponent<Status_Music_Btn>().ChangeSprite();
+            storeMusicBtn.GetComponent<MusicButtons>().CheckData();
         }
     }
 }

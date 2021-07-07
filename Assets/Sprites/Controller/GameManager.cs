@@ -33,12 +33,16 @@ public class GameManager : MonoBehaviour
     private GameObject buyPopupImage;
     [SerializeField]
     private GameObject buyMICPopupImage;
+    [SerializeField]
+    private GameObject buyMusicPopupImage;
 
     [Header("내 정보")]
     [SerializeField]
     private GameObject instPanel;
     [SerializeField]
     private GameObject micPanel;
+    [SerializeField]
+    private GameObject musicPanel;
 
     private StatusPlayerInst statusPlayerInst;
     private MainPlayerInst mainPlayerInst;
@@ -186,6 +190,7 @@ public class GameManager : MonoBehaviour
     {
         buyPopupImage.SetActive(false);
         buyMICPopupImage.SetActive(false);
+        buyMusicPopupImage.SetActive(false);
     }
 
 
@@ -201,12 +206,21 @@ public class GameManager : MonoBehaviour
     {
         instPanel.SetActive(true);
         micPanel.SetActive(false);
+        musicPanel.SetActive(false);
     }
 
     public void MICPanel()
     {
         micPanel.SetActive(true);
         instPanel.SetActive(false);
+        musicPanel.SetActive(false);
+    }
+
+    public void MusicPanel()
+    {
+        micPanel.SetActive(false);
+        instPanel.SetActive(false);
+        musicPanel.SetActive(true);
     }
 
     public void statusInst_ChangeSprite()

@@ -38,6 +38,12 @@ TextureImporter:
   - first:
       213: 893734521221130209
     second: IntrumentsImage_11
+  - first:
+      213: -3673304917202867910
+    second: IntrumentsImage_12
+  - first:
+      213: -4024010728884976414
+    second: IntrumentsImage_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -373,6 +379,48 @@ TextureImporter:
       name: IntrumentsImage_11
       rect:
         serializedVersion: 2
+        x: 996
+        y: 436
+        width: 166
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7a3e4dfce276c00800000000000000
+      internalID: 893734521221130209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_12
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 472
+        width: 382
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a396d6ac3acc50dc0800000000000000
+      internalID: -3673304917202867910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_13
+      rect:
+        serializedVersion: 2
         x: 2282
         y: 54
         width: 463
@@ -384,8 +432,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e7a3e4dfce276c00800000000000000
-      internalID: 893734521221130209
+      spriteID: 2e4437cef87d728c0800000000000000
+      internalID: -4024010728884976414
       vertices: []
       indices: 
       edges: []

@@ -218,6 +218,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &2755904 stripped
@@ -320,6 +328,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &5842919 stripped
@@ -799,6 +815,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &89444789 stripped
@@ -1362,7 +1386,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 893734521221130209, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+  m_Sprite: {fileID: -4024010728884976414, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1543,7 +1567,7 @@ RectTransform:
   m_Children:
   - {fileID: 1748145265}
   m_Father: {fileID: 898428969}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5143,7 +5167,7 @@ GameObject:
   - component: {fileID: 595029242}
   - component: {fileID: 595029241}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Boxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5926,6 +5950,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &651978796 stripped
@@ -6160,6 +6192,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &677489058 stripped
@@ -6425,7 +6465,7 @@ RectTransform:
   m_Children:
   - {fileID: 453984659}
   m_Father: {fileID: 898428969}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -6926,6 +6966,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &747876350 stripped
@@ -8222,9 +8270,9 @@ RectTransform:
   - {fileID: 284144481}
   - {fileID: 502582747}
   - {fileID: 595029240}
-  - {fileID: 203687075}
   - {fileID: 1767655493}
   - {fileID: 717974664}
+  - {fileID: 203687075}
   - {fileID: 1288827445}
   m_Father: {fileID: 625597063}
   m_RootOrder: 0
@@ -8525,6 +8573,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &919182274 stripped
@@ -10792,7 +10848,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 732, y: -5995.0483}
+  m_AnchoredPosition: {x: 732, y: -5995.05}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.52, y: -3.49}
 --- !u!114 &1089141237
@@ -13620,6 +13676,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &1304055184 stripped
@@ -13670,8 +13734,10 @@ MonoBehaviour:
   settingBtn: {fileID: 286235523}
   buyPopupImage: {fileID: 529899946}
   buyMICPopupImage: {fileID: 1223727456}
+  buyMusicPopupImage: {fileID: 777774600}
   instPanel: {fileID: 717974663}
   micPanel: {fileID: 1767655492}
+  musicPanel: {fileID: 203687074}
   mainBtnimage: {fileID: 1232423112}
   statusBtnimage: {fileID: 659422497}
   storeBtnimage: {fileID: 286235526}
@@ -13693,41 +13759,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1322343154
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1322343155}
-  m_Layer: 5
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1322343155
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322343154}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2009497844}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1340259384
 GameObject:
   m_ObjectHideFlags: 0
@@ -13754,8 +13785,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340259384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.98, y: -0.35, z: 0}
-  m_LocalScale: {x: 0.4270112, y: 0.4270112, z: 0.4270112}
+  m_LocalPosition: {x: 1.2, y: -0.3, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 188640365}
   m_RootOrder: 0
@@ -13805,7 +13836,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1.1616305, y: 1.1616305}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -13825,9 +13856,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cas: {fileID: 8011564304408957791, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
   tam: {fileID: -1214747929346021444, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
-  gui: {fileID: -2143216839651712309, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+  gui: {fileID: 893734521221130209, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
   egui: {fileID: 3962615822470558121, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
-  epia: {fileID: -4607247260255624812, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+  epia: {fileID: -3673304917202867910, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
   syn: {fileID: 1355766626887272186, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
   drum: {fileID: -7223477442975868896, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
 --- !u!1001 &1355944602
@@ -13925,6 +13956,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &1355944603 stripped
@@ -15124,6 +15163,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &1412456005 stripped
@@ -15347,6 +15394,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &1436950577 stripped
@@ -15553,7 +15608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.9543797}
-  m_AnchoredPosition: {x: 0, y: 400.90024}
+  m_AnchoredPosition: {x: 0, y: 324}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1.24}
 --- !u!114 &1447532678
@@ -15747,8 +15802,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 348.2, y: 271.15002}
-  m_SizeDelta: {x: 677.6, y: 108.5}
+  m_AnchoredPosition: {x: 348.2, y: 227.43}
+  m_SizeDelta: {x: 677.6, y: 195.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1463982659
 MonoBehaviour:
@@ -16087,6 +16142,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &1494242518 stripped
@@ -16457,6 +16520,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &1538343147 stripped
@@ -17222,7 +17293,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1310303819}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MICPanel
+        m_MethodName: MusicPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17664,9 +17735,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cas: {fileID: 8011564304408957791, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
   tam: {fileID: -1214747929346021444, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
-  gui: {fileID: 0}
-  egui: {fileID: 0}
-  epia: {fileID: 0}
+  gui: {fileID: -2143216839651712309, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+  egui: {fileID: 7996517855592476747, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+  epia: {fileID: -4607247260255624812, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
   syn: {fileID: 0}
   drum: {fileID: 0}
 --- !u!222 &1688889029
@@ -17693,8 +17764,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000015258789, y: 0}
-  m_SizeDelta: {x: -86.3, y: -86.4}
+  m_AnchoredPosition: {x: 0.000045776367, y: 0}
+  m_SizeDelta: {x: -22.3, y: -17.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1704125340
 GameObject:
@@ -18323,6 +18394,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &1744361059 stripped
@@ -18382,7 +18461,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 732, y: -5933.7437}
+  m_AnchoredPosition: {x: 721, y: -5995}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.52, y: -3.49}
 --- !u!114 &1748145266
@@ -18638,6 +18717,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1447532676}
     m_Modifications:
+    - target: {fileID: 311168110706534689, guid: 6d4df3794de40dd4b8b4b99cd369fd2b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3747746270436277436, guid: 26106bbc3c4342241847655d5c4b7666, type: 3}
     - target: {fileID: 311168111004269036, guid: 6d4df3794de40dd4b8b4b99cd369fd2b, type: 3}
       propertyPath: m_Text
       value: "5\uC6D0"
@@ -19022,7 +19105,7 @@ RectTransform:
   m_Children:
   - {fileID: 1089141236}
   m_Father: {fileID: 898428969}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -19205,6 +19288,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!224 &1773764630 stripped
@@ -21191,7 +21282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300.94992, y: 87.4}
+  m_AnchoredPosition: {x: 300.89996, y: 0}
   m_SizeDelta: {x: 583, y: 258.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997019270
@@ -21268,7 +21359,6 @@ RectTransform:
   - {fileID: 888285386}
   - {fileID: 1394569261}
   - {fileID: 1923256944}
-  - {fileID: 1322343155}
   m_Father: {fileID: 1142914266}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22640,6 +22730,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
 --- !u!1001 &5443389410530682545

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musics:
   - musicName: "\uBD04"
-    musicSprite: {fileID: 0}
+    musicSprite: {fileID: 4222414267994576128, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
     money: 100000
     moneyPerSec: 50
     popular: 1
     info: 
   - musicName: Nighty Night
-    musicSprite: {fileID: 0}
+    musicSprite: {fileID: -1214747929346021444, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
     money: 90000
     moneyPerSec: 20
     popular: 1
