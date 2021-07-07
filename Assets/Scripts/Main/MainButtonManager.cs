@@ -13,21 +13,25 @@ public class MainButtonManager : MonoBehaviour
     private List<MainButtonData> mainButtons;
 
     [SerializeField]
-    private InstrumentSO storeButtonDataSO;
+    private InstrumentSO storeInstDataSO;
     [SerializeField]
     private MICSO storeMICDataSO;
+    [SerializeField]
+    private MusicSO storeMusicDataSO;
 
     [SerializeField]
-    GameObject storeButtonPosition, storeMICButtonPosition;
+    GameObject storeInstPos, storeMICPos, storeMusicPos;
 
     [SerializeField]
-    GameObject statusInstButtonPos, statusMICButtonsPos;
+    GameObject statusInstPos, statusMICPos, statusMusicPos;
 
-    public List<MIC> statusMICButtons;
-    public List<Instrument> statusInstBtn;
+    public List<MIC> statusMIC;
+    public List<Instrument> statusInst;
+    public List<Music> statusMusic;
 
-    public List<Instrument> storeButtons;
-    public List<MIC> micStoreButtons;
+    public List<Instrument> storeInst;
+    public List<MIC> storeMIC;
+    public List<Music> storeMusic;
 
     private void Awake()
     {
@@ -59,32 +63,44 @@ public class MainButtonManager : MonoBehaviour
 
     public void SetUp_StoreBtns()
     {
-        storeButtons = new List<Instrument>();
-        statusInstBtn = new List<Instrument>();
-        micStoreButtons = new List<MIC>();
-        statusMICButtons = new List<MIC>();
+        storeInst = new List<Instrument>();
+        statusInst = new List<Instrument>();
+        storeMIC = new List<MIC>();
+        statusMIC = new List<MIC>();
+        storeMusic = new List<Music>();
+        statusMusic = new List<Music>();
 
-        Debug.Log(storeButtonDataSO.instruments.Length);
-        for (int i = 0; i < storeButtonDataSO.instruments.Length; i++)
+        for (int i = 0; i < storeInstDataSO.instruments.Length; i++)
         {
-            Instrument statusInsts = storeButtonDataSO.instruments[i];
-            statusInstBtn.Add(statusInsts);
+            Instrument statusInsts = storeInstDataSO.instruments[i];
+            statusInst.Add(statusInsts);
 
-            if (i == storeButtonDataSO.instruments.Length - 1) continue;
-            Instrument storeInsts = storeButtonDataSO.instruments[i + 1];
+            if (i == storeInstDataSO.instruments.Length - 1) continue;
+            Instrument storeInsts = storeInstDataSO.instruments[i + 1];
 
-            storeButtons.Add(storeInsts);
+            storeInst.Add(storeInsts);
         }
 
         for (int i = 0; i < storeMICDataSO.mics.Length; i++)
         {
             MIC statusMICs = storeMICDataSO.mics[i];
-            statusMICButtons.Add(statusMICs);
+            statusMIC.Add(statusMICs);
 
             if (i == storeMICDataSO.mics.Length - 1) continue;
             MIC storeMICs = storeMICDataSO.mics[i + 1];
 
-            micStoreButtons.Add(storeMICs);
+            storeMIC.Add(storeMICs);
+        }
+
+        for (int i = 0; i < storeMusicDataSO.musics.Length; i++)
+        {
+            Music statusMusics = storeMusicDataSO.musics[i];
+            statusMusic.Add(statusMusics);
+
+            if (i == storeMusicDataSO.musics.Length - 1) continue;
+            Music storeMusics = storeMusicDataSO.musics[i + 1];
+
+            storeMusic.Add(storeMusics);
         }
 
         Update_StoreBtn();
@@ -93,53 +109,79 @@ public class MainButtonManager : MonoBehaviour
 
     public void Update_StoreBtn()
     {
-        for (int i = 0; i < storeButtons.Count; i++)
+        for (int i = 0; i < storeInst.Count; i++)
         {
-            var btnObj = storeButtonPosition.transform.GetChild(i);
+            var btnObj = storeInstPos.transform.GetChild(i);
             var button = btnObj.GetComponent<InstButtons>();
-            button.Setup(storeButtons[i]);
+            button.Setup(storeInst[i]);
         }
 
-        for (int i = 0; i < micStoreButtons.Count; i++)
+        for (int i = 0; i < storeMIC.Count; i++)
         {
-            var btnObj = storeMICButtonPosition.transform.GetChild(i);
+            var btnObj = storeMICPos.transform.GetChild(i);
             var button = btnObj.GetComponent<MICButtons>();
-            button.Setup(micStoreButtons[i]);
+            button.Setup(storeMIC[i]);
+        }
+
+        for (int i = 0; i < storeMusic.Count; i++)
+        {
+            var btnObj = storeMusicPos.transform.GetChild(i);
+            var button = btnObj.GetComponent<MusicButtons>();
+            button.Setup(storeMusic[i]);
         }
     }
 
     public void Update_Status_Inst_Btn()
     {
-        for (int i = 0; i < statusInstBtn.Count; i++)
+        for (int i = 0; i < statusInst.Count; i++)
         {
-            var btnObj = statusInstButtonPos.transform.GetChild(i);
+            var btnObj = statusInstPos.transform.GetChild(i);
             var button = btnObj.GetComponent<Status_Inst_Btn>();
-            button.Setup(statusInstBtn[i]);
+            button.Setup(statusInst[i]);
         }
 
-        for (int i = 0; i < statusMICButtons.Count; i++)
+        for (int i = 0; i < statusMIC.Count; i++)
         {
-            var micBtnObj = statusMICButtonsPos.transform.GetChild(i);
-            var micButton = micBtnObj.GetComponent<Status_MIC_Btn>();
-            micButton.Setup(statusMICButtons[i]);
+            var btnObj = statusMICPos.transform.GetChild(i);
+            var button = btnObj.GetComponent<Status_MIC_Btn>();
+            button.Setup(statusMIC[i]);
+        }
+
+        for (int i = 0; i < statusMusic.Count; i++)
+        {
+            var btnObj = statusMusicPos.transform.GetChild(i);
+            var button = btnObj.GetComponent<Status_Music_Btn>();
+            button.Setup(statusMusic[i]);
         }
     }
 
     public void ChangeInstSprite()
     {
-        for (int i = 0; i < storeButtons.Count; i++)
+        for (int i = 0; i < storeInst.Count; i++)
         {
-            var statusInstBtn = statusInstButtonPos.transform.GetChild(i);
-            var storeInstBtn = storeButtonPosition.transform.GetChild(i);
-
-            var statusMICBtn = statusMICButtonsPos.transform.GetChild(i);
-            var storeMICBtn = storeMICButtonPosition.transform.GetChild(i);
+            var statusInstBtn = statusInstPos.transform.GetChild(i);
+            var storeInstBtn = storeInstPos.transform.GetChild(i);
 
             statusInstBtn.GetComponent<Status_Inst_Btn>().ChangeSprite();
             storeInstBtn.GetComponent<InstButtons>().CheckData();
+        }
+
+        for (int i = 0; i < storeMIC.Count; i++)
+        {
+            var statusMICBtn = statusMICPos.transform.GetChild(i);
+            var storeMICBtn = storeMICPos.transform.GetChild(i);
 
             statusMICBtn.GetComponent<Status_MIC_Btn>().ChangeSprite();
             storeMICBtn.GetComponent<MICButtons>().CheckData();
+        }
+
+        for (int i = 0; i < storeMusic.Count; i++)
+        {
+            var statusMusicBtn = statusMICPos.transform.GetChild(i);
+            var storeMusicBtn = storeMusicPos.transform.GetChild(i);
+
+            statusMusicPos.GetComponent<Status_Music_Btn>().ChangeSprite();
+            storeMusicPos.GetComponent<MusicButtons>().CheckData();
         }
     }
 }

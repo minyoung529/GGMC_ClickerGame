@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MICButtons : MonoBehaviour
+public class MusicButtons : MonoBehaviour
 {
     private string btnName;
     private int money;
     private int popular;
     private int moneyPS;
-    private Sprite micSprite;
+    private Sprite musicSprite;
     private string info;
 
     private bool isBuy = false;
 
-    public MIC mic;
+    public Music music;
     private int originPopular;
 
     [SerializeField]
@@ -22,7 +22,7 @@ public class MICButtons : MonoBehaviour
     [SerializeField]
     Text nameText, infoText, detailText, moneyText;
     [SerializeField]
-    Image micImage, buttonImage;
+    Image musicImage, buttonImage;
     [SerializeField]
     Sprite isSold;
     [SerializeField]
@@ -33,39 +33,39 @@ public class MICButtons : MonoBehaviour
         SetUpData();
     }
 
-    public void Setup(MIC mic)
+    public void Setup(Music music)
     {
-        this.mic = mic;
-        this.btnName = mic.micName;
-        this.money = mic.money;
-        this.popular = mic.popular;
-        this.moneyPS = mic.moneyPerSec;
-        this.micSprite = mic.micSprite;
-        this.info = mic.info;
+        this.music = music;
+        this.btnName = music.musicName;
+        this.money = music.money;
+        this.popular = music.popular;
+        this.moneyPS = music.moneyPerSec;
+        this.musicSprite = music.musicSprite;
+        this.info = music.info;
     }
 
     private void SetUpData()
     {
         switch (btnName)
         {
-            case "다이나믹 마이크":
-                PlayerPrefs.GetString("mic1", "isSell");
+            case "봄":
+                PlayerPrefs.GetString("music1", "isSell");
                 break;
 
-            case "GG157":
-                PlayerPrefs.GetString("mic2", "isSell");
+            case "Nighty Night":
+                PlayerPrefs.GetString("music2", "isSell");
                 break;
 
-            case "콘덴서 마이크":
-                PlayerPrefs.GetString("mic3", "isSell");
+            case "SUMMER STORM!":
+                PlayerPrefs.GetString("music3", "isSell");
                 break;
 
-            case "인이어 마이크":
-                PlayerPrefs.GetString("mic4", "isSell");
+            case "어쩌구":
+                PlayerPrefs.GetString("music4", "isSell");
                 break;
 
-            case "마이스트로":
-                PlayerPrefs.GetString("mic5", "isSell");
+            case "저쩌구":
+                PlayerPrefs.GetString("music5", "isSell");
                 break;
         }
         CheckData();
@@ -75,24 +75,24 @@ public class MICButtons : MonoBehaviour
     {
         switch (productName)
         {
-            case "다이나믹 마이크":
-                PlayerPrefs.SetString("mic1", "isSold");
+            case "봄":
+                PlayerPrefs.SetString("music1", "isSold");
                 break;
 
-            case "GG157":
-                PlayerPrefs.SetString("mic2", "isSold");
+            case "Nighty Night":
+                PlayerPrefs.SetString("music2", "isSold");
                 break;
 
-            case "콘덴서 마이크":
-                PlayerPrefs.SetString("mic3", "isSold");
+            case "SUMMER STORM!":
+                PlayerPrefs.SetString("music3", "isSold");
                 break;
 
-            case "인이어 마이크":
-                PlayerPrefs.SetString("mic4", "isSold");
+            case "어쩌구":
+                PlayerPrefs.SetString("music4", "isSold");
                 break;
 
-            case "마이스트로":
-                PlayerPrefs.SetString("mic5", "isSold");
+            case "저쩌구":
+                PlayerPrefs.SetString("music5", "isSold");
                 break;
         }
         CheckData();
@@ -100,36 +100,36 @@ public class MICButtons : MonoBehaviour
 
     public void CheckData()
     {
-        if (PlayerPrefs.GetString("mic1") == "isSold" && gameObject.transform == contents.transform.GetChild(0))
+        if (PlayerPrefs.GetString("music1") == "isSold" && gameObject.transform == contents.transform.GetChild(0))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
         }
 
-        if (PlayerPrefs.GetString("mic2") == "isSold" && gameObject.transform == contents.transform.GetChild(1))
+        if (PlayerPrefs.GetString("music2") == "isSold" && gameObject.transform == contents.transform.GetChild(1))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
         }
 
-        if (PlayerPrefs.GetString("mic3") == "isSold" && gameObject.transform == contents.transform.GetChild(2))
+        if (PlayerPrefs.GetString("music3") == "isSold" && gameObject.transform == contents.transform.GetChild(2))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
         }
 
-        if (PlayerPrefs.GetString("mic4") == "isSold" && gameObject.transform == contents.transform.GetChild(3))
+        if (PlayerPrefs.GetString("music4") == "isSold" && gameObject.transform == contents.transform.GetChild(3))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
         }
 
-        if (PlayerPrefs.GetString("mic5") == "isSold" && gameObject.transform == contents.transform.GetChild(4))
+        if (PlayerPrefs.GetString("music5") == "isSold" && gameObject.transform == contents.transform.GetChild(4))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
         }
-        if (PlayerPrefs.GetString("mic6") == "isSold" && gameObject.transform == contents.transform.GetChild(5))
+        if (PlayerPrefs.GetString("music6") == "isSold" && gameObject.transform == contents.transform.GetChild(5))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
@@ -145,7 +145,7 @@ public class MICButtons : MonoBehaviour
         infoText.text = string.Format("{0}", info);
         detailText.text = string.Format("5초당 획득 돈: {0}원\n인기도 +{1}원", moneyPS, popular);
         moneyText.text = string.Format("{0}", money);
-        micImage.sprite = micSprite;
+        musicImage.sprite = musicSprite;
     }
 
     public void ChooseBuy()
