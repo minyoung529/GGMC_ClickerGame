@@ -18,6 +18,7 @@ public class StatusPlayerMIC : MonoBehaviour
 
     public void ChangeSprite()
     {
+        Debug.Log(PlayerPrefs.GetString("pm", "노래방 마이크"));
         switch (PlayerPrefs.GetString("pm", "노래방 마이크"))
         {
             case "노래방 마이크":

@@ -37,6 +37,8 @@ public class Status_MIC_Btn : MonoBehaviour
 
     public void ChangeSprite()
     {
+        if (btnName == null) return;
+
         if (btnName == "다이나믹 마이크" && PlayerPrefs.GetString("mic1") == "isSold")
         {
             btnImage.sprite = instSprite;
@@ -74,7 +76,7 @@ public class Status_MIC_Btn : MonoBehaviour
         choosePopup.SetActive(false);
 
         PlayerPrefs.SetString("pm", btnName);
-        PlayerPrefs.SetInt("mtm", moneyPS);
+        PlayerPrefs.SetInt("micPS", moneyPS);
         GameManager.Instance.UpdateUI();
     }
 }

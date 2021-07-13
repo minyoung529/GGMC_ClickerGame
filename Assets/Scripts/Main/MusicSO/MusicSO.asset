@@ -25,15 +25,15 @@ MonoBehaviour:
     moneyPerSec: 50
     popular: 1
     info: 
-  - musicName: SUMMER STORM!
-    musicSprite: {fileID: 2991754045379606626, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
-    money: 1500000
-    moneyPerSec: 20
-    popular: 1
-    info: 
   - musicName: Nighty Night
     musicSprite: {fileID: 2590768977765981754, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
     money: 90000
+    moneyPerSec: 20
+    popular: 1
+    info: 
+  - musicName: SUMMER STORM!
+    musicSprite: {fileID: 2991754045379606626, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
+    money: 1500000
     moneyPerSec: 20
     popular: 1
     info: 

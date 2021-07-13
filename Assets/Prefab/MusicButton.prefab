@@ -158,6 +158,7 @@ MonoBehaviour:
   detailText: {fileID: 0}
   moneyText: {fileID: 0}
   musicImage: {fileID: 0}
-  buttonImage: {fileID: 0}
+  buttonImage: {fileID: 2292995665865119814}
   isSold: {fileID: -6020017073808589776, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+  isEnabled: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
   contents: {fileID: 0}

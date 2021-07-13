@@ -177,7 +177,7 @@ public class MainButtonManager : MonoBehaviour
 
         for (int i = 0; i < storeMusic.Count; i++)
         {
-            var statusMusicBtn = statusMICPos.transform.GetChild(i);
+            var statusMusicBtn = statusMusicPos.transform.GetChild(i);
             var storeMusicBtn = storeMusicPos.transform.GetChild(i);
 
             statusMusicBtn.GetComponent<Status_Music_Btn>().ChangeSprite();

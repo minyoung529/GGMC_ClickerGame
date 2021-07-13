@@ -81,7 +81,7 @@ public class Status_Inst_Btn : MonoBehaviour
         choosePopup.SetActive(false);
 
         PlayerPrefs.SetString("pi", btnName);
-        PlayerPrefs.SetInt("tm", moneyPS);
+        PlayerPrefs.SetInt("instPS", moneyPS);
         GameManager.Instance.UpdateUI();
     }
 }

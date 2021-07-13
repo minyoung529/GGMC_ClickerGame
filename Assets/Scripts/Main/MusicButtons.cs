@@ -24,7 +24,7 @@ public class MusicButtons : MonoBehaviour
     [SerializeField]
     Image musicImage, buttonImage;
     [SerializeField]
-    Sprite isSold;
+    Sprite isSold, isEnabled;
     [SerializeField]
     GameObject contents;
 
@@ -81,10 +81,13 @@ public class MusicButtons : MonoBehaviour
 
             case "Nighty Night":
                 PlayerPrefs.SetString("music2", "isSold");
+                Debug.Log("³ªÀÌÆ¼");
                 break;
 
             case "SUMMER STORM!":
                 PlayerPrefs.SetString("music3", "isSold");
+                Debug.Log("½æ¸Ó");
+
                 break;
 
             case "¾îÂ¼±¸":
@@ -134,6 +137,11 @@ public class MusicButtons : MonoBehaviour
             buttonImage.sprite = isSold;
             isBuy = true;
         }
+
+        if(musicSprite == null)
+        {
+            buttonImage.sprite = isEnabled;
+        }
     }
 
     public void OnClickBuy()
@@ -155,8 +163,6 @@ public class MusicButtons : MonoBehaviour
         string productName;
         productMoney = int.Parse(moneyText.text);
         productName = nameText.text;
-
-        Debug.Log(productMoney);
 
         if (GameManager.Instance.playerMoney - productMoney <= 0) return;
 

@@ -20,15 +20,20 @@ public class SoundManager : MonoBehaviour
     AudioSource audioSource;
     [SerializeField]
     AudioClip aLittleGhost, spring, summerStorm, nightyNight;
+    private string playerMusic;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        playerMusic = PlayerPrefs.GetString("pmusic", "A Little Ghost");
+        PlayMusic(playerMusic);
     }
 
     public void PlayMusic(string music)
     {
-        switch(music)
+        audioSource.Stop();
+
+        switch (music)
         {
             case "A Little Ghost":
                 audioSource.clip = aLittleGhost;
@@ -53,5 +58,8 @@ public class SoundManager : MonoBehaviour
     public void StopMusic()
     {
         audioSource.Stop();
+
+        playerMusic = PlayerPrefs.GetString("pmusic", "A Little Ghost");
+        PlayMusic(playerMusic);
     }
 }

@@ -34,6 +34,19 @@ public class Buttons : MonoBehaviour
 
     public MainButtonData mainButtonData;
     #endregion
+    #region
+    [SerializeField]
+    private Sprite rhythm1, rhythm2, rhythm3;
+    [SerializeField]
+    private Sprite play1, play2, play3;
+    [SerializeField]
+    private Sprite vocal1, vocal2, vocal3;
+    [SerializeField]    
+    private Sprite breathe1, breathe2, breathe3;
+    [SerializeField]
+    private Sprite pitch1, pitch2, pitch3;
+
+    #endregion
 
     private void Start()
     {
@@ -42,6 +55,7 @@ public class Buttons : MonoBehaviour
         Setup(mainButtonData);
         SetUpData();
         SetButtonText();
+        LevelUp();
     }
 
     private void OnMouseDown()
@@ -96,6 +110,44 @@ public class Buttons : MonoBehaviour
                 SetPrefs(PlayerPrefs.GetString("Test55"));
                 break;
         }
+    }
+
+    private void LevelUp()
+    {
+        switch (btnName)
+        {
+            case "리듬감":
+                ChangeSprite(rhythm3, rhythm2, rhythm1, 500, 100, 50);
+                break;
+
+            case "연주 실력":
+                ChangeSprite(play3, play2, play1, 500, 100, 50);
+                break;
+
+            case "발성법":
+                ChangeSprite(vocal3, vocal2, vocal1, 500, 100, 50);
+                break;
+
+            case "폐활량":
+                ChangeSprite(breathe3, breathe2, breathe1, 500, 100, 50);
+                break;
+
+            case "음역대 강화":
+                ChangeSprite(pitch3, pitch2, pitch1, 500, 100, 50);
+                break;
+        }
+    }
+
+    private void ChangeSprite(Sprite s1, Sprite s2, Sprite s3, int a, int b, int c)
+    {
+        if (level > a - 1)
+            image.sprite = s1;
+
+        else if (level > b - 1)
+            image.sprite = s2;
+
+        else if (level > c - 1)
+            image.sprite = s3;
     }
 
     private void SetUpData()
@@ -184,6 +236,7 @@ public class Buttons : MonoBehaviour
         money += plusMoney;
         level++;
 
+        LevelUp();
         SaveData_MainBtn();
         PlusOnClickMoney(click);
         SetButtonText();

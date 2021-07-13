@@ -48,11 +48,11 @@ public class GameManager : MonoBehaviour
     private MainPlayerInst mainPlayerInst;
     private StatusPlayerMIC statusPlayerMIC;
     private MainPlayerMIC mainPlayerMIC;
+    private StatusPlayerMusic statusPlayerMusic;
 
     [SerializeField]
     private Image mainBtnimage, statusBtnimage, storeBtnimage, settingBtnimage;
 
-    private List<GameObject> btnImages = new List<GameObject>();
     private List<Image> btnObjs = new List<Image>();
 
     private int oneClickMoney;
@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
     private int popular;
     private int timeMoney;
     private string playerStatus = "거지음악가";
+    private string playerMusic;
 
     private float timer = 0;
     #endregion
@@ -77,12 +78,14 @@ public class GameManager : MonoBehaviour
         mainPlayerInst = FindObjectOfType<MainPlayerInst>();
         statusPlayerMIC = FindObjectOfType<StatusPlayerMIC>();
         mainPlayerMIC = FindObjectOfType<MainPlayerMIC>();
+        statusPlayerMusic = FindObjectOfType<StatusPlayerMusic>();
 
         timeMoney = PlayerPrefs.GetInt("tm", 1);
         playerMoney = PlayerPrefs.GetInt("Money", 0);
         oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
         popular = PlayerPrefs.GetInt("p1", 0);
         playerInstrument = PlayerPrefs.GetString("pi", "캐스터네츠");
+        playerMusic = PlayerPrefs.GetString("pmusic", "A Little Ghost");
         SetBtnList();
         UpdateUI();
     }
@@ -100,7 +103,7 @@ public class GameManager : MonoBehaviour
     public void UpdateUI()
     {
         oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
-        timeMoney = PlayerPrefs.GetInt("tm", 1);
+        timeMoney = PlayerPrefs.GetInt("micPS", 1) + PlayerPrefs.GetInt("instPS", 1);
         playerInstrument = PlayerPrefs.GetString("pi", "캐스터네츠");
         popular = PlayerPrefs.GetInt("p1", 0);
 
@@ -109,29 +112,29 @@ public class GameManager : MonoBehaviour
 
         playerStatusText.text = string.Format("{0}", playerStatus);
         moneyText.text = string.Format("₩:{0}원", playerMoney);
-        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n초당 획든 돈:{1}원\n자본금: {2}원\n인기도:{3}\n현재상태: {0}", oneClickMoney, timeMoney, playerMoney, popular, playerStatus);
+        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n초당 획든 돈: {1}원\n자본금: {2}원\n인기도: {3}\n현재상태: {4}", oneClickMoney, timeMoney, playerMoney, popular, playerStatus);
         oneClickText.text = string.Format("Click-{0}", oneClickMoney);
         timeText.text = string.Format("5Sec-{0}", timeMoney);
     }
 
     private void PlayerStatus()
     {
-        if(playerMoney < 50000)
+        if(playerMoney < 100000)
         {
             playerStatus = "거지음악가";
         }
 
-        if (playerMoney < 100000)
+        else if (playerMoney < 500000)
         {
             playerStatus = "뒷골목음악가";
         }
 
-        if (playerMoney < 500000)
+        else if (playerMoney < 1000000)
         {
             playerStatus = "어엿한음악가";
         }
 
-        if (playerMoney < 1000000)
+        else if (playerMoney < 10000000)
         {
             playerStatus = "부자음악가";
         }
@@ -155,10 +158,25 @@ public class GameManager : MonoBehaviour
         mainPlayerInst.ChangeSprite();
         statusPlayerMIC.ChangeSprite();
         mainPlayerMIC.ChangeSprite();
+        statusPlayerMusic.ChangeSprite();
     }
 
+    private void PlayerMusic()
+    {
+        playerMusic = PlayerPrefs.GetString("pmusic", "A Little Ghost");
+
+        if (buyMusicPopupImage.activeSelf)
+        {
+            buyMusicPopupImage.SetActive(false);
+            SoundManager.instance.PlayMusic(playerMusic);
+        }
+
+        buyMICPopupImage.SetActive(false);
+        buyPopupImage.SetActive(false);
+    }
     public void OnClickMain()
     {
+        PlayerMusic();
         if (clickCnt == 2005)
             moneyText.text = string.Format("유하준 왔다감");
         mainCamera.transform.position = new Vector2(-20f, 0f);
@@ -168,6 +186,8 @@ public class GameManager : MonoBehaviour
 
     public void OnClickStatus()
     {
+        PlayerMusic();
+
         mainCamera.transform.position = new Vector2(-15f, 0f);
         player.PlayerInactive();
         clickCnt *= 2;
@@ -182,6 +202,8 @@ public class GameManager : MonoBehaviour
 
     public void OnClickSetting()
     {
+        PlayerMusic();
+        
         mainCamera.transform.position = new Vector2(-5f, 0f);
         player.PlayerInactive();
         clickCnt += 1000;

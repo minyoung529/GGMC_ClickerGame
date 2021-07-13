@@ -62,6 +62,9 @@ TextureImporter:
   - first:
       213: 6525877293411595637
     second: MainButton_19
+  - first:
+      213: 1484456204400222632
+    second: MainButton_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -92,7 +95,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -171,7 +174,7 @@ TextureImporter:
         width: 314
         height: 314
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,7 +195,7 @@ TextureImporter:
         width: 314
         height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,10 +213,10 @@ TextureImporter:
         serializedVersion: 2
         x: 667
         y: 986
-        width: 315
+        width: 314
         height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,12 +232,12 @@ TextureImporter:
       name: MainButton_3
       rect:
         serializedVersion: 2
-        x: 990
-        y: 988
-        width: 313
-        height: 311
+        x: 991
+        y: 986
+        width: 312
+        height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,12 +253,12 @@ TextureImporter:
       name: MainButton_4
       rect:
         serializedVersion: 2
-        x: 3
-        y: 668
-        width: 311
-        height: 311
+        x: 1309
+        y: 986
+        width: 314
+        height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,12 +274,12 @@ TextureImporter:
       name: MainButton_5
       rect:
         serializedVersion: 2
-        x: 333
+        x: 2
         y: 667
         width: 314
-        height: 313
+        height: 314
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -292,12 +295,12 @@ TextureImporter:
       name: MainButton_6
       rect:
         serializedVersion: 2
-        x: 667
+        x: 333
         y: 667
-        width: 315
+        width: 314
         height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,12 +316,12 @@ TextureImporter:
       name: MainButton_7
       rect:
         serializedVersion: 2
-        x: 991
-        y: 668
-        width: 311
+        x: 667
+        y: 667
+        width: 314
         height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -334,12 +337,12 @@ TextureImporter:
       name: MainButton_8
       rect:
         serializedVersion: 2
-        x: 333
-        y: 352
-        width: 314
+        x: 991
+        y: 666
+        width: 312
         height: 314
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -355,12 +358,12 @@ TextureImporter:
       name: MainButton_9
       rect:
         serializedVersion: 2
-        x: 667
-        y: 352
-        width: 315
-        height: 314
+        x: 1309
+        y: 668
+        width: 314
+        height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -376,12 +379,12 @@ TextureImporter:
       name: MainButton_10
       rect:
         serializedVersion: 2
-        x: 2
-        y: 33
+        x: 3
+        y: 349
         width: 314
-        height: 315
+        height: 314
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -398,11 +401,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 333
-        y: 33
+        y: 352
         width: 314
-        height: 314
+        height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -419,11 +422,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 667
-        y: 33
-        width: 315
-        height: 314
+        y: 352
+        width: 314
+        height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -439,12 +442,12 @@ TextureImporter:
       name: MainButton_13
       rect:
         serializedVersion: 2
-        x: 990
-        y: 29
+        x: 991
+        y: 343
         width: 312
-        height: 314
+        height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -460,12 +463,12 @@ TextureImporter:
       name: MainButton_14
       rect:
         serializedVersion: 2
-        x: 992
-        y: 353
-        width: 312
-        height: 312
+        x: 1309
+        y: 347
+        width: 314
+        height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -481,12 +484,12 @@ TextureImporter:
       name: MainButton_15
       rect:
         serializedVersion: 2
-        x: 1306
-        y: 29
-        width: 313
-        height: 312
+        x: 3
+        y: 30
+        width: 314
+        height: 314
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -502,12 +505,12 @@ TextureImporter:
       name: MainButton_16
       rect:
         serializedVersion: 2
-        x: 1305
-        y: 354
-        width: 311
-        height: 310
+        x: 333
+        y: 33
+        width: 314
+        height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -523,12 +526,12 @@ TextureImporter:
       name: MainButton_17
       rect:
         serializedVersion: 2
-        x: 1305
-        y: 667
-        width: 313
+        x: 667
+        y: 33
+        width: 314
         height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -544,12 +547,12 @@ TextureImporter:
       name: MainButton_18
       rect:
         serializedVersion: 2
-        x: 1306
-        y: 986
-        width: 310
+        x: 991
+        y: 18
+        width: 312
         height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -565,10 +568,10 @@ TextureImporter:
       name: MainButton_19
       rect:
         serializedVersion: 2
-        x: 2
-        y: 351
+        x: 1309
+        y: 24
         width: 314
-        height: 315
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,6 +581,27 @@ TextureImporter:
       bones: []
       spriteID: 575f591a2d2909a50800000000000000
       internalID: 6525877293411595637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainButton_20
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 39
+        width: 582
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a166eb8d09d99410800000000000000
+      internalID: 1484456204400222632
       vertices: []
       indices: 
       edges: []

@@ -42,7 +42,7 @@ MonoBehaviour:
     money: 560
     number: 50
   - name: "\uC74C\uC5ED\uB300 \uAC15\uD654"
-    sprite: {fileID: 1290507934886648002, guid: 26106bbc3c4342241847655d5c4b7666, type: 3}
+    sprite: {fileID: -6237980093943912935, guid: 26106bbc3c4342241847655d5c4b7666, type: 3}
     level: 1
     plusMoney: 1120
     click: 100

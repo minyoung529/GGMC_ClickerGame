@@ -37,6 +37,8 @@ public class Status_Music_Btn : MonoBehaviour
 
     public void ChangeSprite()
     {
+        if (btnName == null) return;
+
         if (btnName == "º½" && PlayerPrefs.GetString("music1") == "isSold")
         {
             btnImage.sprite = musicSprite;
@@ -61,10 +63,16 @@ public class Status_Music_Btn : MonoBehaviour
         {
             btnImage.sprite = musicSprite;
         }
+    }
 
-        //else if (btnName == "µå·³" && PlayerPrefs.GetString("music6") == "isSold")
-        //{
-        //    btnImage.sprite = musicSprite;
-        //}
+    public void SelectChoose()
+    {
+        if (btnImage.sprite == musicEnabled) return;
+        choosePopup.SetActive(false);
+
+        PlayerPrefs.SetString("pmusic", btnName);
+        PlayerPrefs.SetInt("mtm", moneyPS);
+        GameManager.Instance.UpdateUI();
+        SoundManager.instance.PlayMusic(PlayerPrefs.GetString("pmusic", "A Little Ghost"));
     }
 }
