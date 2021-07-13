@@ -35,14 +35,14 @@ MonoBehaviour:
     money: 80
     number: 10
   - name: "\uD3D0\uD65C\uB7C9"
-    sprite: {fileID: 21300000, guid: 77e221677f1ce0949a77acef8d0ca5a4, type: 3}
+    sprite: {fileID: 2879019869623840977, guid: 26106bbc3c4342241847655d5c4b7666, type: 3}
     level: 1
     plusMoney: 560
     click: 50
     money: 560
     number: 50
   - name: "\uC74C\uC5ED\uB300 \uAC15\uD654"
-    sprite: {fileID: 21300000, guid: 77e221677f1ce0949a77acef8d0ca5a4, type: 3}
+    sprite: {fileID: 1290507934886648002, guid: 26106bbc3c4342241847655d5c4b7666, type: 3}
     level: 1
     plusMoney: 1120
     click: 100

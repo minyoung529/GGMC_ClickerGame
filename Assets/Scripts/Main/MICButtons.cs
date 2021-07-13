@@ -20,11 +20,11 @@ public class MICButtons : MonoBehaviour
     [SerializeField]
     GameObject BuyPopup;
     [SerializeField]
-    Text nameText, infoText, detailText, moneyText;
+    Text nameText, infoText, detailText, moneyText, popularText;
     [SerializeField]
     Image micImage, buttonImage;
     [SerializeField]
-    Sprite isSold;
+    Sprite isSold, isEnabled;
     [SerializeField]
     GameObject contents;
 
@@ -139,6 +139,8 @@ public class MICButtons : MonoBehaviour
     public void OnClickBuy()
     {
         if (isBuy) return;
+        if (buttonImage.sprite == isEnabled) return;
+
         BuyPopup.SetActive(true);
 
         nameText.text = string.Format("{0}", btnName);
@@ -146,14 +148,17 @@ public class MICButtons : MonoBehaviour
         detailText.text = string.Format("5ÃÊ´ç È¹µæ µ·: {0}¿ø\nÀÎ±âµµ +{1}¿ø", moneyPS, popular);
         moneyText.text = string.Format("{0}", money);
         micImage.sprite = micSprite;
+        popularText.text = string.Format("{0}", popular);
     }
 
     public void ChooseBuy()
     {
         int productMoney;
         string productName;
+        int productPopular;
         productMoney = int.Parse(moneyText.text);
         productName = nameText.text;
+        productPopular = int.Parse(popularText.text);
 
         Debug.Log(productMoney);
 
@@ -162,7 +167,7 @@ public class MICButtons : MonoBehaviour
         BuyPopup.SetActive(false);
 
         GameManager.Instance.Min(productMoney);
-        originPopular += popular;
+        originPopular += productPopular;
         PlayerPrefs.SetInt("p1", originPopular);
 
         ChangeData(productName);

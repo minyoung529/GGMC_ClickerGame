@@ -20,11 +20,11 @@ public class InstButtons : MonoBehaviour
     [SerializeField]
     GameObject BuyPopup, instContents;
     [SerializeField]
-    Text nameText, infoText, detailText, moneyText;
+    Text nameText, infoText, detailText, moneyText, popularText;
     [SerializeField]
     Image instImage, buttonImage;
     [SerializeField]
-    Sprite isSold;
+    Sprite isSold, isEnabled;
     [SerializeField]
     GameObject contents;
 
@@ -150,12 +150,15 @@ public class InstButtons : MonoBehaviour
     public void OnClickBuy()
     {
         if (isBuy) return;
+        if (buttonImage.sprite == isEnabled) return;
+
         BuyPopup.SetActive(true);
 
         nameText.text = string.Format("{0}", btnName);
         infoText.text = string.Format("{0}", info);
         detailText.text = string.Format("5ÃÊ´ç È¹µæ µ·: {0}¿ø\nÀÎ±âµµ +{1}¿ø", moneyPS, popular);
         moneyText.text = string.Format("{0}", money);
+        popularText.text = string.Format("{0}", popular);
         instImage.sprite = instSprite;
     }
 
@@ -163,15 +166,17 @@ public class InstButtons : MonoBehaviour
     {
         int productMoney;
         string productName;
+        int productPopular;
         productMoney = int.Parse(moneyText.text);
         productName = nameText.text;
+        productPopular = int.Parse(popularText.text);
 
         if (GameManager.Instance.playerMoney - productMoney <= 0) return;
 
         BuyPopup.SetActive(false);
 
         GameManager.Instance.Min(productMoney);
-        originPopular += popular;
+        originPopular += productPopular;
         PlayerPrefs.SetInt("p1", originPopular);
 
         ChangeData(productName);

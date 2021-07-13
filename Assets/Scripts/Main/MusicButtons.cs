@@ -140,6 +140,7 @@ public class MusicButtons : MonoBehaviour
     {
         if (isBuy) return;
         BuyPopup.SetActive(true);
+        SoundManager.instance.PlayMusic(btnName);
 
         nameText.text = string.Format("{0}", btnName);
         infoText.text = string.Format("{0}", info);

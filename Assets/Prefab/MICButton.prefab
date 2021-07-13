@@ -153,12 +153,13 @@ MonoBehaviour:
     popular: 0
     info: 
   BuyPopup: {fileID: 0}
-  instContents: {fileID: 0}
   nameText: {fileID: 0}
   infoText: {fileID: 0}
   detailText: {fileID: 0}
   moneyText: {fileID: 0}
+  popularText: {fileID: 0}
   micImage: {fileID: 0}
   buttonImage: {fileID: 5443389410646615006}
   isSold: {fileID: 0}
+  isEnabled: {fileID: -958580646009965197, guid: 4737f372b40f96847ab2b1134abec982, type: 3}
   contents: {fileID: 0}
