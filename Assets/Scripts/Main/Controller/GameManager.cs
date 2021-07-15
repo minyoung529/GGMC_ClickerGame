@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     Camera mainCamera;
 
+    [SerializeField]
+    private GameObject coinPrefab;
+
     [Header("버튼 오브젝트")]
     [SerializeField]
     private GameObject mainBtn;
@@ -43,6 +46,8 @@ public class GameManager : MonoBehaviour
     private GameObject micPanel;
     [SerializeField]
     private GameObject musicPanel;
+    [SerializeField]
+    private GameObject buttonsParent;
 
     private StatusPlayerInst statusPlayerInst;
     private MainPlayerInst mainPlayerInst;
@@ -112,7 +117,7 @@ public class GameManager : MonoBehaviour
 
         playerStatusText.text = string.Format("{0}", playerStatus);
         moneyText.text = string.Format("₩:{0}원", playerMoney);
-        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n초당 획든 돈: {1}원\n자본금: {2}원\n인기도: {3}\n현재상태: {4}", oneClickMoney, timeMoney, playerMoney, popular, playerStatus);
+        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n5초당 획든 돈: {1}원\n자본금: {2}원\n인기도: {3}\n현재상태: {4}", oneClickMoney, timeMoney, playerMoney, popular, playerStatus);
         oneClickText.text = string.Format("Click-{0}", oneClickMoney);
         timeText.text = string.Format("5Sec-{0}", timeMoney);
     }
@@ -250,25 +255,37 @@ public class GameManager : MonoBehaviour
         UpdateUI();
     }
 
-    public void InstPanel()
+    public void InstPanel(string panelName)
     {
-        instPanel.SetActive(true);
-        micPanel.SetActive(false);
-        musicPanel.SetActive(false);
-    }
+        for(int i = 0; i<buttonsParent.transform.childCount; i++)
+        {
+            buttonsParent.transform.GetChild(i).GetComponentInChildren<Image>().color = Color.white;
+        }
 
-    public void MICPanel()
-    {
-        micPanel.SetActive(true);
-        instPanel.SetActive(false);
-        musicPanel.SetActive(false);
-    }
+        if (panelName == "악기")
+        {
+            instPanel.SetActive(true);
+            micPanel.SetActive(false);
+            musicPanel.SetActive(false);
+            buttonsParent.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color32(255, 245, 184, 255);
+        }
 
-    public void MusicPanel()
-    {
-        micPanel.SetActive(false);
-        instPanel.SetActive(false);
-        musicPanel.SetActive(true);
+        else if(panelName == "마이크")
+        {
+            instPanel.SetActive(false);
+            micPanel.SetActive(true);
+            musicPanel.SetActive(false);
+            buttonsParent.transform.GetChild(1).GetComponentInChildren<Image>().color = new Color32(255, 245, 184, 255);
+        }
+
+        else if(panelName == "음악")
+        {
+            instPanel.SetActive(false);
+            micPanel.SetActive(false);
+            musicPanel.SetActive(true);
+            buttonsParent.transform.GetChild(2).GetComponentInChildren<Image>().color = new Color32(255, 245, 184, 255);
+        }
+
     }
 
     public void StatusInst_ChangeSprite()
@@ -278,11 +295,10 @@ public class GameManager : MonoBehaviour
 
     private void TimePerMoney()
     {
-        timeMoney = PlayerPrefs.GetInt("tm", 1);
-
         timer += Time.deltaTime;
         if (timer >= 5)
         {
+            Debug.Log(timeMoney);
             StartCoroutine(PlusMoney());
             AddMoney(timeMoney);
             timer = 0;
@@ -291,9 +307,14 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PlusMoney()
     {
-        plusMoneyText.text = string.Format("+{0}", timeMoney);
-        yield return new WaitForSeconds(0.5f);
-        plusMoneyText.text = string.Format(" ");
-        yield break;
+        float randomX = Random.Range(-20.3f, -19.6f);
+
+        for (int i = 0; i<timeMoney/5;i++)
+        {
+            Instantiate(coinPrefab);
+            coinPrefab.gameObject.transform.position = new Vector2(randomX, 4f);
+            yield return new WaitForSeconds(0.01f);
+        }
+            yield break;
     }
 }

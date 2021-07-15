@@ -175,5 +175,6 @@ public class MusicButtons : MonoBehaviour
         ChangeData(productName);
         CheckData();
         GameManager.Instance.UpdateUI();
+        SoundManager.instance.PlayMusic(PlayerPrefs.GetString("pmusic", "A Little Ghost"));
     }
 }
