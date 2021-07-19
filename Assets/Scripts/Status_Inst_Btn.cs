@@ -84,4 +84,28 @@ public class Status_Inst_Btn : MonoBehaviour
         PlayerPrefs.SetInt("instPS", moneyPS);
         GameManager.Instance.UpdateUI();
     }
+
+    public void OnClickInst()
+    {
+        if (btnImage.sprite == instEnabled) return;
+
+        choosePopup.SetActive(true);
+        Text nameText = choosePopup.transform.GetChild(0).GetComponentInChildren<Text>();
+        Text informText = choosePopup.transform.GetChild(1).GetComponentInChildren<Text>();
+        Text secText = choosePopup.transform.GetChild(2).GetComponentInChildren<Text>();
+
+        nameText.text = string.Format("{0}", btnName);
+        informText.text = string.Format("{0}", info);
+        secText.text = string.Format("5Sec - {0}", moneyPS);
+    }
+
+    public void OnClickPutInst()
+    {
+        Text nameText = choosePopup.transform.GetChild(0).GetComponentInChildren<Text>();
+
+        if(nameText.text == btnName)
+        {
+            SelectChoose();
+        }
+    }
 }

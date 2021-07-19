@@ -4,13 +4,4 @@ using UnityEngine;
 
 public class StatusButton : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 }

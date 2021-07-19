@@ -72,11 +72,35 @@ public class Status_MIC_Btn : MonoBehaviour
 
     public void SelectChoose()
     {
-        if (btnImage.sprite == micEnabled) return;
+        
         choosePopup.SetActive(false);
 
         PlayerPrefs.SetString("pm", btnName);
         PlayerPrefs.SetInt("micPS", moneyPS);
         GameManager.Instance.UpdateUI();
+    }
+
+    public void OnClickMIC()
+    {
+        if (btnImage.sprite == micEnabled) return;
+
+        choosePopup.SetActive(true);
+        Text nameText = choosePopup.transform.GetChild(0).GetComponentInChildren<Text>();
+        Text informText = choosePopup.transform.GetChild(1).GetComponentInChildren<Text>();
+        Text secText = choosePopup.transform.GetChild(2).GetComponentInChildren<Text>();
+
+        nameText.text = string.Format("{0}", btnName);
+        informText.text = string.Format("{0}", info);
+        secText.text = string.Format("5Sec - {0}", moneyPS);
+    }
+
+    public void OnClickPutMIC()
+    {
+        Text nameText = choosePopup.transform.GetChild(0).GetComponentInChildren<Text>();
+
+        if (nameText.text == btnName)
+        {
+            SelectChoose();
+        }
     }
 }

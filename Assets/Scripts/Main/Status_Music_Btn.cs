@@ -67,12 +67,35 @@ public class Status_Music_Btn : MonoBehaviour
 
     public void SelectChoose()
     {
-        if (btnImage.sprite == musicEnabled) return;
         choosePopup.SetActive(false);
 
         PlayerPrefs.SetString("pmusic", btnName);
-        PlayerPrefs.SetInt("mtm", moneyPS);
+        PlayerPrefs.SetInt("musicPS", moneyPS);
         GameManager.Instance.UpdateUI();
         SoundManager.instance.PlayMusic(PlayerPrefs.GetString("pmusic", "A Little Ghost"));
+    }
+
+    public void OnClickMusic()
+    {
+        if (btnImage.sprite == musicEnabled) return;
+
+        choosePopup.SetActive(true);
+        Text nameText = choosePopup.transform.GetChild(0).GetComponentInChildren<Text>();
+        Text informText = choosePopup.transform.GetChild(1).GetComponentInChildren<Text>();
+        Text secText = choosePopup.transform.GetChild(2).GetComponentInChildren<Text>();
+
+        nameText.text = string.Format("{0}", btnName);
+        informText.text = string.Format("{0}", info);
+        secText.text = string.Format("5Sec - {0}", moneyPS);
+    }
+
+    public void OnClickPutMusic()
+    {
+        Text nameText = choosePopup.transform.GetChild(0).GetComponentInChildren<Text>();
+
+        if (nameText.text == btnName)
+        {
+            SelectChoose();
+        }
     }
 }

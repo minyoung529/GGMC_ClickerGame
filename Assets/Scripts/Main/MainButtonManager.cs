@@ -155,6 +155,30 @@ public class MainButtonManager : MonoBehaviour
         }
     }
 
+    public void Check_StatusButton()
+    {
+        for (int i = 0; i < statusInst.Count; i++)
+        {
+            var btnObj = statusInstPos.transform.GetChild(i);
+            var button = btnObj.GetComponent<Status_Inst_Btn>();
+            button.OnClickPutInst();
+        }
+
+        for (int i = 0; i < statusMIC.Count; i++)
+        {
+            var btnObj = statusMICPos.transform.GetChild(i);
+            var button = btnObj.GetComponent<Status_MIC_Btn>();
+            button.OnClickPutMIC();
+        }
+
+        for (int i = 0; i < statusMusic.Count; i++)
+        {
+            var btnObj = statusMusicPos.transform.GetChild(i);
+            var button = btnObj.GetComponent<Status_Music_Btn>();
+            button.OnClickPutMusic();
+        }
+    }
+
     public void ChangeInstSprite()
     {
         for (int i = 0; i < storeInst.Count; i++)

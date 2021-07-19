@@ -16,30 +16,40 @@ MonoBehaviour:
   - musicName: A Little Ghost
     musicSprite: {fileID: 800261244044264288, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
     money: 0
-    moneyPerSec: 10
+    moneyPerSec: 1
     popular: 1
-    info: 
+    info: "\uC5B4\uB518\uAC00\uC5D0\uC11C \uC8FC\uC6B4 \uC74C\uC545\uC774\uB2E4.
+      \uAF2C\uB9C8 \uADC0\uC2E0\uC774 \uB193\uACE0 \uAC14\uC744\uC218\uB3C4...?"
   - musicName: "\uBD04"
     musicSprite: {fileID: 1039681172911205126, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
     money: 100000
-    moneyPerSec: 50
+    moneyPerSec: 20
     popular: 1
-    info: 
+    info: "\uD3EC\uADFC\uD55C \uBD04\uAC19\uC740 \uC74C\uC545\uC774\uB2E4. \uC0C8\uAC00
+      \uC9C0\uC800\uADC0\uB294 \uC18C\uB9AC\uAC00 \uC774\uB530\uAE08 \uB4E4\uB9B0\uB2E4."
   - musicName: Nighty Night
     musicSprite: {fileID: 2590768977765981754, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
     money: 90000
-    moneyPerSec: 20
+    moneyPerSec: 30
     popular: 1
-    info: 
+    info: "\uC5B4\uB9B4 \uB54C \uC790\uC7A5\uAC00\uB85C \uB4E4\uC740 \uC74C\uC545\uC774\uB2E4.
+      \uD750\uC544\uC544\uC554 \uD53C\uACE4\uD574..."
   - musicName: SUMMER STORM!
     musicSprite: {fileID: 2991754045379606626, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
     money: 1500000
-    moneyPerSec: 20
+    moneyPerSec: 40
     popular: 1
-    info: 
-  - musicName: "\uC800\uCA4C\uAD6C"
+    info: "\uB0AD\uB9CC\uC801\uC778 \uC5EC\uB984\uC740 \uC74C\uC545\uC5D0\uC11C\uBC16\uC5D0
+      \uC5C6\uB2E4. \uC5B4\uCA50\uC9C0 \uC2DC\uC6D0\uD574\uC9C8\uC9C0\uB3C4?"
+  - musicName: "\uBAA8\uD5D8"
     musicSprite: {fileID: 0}
     money: 1500000
-    moneyPerSec: 20
+    moneyPerSec: 50
     popular: 1
-    info: 
+    info: "\uAE54\uB054\uD55C \uB290\uB08C\uC758 \uC74C\uC545\uC774\uB2E4. "
+  - musicName: "\uAE30\uC7A5\uB2D8\uC74C\uC545"
+    musicSprite: {fileID: 0}
+    money: 1500000
+    moneyPerSec: 50
+    popular: 1
+    info: "\uAE30\uC7A5\uB2D8\uC74C\uC545\uC544\u3163\uC544\uB315\uC560\uC560\uC560\uC560\uC560\u3150\u3147\u3147"

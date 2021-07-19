@@ -48,6 +48,8 @@ public class GameManager : MonoBehaviour
     private GameObject musicPanel;
     [SerializeField]
     private GameObject buttonsParent;
+    [SerializeField]
+    private GameObject choosePopup;
 
     private StatusPlayerInst statusPlayerInst;
     private MainPlayerInst mainPlayerInst;
@@ -108,7 +110,7 @@ public class GameManager : MonoBehaviour
     public void UpdateUI()
     {
         oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
-        timeMoney = PlayerPrefs.GetInt("micPS", 1) + PlayerPrefs.GetInt("instPS", 1);
+        timeMoney = PlayerPrefs.GetInt("micPS", 1) + PlayerPrefs.GetInt("instPS", 1) + PlayerPrefs.GetInt("musicPS", 1);
         playerInstrument = PlayerPrefs.GetString("pi", "캐스터네츠");
         popular = PlayerPrefs.GetInt("p1", 0);
 
@@ -198,6 +200,11 @@ public class GameManager : MonoBehaviour
         clickCnt *= 2;
     }
 
+    public void InactiveChoosePopup()
+    {
+        choosePopup.SetActive(false);
+    }
+    
     public void OnClickStore()
     {
         mainCamera.transform.position = new Vector2(-10f, 0f);
@@ -296,7 +303,7 @@ public class GameManager : MonoBehaviour
     private void TimePerMoney()
     {
         timer += Time.deltaTime;
-        if (timer >= 5)
+        if (timer >= 5 && mainCamera.transform.position == new Vector3(-20f, 0f, -0))
         {
             Debug.Log(timeMoney);
             StartCoroutine(PlusMoney());
@@ -309,7 +316,7 @@ public class GameManager : MonoBehaviour
     {
         float randomX = Random.Range(-20.3f, -19.6f);
 
-        for (int i = 0; i<timeMoney/5;i++)
+        for (int i = 0; i<timeMoney/4;i++)
         {
             Instantiate(coinPrefab);
             coinPrefab.gameObject.transform.position = new Vector2(randomX, 4f);
