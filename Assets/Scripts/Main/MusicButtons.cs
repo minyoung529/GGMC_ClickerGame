@@ -60,12 +60,48 @@ public class MusicButtons : MonoBehaviour
                 PlayerPrefs.GetString("music3", "isSell");
                 break;
 
-            case "어쩌구":
+            case "모험":
                 PlayerPrefs.GetString("music4", "isSell");
                 break;
 
-            case "저쩌구":
+            case "평화로운 마을":
                 PlayerPrefs.GetString("music5", "isSell");
+                break;
+
+            case "Bell tower":
+                PlayerPrefs.GetString("music6", "isSell");
+                break;
+
+            case "Error":
+                PlayerPrefs.GetString("music7", "isSell");
+                break;
+
+            case "Exploration":
+                PlayerPrefs.GetString("music8", "isSell");
+                break;
+
+            case "Happy memories":
+                PlayerPrefs.GetString("music9", "isSell");
+                break;
+
+            case "Lawn":
+                PlayerPrefs.GetString("music10", "isSell");
+                break;
+
+            case "Night walk":
+                PlayerPrefs.GetString("music11", "isSell");
+                break;
+
+            case "Recess":
+                PlayerPrefs.GetString("music12", "isSell");
+                break;
+
+            case "Unknown":
+                PlayerPrefs.GetString("music13", "isSell");
+                break;
+
+            case "Whirlpool":
+                PlayerPrefs.GetString("music14", "isSell");
                 break;
         }
         CheckData();
@@ -87,15 +123,50 @@ public class MusicButtons : MonoBehaviour
             case "SUMMER STORM!":
                 PlayerPrefs.SetString("music3", "isSold");
                 Debug.Log("썸머");
-
                 break;
 
-            case "어쩌구":
+            case "모험":
                 PlayerPrefs.SetString("music4", "isSold");
                 break;
 
-            case "저쩌구":
+            case "평화로운 마을":
                 PlayerPrefs.SetString("music5", "isSold");
+                break;
+
+            case "Bell tower":
+                PlayerPrefs.SetString("music6", "isSold");
+                break;
+
+            case "Error":
+                PlayerPrefs.SetString("music7", "isSold");
+                break;
+
+            case "Exploration":
+                PlayerPrefs.SetString("music8", "isSold");
+                break;
+
+            case "Happy memories":
+                PlayerPrefs.SetString("music9", "isSold");
+                break;
+
+            case "Lawn":
+                PlayerPrefs.SetString("music10", "isSold");
+                break;
+
+            case "Night walk":
+                PlayerPrefs.SetString("music11", "isSold");
+                break;
+
+            case "Recess":
+                PlayerPrefs.SetString("music12", "isSold");
+                break;
+
+            case "Unknown":
+                PlayerPrefs.SetString("music13", "isSold");
+                break;
+
+            case "Whirlpool":
+                PlayerPrefs.SetString("music14", "isSold");
                 break;
         }
         CheckData();
@@ -132,13 +203,62 @@ public class MusicButtons : MonoBehaviour
             buttonImage.sprite = isSold;
             isBuy = true;
         }
+
         if (PlayerPrefs.GetString("music6") == "isSold" && gameObject.transform == contents.transform.GetChild(5))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
         }
 
-        if(musicSprite == null)
+        if (PlayerPrefs.GetString("music7") == "isSold" && gameObject.transform == contents.transform.GetChild(6))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+
+        if (PlayerPrefs.GetString("music8") == "isSold" && gameObject.transform == contents.transform.GetChild(7))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+
+        if (PlayerPrefs.GetString("music9") == "isSold" && gameObject.transform == contents.transform.GetChild(8))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+
+        if (PlayerPrefs.GetString("music10") == "isSold" && gameObject.transform == contents.transform.GetChild(9))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+
+        if (PlayerPrefs.GetString("music11") == "isSold" && gameObject.transform == contents.transform.GetChild(10))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+
+        if (PlayerPrefs.GetString("music12") == "isSold" && gameObject.transform == contents.transform.GetChild(11))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+
+        if (PlayerPrefs.GetString("music13") == "isSold" && gameObject.transform == contents.transform.GetChild(12))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+
+        if (PlayerPrefs.GetString("music14") == "isSold" && gameObject.transform == contents.transform.GetChild(13))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+
+        if (musicSprite == null)
         {
             buttonImage.sprite = isEnabled;
         }

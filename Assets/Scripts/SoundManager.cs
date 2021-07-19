@@ -20,6 +20,10 @@ public class SoundManager : MonoBehaviour
     AudioSource audioSource;
     [SerializeField]
     AudioClip aLittleGhost, spring, summerStorm, nightyNight;
+    [SerializeField]
+    AudioClip adventure, peacefulVil, bellTower, error, lawn, exploration, happyMemories;
+    [SerializeField]
+    AudioClip nightWalk, recess, unknown, whirlpool;
     private string playerMusic;
 
     void Start()
@@ -49,6 +53,50 @@ public class SoundManager : MonoBehaviour
 
             case "Nighty Night":
                 audioSource.clip = nightyNight;
+                break;
+
+            case "모험":
+                audioSource.clip = adventure;
+                break;
+
+            case "평화로운 마을":
+                audioSource.clip = peacefulVil;
+                break;
+
+            case "Bell tower":
+                audioSource.clip = bellTower;
+                break;
+
+            case "Error":
+                audioSource.clip = error;
+                break;
+
+            case "Exploration":
+                audioSource.clip = exploration;
+                break;
+
+            case "Happy memories":
+                audioSource.clip = happyMemories;
+                break;
+
+            case "Lawn":
+                audioSource.clip = lawn;
+                break;
+
+            case "Night walk":
+                audioSource.clip = nightWalk;
+                break;
+
+            case "Recess":
+                audioSource.clip = recess;
+                break;
+
+            case "Unknown":
+                audioSource.clip = unknown;
+                break;
+
+            case "Whirlpool":
+                audioSource.clip = whirlpool;
                 break;
         }
 

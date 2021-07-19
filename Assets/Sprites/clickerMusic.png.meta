@@ -14,6 +14,54 @@ TextureImporter:
   - first:
       213: 2590768977765981754
     second: clickerMusic_3
+  - first:
+      213: -8626025547351061095
+    second: clickerMusic_4
+  - first:
+      213: 7068111010347736146
+    second: clickerMusic_5
+  - first:
+      213: -3080130535296305851
+    second: clickerMusic_6
+  - first:
+      213: -5429425509493378975
+    second: clickerMusic_7
+  - first:
+      213: -588298859998399382
+    second: clickerMusic_8
+  - first:
+      213: -1081228034578605154
+    second: clickerMusic_9
+  - first:
+      213: 4941399713725237743
+    second: clickerMusic_10
+  - first:
+      213: -3329448094145830518
+    second: clickerMusic_11
+  - first:
+      213: -6327625639062496434
+    second: clickerMusic_12
+  - first:
+      213: 7599929035448622475
+    second: clickerMusic_13
+  - first:
+      213: -3229352895328876407
+    second: clickerMusic_14
+  - first:
+      213: 5224648184418443107
+    second: clickerMusic_15
+  - first:
+      213: -5339823723601398582
+    second: clickerMusic_16
+  - first:
+      213: -1977531722227859684
+    second: clickerMusic_17
+  - first:
+      213: 8399360979176129189
+    second: clickerMusic_18
+  - first:
+      213: -1128959177627092297
+    second: clickerMusic_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,7 +171,7 @@ TextureImporter:
         width: 315
         height: 312
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,7 +192,7 @@ TextureImporter:
         width: 313
         height: 312
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,7 +213,7 @@ TextureImporter:
         width: 314
         height: 312
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +234,7 @@ TextureImporter:
         width: 311
         height: 311
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,6 +242,216 @@ TextureImporter:
       bones: []
       spriteID: a3ed7d6a8a244f320800000000000000
       internalID: 2590768977765981754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clickerMusic_4
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 906
+        width: 314
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d02b2a7733a4880800000000000000
+      internalID: -8626025547351061095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clickerMusic_5
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 906
+        width: 312
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25cddc4f389f61260800000000000000
+      internalID: 7068111010347736146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clickerMusic_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 580
+        width: 313
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54574dde89d2145d0800000000000000
+      internalID: -3080130535296305851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clickerMusic_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 580
+        width: 314
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b9fb5c4d4bef0f0800000000000000
+      internalID: -1081228034578605154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clickerMusic_10
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 580
+        width: 314
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe94fc5ebd0639440800000000000000
+      internalID: 4941399713725237743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clickerMusic_11
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 581
+        width: 311
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81265a399c6bc1d0800000000000000
+      internalID: -3329448094145830518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clickerMusic_12
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 581
+        width: 314
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b9608a102cf28a0800000000000000
+      internalID: -6327625639062496434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clickerMusic_13
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 581
+        width: 312
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d971c013f587960800000000000000
+      internalID: 7599929035448622475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clickerMusic_18
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 250
+        width: 315
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a202101f46809470800000000000000
+      internalID: 8399360979176129189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clickerMusic_19
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 250
+        width: 313
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7babe930c912550f0800000000000000
+      internalID: -1128959177627092297
       vertices: []
       indices: 
       edges: []
