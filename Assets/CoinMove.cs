@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class CoinMove : MonoBehaviour
 {
-    void Start()
+    private void Update()
     {
-        StartCoroutine(Destroy());
-    }
-
-    private IEnumerator Destroy()
-    {
-        yield return new WaitForSeconds(6f);
-        Destroy(gameObject);
+        if(transform.position.y < -3f)
+        {
+            Destroy(gameObject);
+        }
     }
 }

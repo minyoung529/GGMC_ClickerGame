@@ -46,7 +46,8 @@ MonoBehaviour:
     money: 1500000
     moneyPerSec: 50
     popular: 1
-    info: "\uAE54\uB054\uD55C \uB290\uB08C\uC758 \uC74C\uC545\uC774\uB2E4. \uAE54\uB044\uC73C\uC74C!"
+    info: "\uAE54\uB054\uD55C \uB290\uB08C\uC758 \uC74C\uC545\uC774\uB2E4. \uBAA8\uD5D8\uC744
+      \uB5A0\uB098\uBCFC\uAE4C?"
   - musicName: "\uD3C9\uD654\uB85C\uC6B4 \uB9C8\uC744"
     musicSprite: {fileID: -8626025547351061095, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
     money: 1500000
@@ -59,9 +60,8 @@ MonoBehaviour:
     money: 1500000
     moneyPerSec: 50
     popular: 1
-    info: "\uC885\uC18C\uB9AC\uB97C \uC5F0\uC0C1\uC2DC\uD0A4\uB294 \uD328\uD134!
-      \uC0AC\uC6A9\uD558\uC5EC \uAE34\uC7A5\uAC10\uC774 \uAC10\uB3C4\uB294 \uB290\uB08C\uC758
-      \uC74C\uC545\uC774\uB2E4."
+    info: "\uC885\uC18C\uB9AC\uB97C \uC5F0\uC0C1\uC2DC\uD0A4\uB294 \uC74C\uC545\uC774\uB2E4.
+      \uC5B4\uCA50\uC9C0 \uAE34\uC7A5\uAC10\uC774 \uAC10\uB3C8\uB2E4."
   - musicName: Error
     musicSprite: {fileID: -3080130535296305851, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
     money: 1500000
@@ -88,15 +88,15 @@ MonoBehaviour:
     money: 1500000
     moneyPerSec: 50
     popular: 1
-    info: "\uAC8C\uC784 \uC18D \uD3C9\uD654\uB85C\uC6B4 \uB9C8\uC744\uC758 \uC74C\uC545\uC774\uB2E4.
-      \uB9C8\uC74C\uC774 \uD3C9\uD654\uB85C\uC6CC\uC9C4\uB2E4."
+    info: "\uC794\uB514\uBC2D\uC5D0 \uB215\uACE0 \uC2F6\uB2E4. \uB9C8\uC74C\uC774
+      \uD3C9\uD654\uB85C\uC6CC\uC9C0\uB294 \uC74C\uC545\uC774\uB2E4."
   - musicName: Night walk
     musicSprite: {fileID: -3329448094145830518, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
     money: 1500000
     moneyPerSec: 50
     popular: 1
-    info: "\uC794\uB514\uBC2D\uC5D0 \uB215\uACE0 \uC2F6\uB2E4. \uB9C8\uC74C\uC774
-      \uD3C9\uD654\uB85C\uC6CC\uC9C0\uB294 \uC74C\uC545\uC774\uB2E4."
+    info: "\uBC18\uC9DD\uBC18\uC9DD\uD55C \uBC24\uAC70\uB9AC\uB97C \uC9C0\uB098\uB294
+      \uB290\uB08C\uC774\uB2E4. \uB124\uC628\uC0AC\uC778\uC774 \uCC38 \uBE5B\uB09C\uB2E4."
   - musicName: Recess
     musicSprite: {fileID: -6327625639062496434, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
     money: 1500000
@@ -109,8 +109,8 @@ MonoBehaviour:
     money: 1500000
     moneyPerSec: 50
     popular: 1
-    info: "\uAC8C\uC784 \uC18D \uD3C9\uD654\uB85C\uC6B4 \uB9C8\uC744\uC758 \uC74C\uC545\uC774\uB2E4.
-      \uB9C8\uC74C\uC774 \uD3C9\uD654\uB85C\uC6CC\uC9C4\uB2E4."
+    info: "\uBC18\uBCF5\uB418\uB294 \uBA5C\uB85C\uB514\uC758 \uC74C\uC545\uC774\uB2E4.
+      \uD638\uAE30\uC2EC \uB118\uCE58\uB294\uB370?"
   - musicName: Whirlpool
     musicSprite: {fileID: 7599929035448622475, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
     money: 1500000

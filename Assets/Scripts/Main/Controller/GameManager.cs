@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            AddMoney(10000);
+            AddMoney(100000);
         }
 
         TimePerMoney();
@@ -314,10 +314,11 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PlusMoney()
     {
-        float randomX = Random.Range(-20.3f, -19.6f);
+        float randomX;
 
-        for (int i = 0; i<timeMoney/4;i++)
+        for (int i = 0; i<timeMoney/5;i++)
         {
+            randomX = Random.Range(-20.3f, -19.6f);
             Instantiate(coinPrefab);
             coinPrefab.gameObject.transform.position = new Vector2(randomX, 4f);
             yield return new WaitForSeconds(0.01f);

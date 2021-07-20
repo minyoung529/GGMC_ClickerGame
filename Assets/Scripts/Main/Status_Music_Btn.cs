@@ -54,12 +54,57 @@ public class Status_Music_Btn : MonoBehaviour
             btnImage.sprite = musicSprite;
         }
 
-        else if (btnName == "어쩌구" && PlayerPrefs.GetString("music4") == "isSold")
+        else if (btnName == "모험" && PlayerPrefs.GetString("music4") == "isSold")
         {
             btnImage.sprite = musicSprite;
         }
 
-        else if (btnName == "저쩌구" && PlayerPrefs.GetString("music5") == "isSold")
+        else if (btnName == "평화로운 마을" && PlayerPrefs.GetString("music5") == "isSold")
+        {
+            btnImage.sprite = musicSprite;
+        }
+
+        else if (btnName == "Bell tower" && PlayerPrefs.GetString("music6") == "isSold")
+        {
+            btnImage.sprite = musicSprite;
+        }
+
+        else if (btnName == "Error" && PlayerPrefs.GetString("music7") == "isSold")
+        {
+            btnImage.sprite = musicSprite;
+        }
+
+        else if (btnName == "Exploration" && PlayerPrefs.GetString("music8") == "isSold")
+        {
+            btnImage.sprite = musicSprite;
+        }
+
+        else if (btnName == "Happy memories" && PlayerPrefs.GetString("music9") == "isSold")
+        {
+            btnImage.sprite = musicSprite;
+        }
+
+        else if (btnName == "Lawn" && PlayerPrefs.GetString("music10") == "isSold")
+        {
+            btnImage.sprite = musicSprite;
+        }
+
+        else if (btnName == "Night walk" && PlayerPrefs.GetString("music11") == "isSold")
+        {
+            btnImage.sprite = musicSprite;
+        }
+
+        else if (btnName == "Recess" && PlayerPrefs.GetString("music12") == "isSold")
+        {
+            btnImage.sprite = musicSprite;
+        }
+
+        else if (btnName == "Unknown" && PlayerPrefs.GetString("music13") == "isSold")
+        {
+            btnImage.sprite = musicSprite;
+        }
+
+        else if (btnName == "Whirlpool" && PlayerPrefs.GetString("music14") == "isSold")
         {
             btnImage.sprite = musicSprite;
         }
