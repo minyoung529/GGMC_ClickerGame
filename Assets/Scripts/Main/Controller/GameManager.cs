@@ -303,10 +303,13 @@ public class GameManager : MonoBehaviour
     private void TimePerMoney()
     {
         timer += Time.deltaTime;
-        if (timer >= 5 && mainCamera.transform.position == new Vector3(-20f, 0f, -0))
+        if (timer >= 5 )
         {
             Debug.Log(timeMoney);
-            StartCoroutine(PlusMoney());
+            if(mainCamera.transform.position == new Vector3(-20f, 0f, -0))
+            {
+                StartCoroutine(PlusMoney());
+            }
             AddMoney(timeMoney);
             timer = 0;
         }
