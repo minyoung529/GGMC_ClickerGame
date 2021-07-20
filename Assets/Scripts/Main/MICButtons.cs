@@ -48,24 +48,48 @@ public class MICButtons : MonoBehaviour
     {
         switch (btnName)
         {
-            case "다이나믹 마이크":
-                PlayerPrefs.GetString("mic1", "isSell");
-                break;
-
-            case "GG157":
+            case "뽀로로 마이크":
                 PlayerPrefs.GetString("mic2", "isSell");
                 break;
 
-            case "콘덴서 마이크":
+            case "노래방에서 가져온 마이크":
                 PlayerPrefs.GetString("mic3", "isSell");
                 break;
 
-            case "인이어 마이크":
+            case "매우 중고 마이크":
                 PlayerPrefs.GetString("mic4", "isSell");
                 break;
 
-            case "마이스트로":
+            case "좀 좋아 보이는 마이크":
                 PlayerPrefs.GetString("mic5", "isSell");
+                break;
+
+            case "GG157":
+                PlayerPrefs.GetString("mic6", "isSell");
+                break;
+
+            case "방송용 마이크":
+                PlayerPrefs.GetString("mic7", "isSell");
+                break;
+
+            case "아이돌이 쓸 법한 마이크":
+                PlayerPrefs.GetString("mic8", "isSell");
+                break;
+
+            case "Shiba's VoicE":
+                PlayerPrefs.GetString("mic9", "isSell");
+                break;
+
+            case "스튜디오 마이크":
+                PlayerPrefs.GetString("mic10", "isSell");
+                break;
+
+            case "The Angel's Ring":
+                PlayerPrefs.GetString("mic11", "isSell");
+                break;
+
+            case "목소리":
+                PlayerPrefs.GetString("mic12", "isSell");
                 break;
         }
         CheckData();
@@ -75,24 +99,48 @@ public class MICButtons : MonoBehaviour
     {
         switch (productName)
         {
-            case "다이나믹 마이크":
-                PlayerPrefs.SetString("mic1", "isSold");
-                break;
-
-            case "GG157":
+            case "뽀로로 마이크":
                 PlayerPrefs.SetString("mic2", "isSold");
                 break;
 
-            case "콘덴서 마이크":
+            case "노래방에서 가져온 마이크":
                 PlayerPrefs.SetString("mic3", "isSold");
                 break;
 
-            case "인이어 마이크":
+            case "매우 중고 마이크":
                 PlayerPrefs.SetString("mic4", "isSold");
                 break;
 
-            case "마이스트로":
+            case "좀 좋아 보이는 마이크":
                 PlayerPrefs.SetString("mic5", "isSold");
+                break;
+
+            case "GG157":
+                PlayerPrefs.SetString("mic6", "isSold");
+                break;
+
+            case "방송용 마이크":
+                PlayerPrefs.SetString("mic7", "isSold");
+                break;
+
+            case "아이돌이 쓸 법한 마이크":
+                PlayerPrefs.SetString("mic8", "isSold");
+                break;
+
+            case "Shiba's VoicE":
+                PlayerPrefs.SetString("mic9", "isSold");
+                break;
+
+            case "스튜디오 마이크":
+                PlayerPrefs.SetString("mic10", "isSold");
+                break;
+
+            case "The Angel's Ring":
+                PlayerPrefs.SetString("mic11", "isSold");
+                break;
+
+            case "목소리":
+                PlayerPrefs.SetString("mic12", "isSold");
                 break;
         }
         CheckData();
@@ -100,36 +148,64 @@ public class MICButtons : MonoBehaviour
 
     public void CheckData()
     {
-        if (PlayerPrefs.GetString("mic1") == "isSold" && gameObject.transform == contents.transform.GetChild(0))
+        if (PlayerPrefs.GetString("mic2") == "isSold" && gameObject.transform == contents.transform.GetChild(0))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
         }
 
-        if (PlayerPrefs.GetString("mic2") == "isSold" && gameObject.transform == contents.transform.GetChild(1))
+        if (PlayerPrefs.GetString("mic3") == "isSold" && gameObject.transform == contents.transform.GetChild(1))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
         }
 
-        if (PlayerPrefs.GetString("mic3") == "isSold" && gameObject.transform == contents.transform.GetChild(2))
+        if (PlayerPrefs.GetString("mic4") == "isSold" && gameObject.transform == contents.transform.GetChild(2))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
         }
 
-        if (PlayerPrefs.GetString("mic4") == "isSold" && gameObject.transform == contents.transform.GetChild(3))
+        if (PlayerPrefs.GetString("mic5") == "isSold" && gameObject.transform == contents.transform.GetChild(3))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+        if (PlayerPrefs.GetString("mic6") == "isSold" && gameObject.transform == contents.transform.GetChild(4))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+        if (PlayerPrefs.GetString("mic7") == "isSold" && gameObject.transform == contents.transform.GetChild(5))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
         }
 
-        if (PlayerPrefs.GetString("mic5") == "isSold" && gameObject.transform == contents.transform.GetChild(4))
+        if (PlayerPrefs.GetString("mic8") == "isSold" && gameObject.transform == contents.transform.GetChild(6))
         {
             buttonImage.sprite = isSold;
             isBuy = true;
         }
-        if (PlayerPrefs.GetString("mic6") == "isSold" && gameObject.transform == contents.transform.GetChild(5))
+
+        if (PlayerPrefs.GetString("mic9") == "isSold" && gameObject.transform == contents.transform.GetChild(7))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+
+        if (PlayerPrefs.GetString("mic10") == "isSold" && gameObject.transform == contents.transform.GetChild(8))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+
+        if (PlayerPrefs.GetString("mic11") == "isSold" && gameObject.transform == contents.transform.GetChild(9))
+        {
+            buttonImage.sprite = isSold;
+            isBuy = true;
+        }
+        if (PlayerPrefs.GetString("mic12") == "isSold" && gameObject.transform == contents.transform.GetChild(10))
         {
             buttonImage.sprite = isSold;
             isBuy = true;

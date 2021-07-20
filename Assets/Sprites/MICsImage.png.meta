@@ -20,6 +20,24 @@ TextureImporter:
   - first:
       213: 8624745011601708625
     second: MICsImage_5
+  - first:
+      213: -309648276017634612
+    second: MICsImage_6
+  - first:
+      213: -356786629041237231
+    second: MICsImage_7
+  - first:
+      213: -3594602119323134721
+    second: MICsImage_8
+  - first:
+      213: -9205479780241013318
+    second: MICsImage_9
+  - first:
+      213: 651997100344890996
+    second: MICsImage_10
+  - first:
+      213: 134015361769854207
+    second: MICsImage_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,10 +142,10 @@ TextureImporter:
       name: MICsImage_0
       rect:
         serializedVersion: 2
-        x: 307
-        y: 1270
-        width: 316
-        height: 316
+        x: 309
+        y: 1271
+        width: 313
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,10 +163,10 @@ TextureImporter:
       name: MICsImage_1
       rect:
         serializedVersion: 2
-        x: 646
-        y: 1270
-        width: 315
-        height: 316
+        x: 647
+        y: 1271
+        width: 312
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +184,10 @@ TextureImporter:
       name: MICsImage_2
       rect:
         serializedVersion: 2
-        x: 983
-        y: 1270
-        width: 315
-        height: 316
+        x: 984
+        y: 1271
+        width: 313
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +205,10 @@ TextureImporter:
       name: MICsImage_3
       rect:
         serializedVersion: 2
-        x: 1319
-        y: 1270
-        width: 315
-        height: 316
+        x: 1320
+        y: 1271
+        width: 313
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,10 +226,10 @@ TextureImporter:
       name: MICsImage_4
       rect:
         serializedVersion: 2
-        x: 1662
-        y: 1270
-        width: 316
-        height: 316
+        x: 1664
+        y: 1271
+        width: 312
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,10 +247,10 @@ TextureImporter:
       name: MICsImage_5
       rect:
         serializedVersion: 2
-        x: 1998
-        y: 1270
-        width: 316
-        height: 316
+        x: 2000
+        y: 1271
+        width: 312
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,6 +260,132 @@ TextureImporter:
       bones: []
       spriteID: 15697d664ef31b770800000000000000
       internalID: 8624745011601708625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MICsImage_6
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 930
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc228a69888e3bbf0800000000000000
+      internalID: -309648276017634612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MICsImage_7
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 930
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113536383707c0bf0800000000000000
+      internalID: -356786629041237231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MICsImage_8
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 930
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4d0e0ea686d1ec0800000000000000
+      internalID: -3594602119323134721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MICsImage_9
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 930
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab581bf99e09f3080800000000000000
+      internalID: -9205479780241013318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MICsImage_10
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 930
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47654a888eb5c0900800000000000000
+      internalID: 651997100344890996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MICsImage_11
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 930
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4dcb0f24e1cd100800000000000000
+      internalID: 134015361769854207
       vertices: []
       indices: 
       edges: []

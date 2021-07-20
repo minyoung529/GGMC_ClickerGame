@@ -44,32 +44,87 @@ public class Status_Inst_Btn : MonoBehaviour
 
     public void ChangeSprite()
     {
-        if(btnName == "탬버린" && PlayerPrefs.GetString("inst11") == "isSold")
+        if(btnName == "탬버린" && PlayerPrefs.GetString("inst1") == "isSold")
         {
             btnImage.sprite = instSprite;
         }
 
-        else if (btnName == "기타" && PlayerPrefs.GetString("inst22") == "isSold")
+        else if (btnName == "깽과리" && PlayerPrefs.GetString("inst2") == "isSold")
         {
             btnImage.sprite = instSprite;
         }
 
-        else if (btnName == "일렉 기타" && PlayerPrefs.GetString("inst33") == "isSold")
+        else if (btnName == "기타" && PlayerPrefs.GetString("inst3") == "isSold")
         {
             btnImage.sprite = instSprite;
         }
 
-        else if (btnName == "디지털 피아노" && PlayerPrefs.GetString("inst44") == "isSold")
+        else if (btnName == "일렉 기타" && PlayerPrefs.GetString("inst4") == "isSold")
         {
             btnImage.sprite = instSprite;
         }
 
-        else if (btnName == "신디사이저" && PlayerPrefs.GetString("inst55") == "isSold")
+        else if (btnName == "바이올린" && PlayerPrefs.GetString("inst5") == "isSold")
         {
             btnImage.sprite = instSprite;
         }
 
-        else if (btnName == "드럼" && PlayerPrefs.GetString("inst66") == "isSold")
+        else if (btnName == "첼로" && PlayerPrefs.GetString("inst6") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "디지털 피아노" && PlayerPrefs.GetString("inst7") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "가야금" && PlayerPrefs.GetString("inst8") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "신디사이저" && PlayerPrefs.GetString("inst9") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "드럼" && PlayerPrefs.GetString("inst10") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "하프" && PlayerPrefs.GetString("inst11") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "호른" && PlayerPrefs.GetString("inst12") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "박수" && PlayerPrefs.GetString("inst13") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "플루트" && PlayerPrefs.GetString("inst14") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "EasyOne" && PlayerPrefs.GetString("inst15") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "Young's HanD" && PlayerPrefs.GetString("inst16") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "레이디 테넌트" && PlayerPrefs.GetString("inst17") == "isSold")
         {
             btnImage.sprite = instSprite;
         }

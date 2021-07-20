@@ -13,43 +13,90 @@ MonoBehaviour:
   m_Name: MICSO
   m_EditorClassIdentifier: 
   mics:
-  - micName: "\uB178\uB798\uBC29 \uB9C8\uC774\uD06C"
+  - micName: "\uC4F0\uB808\uAE30\uD1B5\uC5D0\uC11C \uC8FC\uC6B4 \uB9C8\uC774\uD06C"
     micSprite: {fileID: 8452619466554995066, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
     money: 0
     moneyPerSec: 0
-    popular: 0
+    popular: 10
+    info: "\uC791\uB3D9\uB418\uB294 \uB9C8\uC774\uD06C\uB97C \uAD6C\uD55C \uAC8C
+      \uAE30\uC801\uC774\uB2E4."
+  - micName: "\uBF40\uB85C\uB85C \uB9C8\uC774\uD06C"
+    micSprite: {fileID: 7451204014267456462, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 500000
+    moneyPerSec: 70
+    popular: 1
+    info: "5\uC0B4 \uB54C\uC758 \uAFC8\uC774 \uB418\uC0B4\uC544\uB09C\uB2E4. \uC2EC\uC9C0\uC5B4
+      \uB9C8\uC774\uD06C\uC5D0\uC11C \uBE5B\uC774 \uB09C\uB2E4!"
+  - micName: "\uB178\uB798\uBC29\uC5D0\uC11C \uAC00\uC838\uC628 \uB9C8\uC774\uD06C"
+    micSprite: {fileID: 4972750709050344076, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 1000000
+    moneyPerSec: 0
+    popular: 1
     info: "\uB178\uB798\uBC29 \uB9C8\uC774\uD06C\uC774\uB2E4. \uB178\uB798\uBC29\uC5D0\uC11C
       \uC8FC\uC6CC\uC654\uB2E4."
-  - micName: "\uB2E4\uC774\uB098\uBBF9 \uB9C8\uC774\uD06C"
-    micSprite: {fileID: 7451204014267456462, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
-    money: 50000
-    moneyPerSec: 5
-    popular: 1
-    info: "\uB2E4\uC774\uB098\uBBF9 \uB9C8\uC774\uD06C. \uC5ED\uB3D9\uC801\uC778
-      \uB9C8\uC774\uD06C\uC774\uB2E4."
+  - micName: "\uB9E4\uC6B0 \uC911\uACE0 \uB9C8\uC774\uD06C"
+    micSprite: {fileID: 2787171706449710577, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 500000
+    moneyPerSec: 70
+    popular: 2
+    info: "\uC5B4\uB5BB\uAC8C \uB3C8\uC744 \uBAA8\uC544\uC11C \uB9C8\uB828\uD55C\r
+      \uCCAB \uC815\uC2DD \uB9C8\uC774\uD06C.\r \uC57C\u2026\uC6B0\uB0D0..?"
+  - micName: "\uC880 \uC88B\uC544 \uBCF4\uC774\uB294 \uB9C8\uC774\uD06C"
+    micSprite: {fileID: 280514421296183019, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 2900000
+    moneyPerSec: 70
+    popular: 3
+    info: "\uC804 \uC0AC\uC6A9\uC790\uAC00 \uC798 \uAD00\uB9AC\uD55C \uB355\uBD84\uC5D0\r
+      \uB9E4\uC6B0 \uC88B\uC740 \uC131\uB2A5\uC744 \uBC1C\uD718\uD558\uB294 \uB9C8\uC774\uD06C\r."
   - micName: GG157
-    micSprite: {fileID: 4972750709050344076, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    micSprite: {fileID: 8624745011601708625, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
     money: 130000
     moneyPerSec: 13
-    popular: 3
-    info: '157157 157157 157 175 175175 '
-  - micName: "\uCF58\uB374\uC11C \uB9C8\uC774\uD06C"
-    micSprite: {fileID: 2787171706449710577, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
-    money: 280000
-    moneyPerSec: 28
     popular: 4
-    info: "\uCF54\uB124\uB374\uC11C \uB9C8\uC774\uD06C\uC774\uB2E4. \uCF54\uCF54\uCF54
-      \uCF54\uC9C0\uB9C8!"
-  - micName: "\uC778\uC774\uC5B4 \uB9C8\uC774\uD06C"
-    micSprite: {fileID: 280514421296183019, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
-    money: 410000
-    moneyPerSec: 41
-    popular: 4
-    info: "\uC778\uC774\uC5B4 \uB9C8\uC774\uD06C\uC774\uB2E4. \uC778\u3147\uC774\uC5B4
-      \uB9C8\uC774\uD06C\uC774\uB2E4. \uC778\u3134\uC774\u3153!"
-  - micName: "\uB9C8\uC774\uC2A4\uD2B8\uB85C"
-    micSprite: {fileID: 8624745011601708625, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
-    money: 800000
+    info: "\uD0A4\uAC00 157\uC778 \uC0AC\uB78C\uC774 \uC774 \uB9C8\uC774\uD06C\uB97C
+      \uC0AC\uC6A9\uD560 \uC2DC\r \uC138\uC0C1\uC740 \uBA78\uB9DD\uD55C\uB2E4.\r"
+  - micName: "\uBC29\uC1A1\uC6A9 \uB9C8\uC774\uD06C"
+    micSprite: {fileID: -309648276017634612, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 5000000
+    moneyPerSec: 70
+    popular: 5
+    info: "\uD604\uC9C1 \uC778\uD130\uB137 \uBC29\uC1A1\uC778\uC774\r \uD32C\uC2EC\uC5D0
+      \uBCF4\uB0B4\uC900 \uB9C8\uC774\uD06C.\r \uC790\uC2E0\uAC10\uC774 \uC0DD\uAE34\uB2E4!\r"
+  - micName: "\uC544\uC774\uB3CC\uC774 \uC4F8 \uBC95\uD55C \uB9C8\uC774\uD06C"
+    micSprite: {fileID: -356786629041237231, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 8700000
+    moneyPerSec: 70
+    popular: 7
+    info: "\uBC29\uC1A1\uC5D0\uC11C\uB9CC \uBCF4\uB358 \uC544\uC774\uB3CC\uB4E4\uC774\r
+      \uADC0\uC5D0 \uAF42\uACE0 \uB098\uC624\uB294 \uB9C8\uC774\uD06C\uC774\uB2E4.\r
+      \uBAB8\uCE58 \uD0C8\uCD9C\uC778\uAC00..?\r"
+  - micName: "Shiba\u2019s VoicE"
+    micSprite: {fileID: -3594602119323134721, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 12000000
+    moneyPerSec: 70
+    popular: 8
+    info: "\uBAA9\uC18C\uB9AC\uAC00 \uC2DC\uBC14\uACAC\uC774 \uB418\uACE0\r \uC774
+      \uC18C\uB9AC\uB97C \uB4E3\uB294 \uC0AC\uB78C\uC740\r \uC5C9\uB369\uC774\uB97C
+      \uB9CC\uC9C0\uB7EC \uC628\uB2E4\uACE0 \uD55C\uB2E4.\r"
+  - micName: "\uC2A4\uD29C\uB514\uC624 \uB9C8\uC774\uD06C"
+    micSprite: {fileID: -9205479780241013318, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 12000000
+    moneyPerSec: 70
+    popular: 9
+    info: "\uAC00\uC218, \uB798\uD37C \uB4E4\uC774 \uC2A4\uD29C\uB514\uC624\uC5D0\uC11C\r
+      \uB179\uC74C\uD560 \uB54C \uC4F0\uB294 \uB9C8\uC774\uD06C.\r \uC810\uC810 \uB300\uAE30\uC5C5\uC774
+      \uB3FC\uAC04\uB2E4.\r"
+  - micName: "The Angel\u2019s Ring"
+    micSprite: {fileID: 651997100344890996, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 12000000
     moneyPerSec: 70
     popular: 10
-    info: "\uB9C8\uC774\uC2A4\uD2C0\uB294 \u3134\uC601\uC5B4\uB85C \uB9C8\uC774\uC2A4\uD2B8\uB85C"
+    info: "\uB3D9\uADF8\uB780 \uB9C1 \uB9C8\uC774\uD06C. \r\uC131\uC545 \uAC19\uC740
+      \uC5D0\uCF54\uAC00 \uC0DD\uAE30\uACE0\r \uB4E4\uC73C\uBA74 \uACBD\uAC74\uD574\uC9C4\uB2E4.\r"
+  - micName: "\uBAA9\uC18C\uB9AC"
+    micSprite: {fileID: 134015361769854207, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
+    money: 151515151
+    moneyPerSec: 70
+    popular: 15
+    info: "\uB3D9\uADF8\uB780 \uB9C1 \uB9C8\uC774\uD06C. \r\uC131\uC545 \uAC19\uC740
+      \uC5D0\uCF54\uAC00 \uC0DD\uAE30\uACE0\r \uB4E4\uC73C\uBA74 \uACBD\uAC74\uD574\uC9C4\uB2E4.\r"

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class StatusPlayerMIC : MonoBehaviour
 {
     [SerializeField]
-    Sprite kara, dyn, gg157, con, year, mi;
+    Sprite gar, pororo, kara, used, well, gg157, broad, idol, shiba, studio, angel, voice;
 
     Image image;
 
@@ -18,31 +18,55 @@ public class StatusPlayerMIC : MonoBehaviour
 
     public void ChangeSprite()
     {
-        Debug.Log(PlayerPrefs.GetString("pm", "노래방 마이크"));
-        switch (PlayerPrefs.GetString("pm", "노래방 마이크"))
+        Debug.Log(PlayerPrefs.GetString("pm", "쓰레기통에서 주운 마이크"));
+        switch (PlayerPrefs.GetString("pm", "쓰레기통에서 주운 마이크"))
         {
-            case "노래방 마이크":
+            case "쓰레기통에서 주운 마이크":
+                image.sprite = gar;
+                break;
+
+            case "뽀로로 마이크":
+                image.sprite = pororo;
+                break;
+
+            case "노래방에서 가져온 마이크":
                 image.sprite = kara;
                 break;
 
-            case "다이나믹 마이크":
-                image.sprite = dyn;
+            case "매우 중고 마이크":
+                image.sprite = used;
+                break;
+
+            case "좀 좋아 보이는 마이크":
+                image.sprite = well;
                 break;
 
             case "GG157":
                 image.sprite = gg157;
                 break;
 
-            case "콘덴서 마이크":
-                image.sprite = con;
+            case "방송용 마이크":
+                image.sprite = broad;
                 break;
 
-            case "인이어 마이크":
-                image.sprite = year;
+            case "아이돌이 쓸 법한 마이크":
+                image.sprite = idol;
                 break;
 
-            case "마이스트로":
-                image.sprite = mi;
+            case "Shiba's VoicE":
+                image.sprite = shiba;
+                break;
+
+            case "스튜디오 마이크":
+                image.sprite = studio;
+                break;
+
+            case "The Angel's Ring":
+                image.sprite = angel;
+                break;
+
+            case "목소리":
+                image.sprite = voice;
                 break;
         }
     }

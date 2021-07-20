@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     private Text moneyText, timeText, statusText, oneClickText, plusMoneyText, playerStatusText;
 
     [SerializeField]
-    Camera mainCamera;
+    Camera mainCamera, statusCamera, storeCamera, settingCamera;
 
     [SerializeField]
     private GameObject coinPrefab;
@@ -59,6 +59,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private Image mainBtnimage, statusBtnimage, storeBtnimage, settingBtnimage;
+    [SerializeField]
+    private Canvas main, status, store, setting;
 
     private List<Image> btnObjs = new List<Image>();
 
@@ -95,6 +97,7 @@ public class GameManager : MonoBehaviour
         playerMusic = PlayerPrefs.GetString("pmusic", "A Little Ghost");
         SetBtnList();
         UpdateUI();
+        OnClickMain();
     }
 
     private void Update()
@@ -119,14 +122,14 @@ public class GameManager : MonoBehaviour
 
         playerStatusText.text = string.Format("{0}", playerStatus);
         moneyText.text = string.Format("₩:{0}원", playerMoney);
-        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n5초당 획든 돈: {1}원\n자본금: {2}원\n인기도: {3}\n현재상태: {4}", oneClickMoney, timeMoney, playerMoney, popular, playerStatus);
+        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n5초당 획든 돈: {1}원\n자본금: {2}원\n인기도: {3}", oneClickMoney, timeMoney, playerMoney, popular/*, playerStatus*/);
         oneClickText.text = string.Format("Click-{0}", oneClickMoney);
         timeText.text = string.Format("5Sec-{0}", timeMoney);
     }
 
     private void PlayerStatus()
     {
-        if(playerMoney < 100000)
+        if (playerMoney < 100000)
         {
             playerStatus = "거지음악가";
         }
@@ -181,46 +184,74 @@ public class GameManager : MonoBehaviour
         buyMICPopupImage.SetActive(false);
         buyPopupImage.SetActive(false);
     }
+    private void SetActiveCamera(bool isTrue)
+    {
+        if (!isTrue)
+        {
+            mainCamera.gameObject.SetActive(false);
+            statusCamera.gameObject.SetActive(false);
+            storeCamera.gameObject.SetActive(false);
+            settingCamera.gameObject.SetActive(false);
+        }
+    }
+
+    private void SetActiveCanvas(bool isTrue)
+    {
+        if(!isTrue)
+        {
+            main.gameObject.SetActive(false);
+            status.gameObject.SetActive(false);
+            store.gameObject.SetActive(false);
+            setting.gameObject.SetActive(false);
+        }
+    }
+
     public void OnClickMain()
     {
         PlayerMusic();
-        if (clickCnt == 2005)
-            moneyText.text = string.Format("유하준 왔다감");
-        mainCamera.transform.position = new Vector2(-20f, 0f);
+
+        SetActiveCamera(false);
+        SetActiveCanvas(false);
+        mainCamera.gameObject.SetActive(true);
+        main.gameObject.SetActive(true);
         player.PlayerActive();
-        clickCnt++;
     }
 
     public void OnClickStatus()
     {
         PlayerMusic();
 
-        mainCamera.transform.position = new Vector2(-15f, 0f);
+        SetActiveCamera(false);
+        SetActiveCanvas(false);
+        statusCamera.gameObject.SetActive(true);
+        status.gameObject.SetActive(true);
         player.PlayerInactive();
-        clickCnt *= 2;
+    }
+
+    public void OnClickStore()
+    {
+        SetActiveCamera(false);
+        SetActiveCanvas(false);
+        storeCamera.gameObject.SetActive(true);
+        store.gameObject.SetActive(true);
+        player.PlayerInactive();
+    }
+
+    public void OnClickSetting()
+    {
+        PlayerMusic();
+
+        SetActiveCamera(false);
+        SetActiveCanvas(false);
+        settingCamera.gameObject.SetActive(true);
+        setting.gameObject.SetActive(true);
+        player.PlayerInactive();
     }
 
     public void InactiveChoosePopup()
     {
         choosePopup.SetActive(false);
     }
-    
-    public void OnClickStore()
-    {
-        mainCamera.transform.position = new Vector2(-10f, 0f);
-        player.PlayerInactive();
-        clickCnt *= 2;
-    }
-
-    public void OnClickSetting()
-    {
-        PlayerMusic();
-        
-        mainCamera.transform.position = new Vector2(-5f, 0f);
-        player.PlayerInactive();
-        clickCnt += 1000;
-    }
-
     public void OnClickAudition()
     {
         SceneManager.LoadScene("Audition");
@@ -243,7 +274,7 @@ public class GameManager : MonoBehaviour
 
     public void BuyPopupActive()
     {
-        if(buyMusicPopupImage.activeSelf)
+        if (buyMusicPopupImage.activeSelf)
         {
             SoundManager.instance.StopMusic();
         }
@@ -264,7 +295,7 @@ public class GameManager : MonoBehaviour
 
     public void InstPanel(string panelName)
     {
-        for(int i = 0; i<buttonsParent.transform.childCount; i++)
+        for (int i = 0; i < buttonsParent.transform.childCount; i++)
         {
             buttonsParent.transform.GetChild(i).GetComponentInChildren<Image>().color = Color.white;
         }
@@ -277,7 +308,7 @@ public class GameManager : MonoBehaviour
             buttonsParent.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color32(255, 245, 184, 255);
         }
 
-        else if(panelName == "마이크")
+        else if (panelName == "마이크")
         {
             instPanel.SetActive(false);
             micPanel.SetActive(true);
@@ -285,7 +316,7 @@ public class GameManager : MonoBehaviour
             buttonsParent.transform.GetChild(1).GetComponentInChildren<Image>().color = new Color32(255, 245, 184, 255);
         }
 
-        else if(panelName == "음악")
+        else if (panelName == "음악")
         {
             instPanel.SetActive(false);
             micPanel.SetActive(false);
@@ -303,13 +334,13 @@ public class GameManager : MonoBehaviour
     private void TimePerMoney()
     {
         timer += Time.deltaTime;
-        if (timer >= 5 )
+        if (timer >= 5)
         {
-            Debug.Log(timeMoney);
-            if(mainCamera.transform.position == new Vector3(-20f, 0f, -0))
+            if (main.gameObject.activeSelf)
             {
                 StartCoroutine(PlusMoney());
             }
+
             AddMoney(timeMoney);
             timer = 0;
         }
@@ -319,13 +350,13 @@ public class GameManager : MonoBehaviour
     {
         float randomX;
 
-        for (int i = 0; i<timeMoney/5;i++)
+        for (int i = 0; i < timeMoney / 5; i++)
         {
             randomX = Random.Range(-20.3f, -19.6f);
             Instantiate(coinPrefab);
             coinPrefab.gameObject.transform.position = new Vector2(randomX, 4f);
             yield return new WaitForSeconds(0.01f);
         }
-            yield break;
+        yield break;
     }
 }

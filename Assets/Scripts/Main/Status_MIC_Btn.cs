@@ -39,32 +39,57 @@ public class Status_MIC_Btn : MonoBehaviour
     {
         if (btnName == null) return;
 
-        if (btnName == "다이나믹 마이크" && PlayerPrefs.GetString("mic1") == "isSold")
+        else if (btnName == "뽀로로 마이크" && PlayerPrefs.GetString("mic2") == "isSold")
         {
             btnImage.sprite = instSprite;
         }
 
-        else if (btnName == "GG157" && PlayerPrefs.GetString("mic2") == "isSold")
+        else if (btnName == "노래방에서 가져온 마이크" && PlayerPrefs.GetString("mic3") == "isSold")
         {
             btnImage.sprite = instSprite;
         }
 
-        else if (btnName == "콘덴서 마이크" && PlayerPrefs.GetString("mic3") == "isSold")
+        else if (btnName == "매우 중고 마이크" && PlayerPrefs.GetString("mic4") == "isSold")
         {
             btnImage.sprite = instSprite;
         }
 
-        else if (btnName == "인이어 마이크" && PlayerPrefs.GetString("mic4") == "isSold")
+        else if (btnName == "좀 좋아 보이는 마이크" && PlayerPrefs.GetString("mic5") == "isSold")
         {
             btnImage.sprite = instSprite;
         }
 
-        else if (btnName == "마이스트로" && PlayerPrefs.GetString("mic5") == "isSold")
+        else if (btnName == "GG157" && PlayerPrefs.GetString("mic6") == "isSold")
         {
             btnImage.sprite = instSprite;
         }
 
-        else if (btnName == "드럼" && PlayerPrefs.GetString("inst66") == "isSold")
+        else if (btnName == "방송용 마이크" && PlayerPrefs.GetString("mic7") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "아이돌이 쓸 법한 마이크" && PlayerPrefs.GetString("mic8") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "Shiba's VoicE" && PlayerPrefs.GetString("mic9") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "스튜디오 마이크" && PlayerPrefs.GetString("mic10") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "The Angel's Ring" && PlayerPrefs.GetString("mic11") == "isSold")
+        {
+            btnImage.sprite = instSprite;
+        }
+
+        else if (btnName == "목소리" && PlayerPrefs.GetString("mic12") == "isSold")
         {
             btnImage.sprite = instSprite;
         }
@@ -72,7 +97,6 @@ public class Status_MIC_Btn : MonoBehaviour
 
     public void SelectChoose()
     {
-        
         choosePopup.SetActive(false);
 
         PlayerPrefs.SetString("pm", btnName);
