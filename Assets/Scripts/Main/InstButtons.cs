@@ -319,11 +319,16 @@ public class InstButtons : MonoBehaviour
         int productMoney;
         string productName;
         int productPopular;
+
         productMoney = int.Parse(moneyText.text);
         productName = nameText.text;
         productPopular = int.Parse(popularText.text);
 
-        if (GameManager.Instance.playerMoney - productMoney <= 0) return;
+        if (GameManager.Instance.playerMoney - productMoney <= 0)
+        {
+            SoundManager.instance.ErrorSound();
+            return;
+        }
 
         BuyPopup.SetActive(false);
 
@@ -334,5 +339,6 @@ public class InstButtons : MonoBehaviour
         ChangeData(productName);
         CheckData();
         GameManager.Instance.UpdateUI();
+        SoundManager.instance.CashSound();
     }
 }

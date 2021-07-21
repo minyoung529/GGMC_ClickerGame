@@ -97,6 +97,7 @@ public class GameManager : MonoBehaviour
         playerMusic = PlayerPrefs.GetString("pmusic", "A Little Ghost");
         SetBtnList();
         UpdateUI();
+
         OnClickMain();
     }
 
@@ -141,12 +142,22 @@ public class GameManager : MonoBehaviour
 
         else if (playerMoney < 1000000)
         {
-            playerStatus = "어엿한음악가";
+            playerStatus = "뒷골목 주름잡는 음악가";
         }
 
         else if (playerMoney < 10000000)
         {
-            playerStatus = "부자음악가";
+            playerStatus = "여엇한 음악가";
+        }
+
+        else if (playerMoney < 15000000)
+        {
+            playerStatus = "당당한 음악가";
+        }
+
+        else if (playerMoney < 30000000)
+        {
+            playerStatus = "짱쎈 음악가";
         }
 
         else
@@ -184,6 +195,7 @@ public class GameManager : MonoBehaviour
         buyMICPopupImage.SetActive(false);
         buyPopupImage.SetActive(false);
     }
+
     private void SetActiveCamera(bool isTrue)
     {
         if (!isTrue)
@@ -197,7 +209,7 @@ public class GameManager : MonoBehaviour
 
     private void SetActiveCanvas(bool isTrue)
     {
-        if(!isTrue)
+        if (!isTrue)
         {
             main.gameObject.SetActive(false);
             status.gameObject.SetActive(false);
@@ -209,31 +221,22 @@ public class GameManager : MonoBehaviour
     public void OnClickMain()
     {
         PlayerMusic();
+        MainButton(main, mainCamera, mainBtnimage);
 
-        SetActiveCamera(false);
-        SetActiveCanvas(false);
-        mainCamera.gameObject.SetActive(true);
-        main.gameObject.SetActive(true);
         player.PlayerActive();
     }
 
     public void OnClickStatus()
     {
         PlayerMusic();
+        MainButton(status, statusCamera, statusBtnimage);
 
-        SetActiveCamera(false);
-        SetActiveCanvas(false);
-        statusCamera.gameObject.SetActive(true);
-        status.gameObject.SetActive(true);
         player.PlayerInactive();
     }
 
     public void OnClickStore()
     {
-        SetActiveCamera(false);
-        SetActiveCanvas(false);
-        storeCamera.gameObject.SetActive(true);
-        store.gameObject.SetActive(true);
+        MainButton(store, storeCamera, storeBtnimage);
         player.PlayerInactive();
     }
 
@@ -241,11 +244,18 @@ public class GameManager : MonoBehaviour
     {
         PlayerMusic();
 
+        MainButton(setting, settingCamera, settingBtnimage);
+        player.PlayerInactive();
+    }
+
+    public void MainButton(Canvas mainImage, Camera camera, Image btnImage)
+    {
         SetActiveCamera(false);
         SetActiveCanvas(false);
-        settingCamera.gameObject.SetActive(true);
-        setting.gameObject.SetActive(true);
-        player.PlayerInactive();
+        AllBtnSetColor();
+        SetButtonColor(btnImage);
+        mainImage.gameObject.SetActive(true);
+        camera.gameObject.SetActive(true);
     }
 
     public void InactiveChoosePopup()
@@ -263,6 +273,19 @@ public class GameManager : MonoBehaviour
         btnObjs.Add(storeBtnimage);
         btnObjs.Add(statusBtnimage);
         btnObjs.Add(settingBtnimage);
+    }
+
+    public void AllBtnSetColor()
+    {
+        mainBtnimage.color = Color.white;
+        storeBtnimage.color = Color.white;
+        statusBtnimage.color = Color.white;
+        settingBtnimage.color = Color.white;
+    }
+
+    public void SetButtonColor(Image button)
+    {
+        button.color = Color.gray;
     }
 
     public void Min(int minmoney)
@@ -283,7 +306,6 @@ public class GameManager : MonoBehaviour
         buyMICPopupImage.SetActive(false);
         buyMusicPopupImage.SetActive(false);
     }
-
 
     public void ClickArea()
     {
@@ -336,7 +358,7 @@ public class GameManager : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 5)
         {
-            if (main.gameObject.activeSelf)
+            if (main.gameObject.activeSelf && timeMoney > 4)
             {
                 StartCoroutine(PlusMoney());
             }
@@ -357,6 +379,8 @@ public class GameManager : MonoBehaviour
             coinPrefab.gameObject.transform.position = new Vector2(randomX, 4f);
             yield return new WaitForSeconds(0.01f);
         }
+
+        SoundManager.instance.CashSound();
         yield break;
     }
 }

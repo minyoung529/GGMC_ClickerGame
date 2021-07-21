@@ -238,7 +238,11 @@ public class MICButtons : MonoBehaviour
 
         Debug.Log(productMoney);
 
-        if (GameManager.Instance.playerMoney - productMoney <= 0) return;
+        if (GameManager.Instance.playerMoney - productMoney <= 0)
+        {
+            SoundManager.instance.ErrorSound();
+            return;
+        }
 
         BuyPopup.SetActive(false);
 
@@ -249,5 +253,6 @@ public class MICButtons : MonoBehaviour
         ChangeData(productName);
         CheckData();
         GameManager.Instance.UpdateUI();
+        SoundManager.instance.CashSound();
     }
 }

@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class StatusPlayerInst : MonoBehaviour
 {
     [SerializeField]
-    Sprite cas, tam, gui, egui, epia, syn, drum;
+    private Sprite cas, tam, ggang, gui, egui, vi, cel, epia, gaya, syn, drum, harp, horn, clap, flute, easyone, young, lady;
 
-    Image image;
+    private Image image;
     private void Awake()
     {
         image = GetComponent<Image>();

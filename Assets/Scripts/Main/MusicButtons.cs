@@ -284,7 +284,11 @@ public class MusicButtons : MonoBehaviour
         productMoney = int.Parse(moneyText.text);
         productName = nameText.text;
 
-        if (GameManager.Instance.playerMoney - productMoney <= 0) return;
+        if (GameManager.Instance.playerMoney - productMoney <= 0)
+        {
+            SoundManager.instance.ErrorSound();
+            return;
+        }
 
         BuyPopup.SetActive(false);
 
@@ -296,5 +300,6 @@ public class MusicButtons : MonoBehaviour
         CheckData();
         GameManager.Instance.UpdateUI();
         SoundManager.instance.PlayMusic(PlayerPrefs.GetString("pmusic", "A Little Ghost"));
+        SoundManager.instance.CashSound();
     }
 }

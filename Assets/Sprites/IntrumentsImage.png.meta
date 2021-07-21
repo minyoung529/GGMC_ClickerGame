@@ -44,6 +44,39 @@ TextureImporter:
   - first:
       213: -4024010728884976414
     second: IntrumentsImage_13
+  - first:
+      213: 6930473330248566812
+    second: IntrumentsImage_14
+  - first:
+      213: 8900009276820549211
+    second: IntrumentsImage_15
+  - first:
+      213: -1418001009523880046
+    second: IntrumentsImage_16
+  - first:
+      213: -4946316400098061712
+    second: IntrumentsImage_17
+  - first:
+      213: -1559932232829703081
+    second: IntrumentsImage_18
+  - first:
+      213: 4949931218219964871
+    second: IntrumentsImage_19
+  - first:
+      213: 108810550518320614
+    second: IntrumentsImage_20
+  - first:
+      213: 657779070299276869
+    second: IntrumentsImage_21
+  - first:
+      213: -6335064608242071198
+    second: IntrumentsImage_22
+  - first:
+      213: -7416992765819113948
+    second: IntrumentsImage_23
+  - first:
+      213: 2849281588143775959
+    second: IntrumentsImage_24
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -148,10 +181,10 @@ TextureImporter:
       name: IntrumentsImage_0
       rect:
         serializedVersion: 2
-        x: 311
-        y: 1061
-        width: 313
-        height: 313
+        x: 26
+        y: 1891
+        width: 312
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +202,10 @@ TextureImporter:
       name: IntrumentsImage_1
       rect:
         serializedVersion: 2
-        x: 649
-        y: 1061
+        x: 369
+        y: 1897
         width: 312
-        height: 313
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +223,10 @@ TextureImporter:
       name: IntrumentsImage_2
       rect:
         serializedVersion: 2
-        x: 986
-        y: 1061
+        x: 695
+        y: 1899
         width: 313
-        height: 313
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +244,10 @@ TextureImporter:
       name: IntrumentsImage_3
       rect:
         serializedVersion: 2
-        x: 1322
-        y: 1061
-        width: 313
-        height: 313
+        x: 1031
+        y: 1897
+        width: 312
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +265,10 @@ TextureImporter:
       name: IntrumentsImage_4
       rect:
         serializedVersion: 2
-        x: 1666
-        y: 1061
+        x: 1364
+        y: 1899
         width: 312
-        height: 313
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +286,10 @@ TextureImporter:
       name: IntrumentsImage_5
       rect:
         serializedVersion: 2
-        x: 2002
-        y: 1061
+        x: 1702
+        y: 1900
         width: 312
-        height: 313
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,9 +307,9 @@ TextureImporter:
       name: IntrumentsImage_6
       rect:
         serializedVersion: 2
-        x: 312
-        y: 722
-        width: 311
+        x: 2048
+        y: 1886
+        width: 312
         height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -295,9 +328,9 @@ TextureImporter:
       name: IntrumentsImage_7
       rect:
         serializedVersion: 2
-        x: 652
-        y: 721
-        width: 312
+        x: 2403
+        y: 1897
+        width: 313
         height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -316,10 +349,10 @@ TextureImporter:
       name: IntrumentsImage_8
       rect:
         serializedVersion: 2
-        x: 2002
-        y: 725
-        width: 311
-        height: 311
+        x: 2747
+        y: 1897
+        width: 312
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +370,10 @@ TextureImporter:
       name: IntrumentsImage_9
       rect:
         serializedVersion: 2
-        x: 354
-        y: 449
-        width: 211
-        height: 214
+        x: 19
+        y: 1556
+        width: 312
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +391,10 @@ TextureImporter:
       name: IntrumentsImage_10
       rect:
         serializedVersion: 2
-        x: 684
-        y: 450
-        width: 221
-        height: 210
+        x: 366
+        y: 1557
+        width: 312
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,10 +412,10 @@ TextureImporter:
       name: IntrumentsImage_11
       rect:
         serializedVersion: 2
-        x: 996
-        y: 436
-        width: 166
-        height: 253
+        x: 712
+        y: 1557
+        width: 312
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,10 +433,10 @@ TextureImporter:
       name: IntrumentsImage_12
       rect:
         serializedVersion: 2
-        x: 1206
-        y: 472
-        width: 382
-        height: 76
+        x: 1066
+        y: 1566
+        width: 312
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,10 +454,10 @@ TextureImporter:
       name: IntrumentsImage_13
       rect:
         serializedVersion: 2
-        x: 2282
-        y: 54
-        width: 463
-        height: 285
+        x: 1412
+        y: 1566
+        width: 312
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,6 +467,237 @@ TextureImporter:
       bones: []
       spriteID: 2e4437cef87d728c0800000000000000
       internalID: -4024010728884976414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_14
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 1541
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18c8ce46ccfd2060800000000000000
+      internalID: 6930473330248566812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_15
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 1550
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ee192784f238b70800000000000000
+      internalID: 8900009276820549211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_16
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 1550
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f0f20489f325ce0800000000000000
+      internalID: -1418001009523880046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_17
+      rect:
+        serializedVersion: 2
+        x: 2858
+        y: 1543
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0725779d0772b5bb0800000000000000
+      internalID: -4946316400098061712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_18
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1261
+        width: 221
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ce08c26e10a5ae0800000000000000
+      internalID: -1559932232829703081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_19
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1249
+        width: 211
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c91e949730b1b440800000000000000
+      internalID: 4949931218219964871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_20
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1299
+        width: 248
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed85738e92928100800000000000000
+      internalID: 108810550518320614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_21
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1209
+        width: 166
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54600e15496e02900800000000000000
+      internalID: 657779070299276869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_22
+      rect:
+        serializedVersion: 2
+        x: 2134
+        y: 1351
+        width: 382
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269059cad445518a0800000000000000
+      internalID: -6335064608242071198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_23
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 1208
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ea5bb506c811990800000000000000
+      internalID: -7416992765819113948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntrumentsImage_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 113
+        width: 463
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0ee5e128eaa8720800000000000000
+      internalID: 2849281588143775959
       vertices: []
       indices: 
       edges: []

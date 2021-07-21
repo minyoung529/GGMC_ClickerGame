@@ -17,13 +17,18 @@ public class SoundManager : MonoBehaviour
     }
     #endregion
 
-    AudioSource audioSource;
+    private AudioSource audioSource;
+    [SerializeField]
+    private AudioSource effect;
     [SerializeField]
     AudioClip aLittleGhost, spring, summerStorm, nightyNight;
     [SerializeField]
     AudioClip adventure, peacefulVil, bellTower, error, lawn, exploration, happyMemories;
     [SerializeField]
     AudioClip nightWalk, recess, unknown, whirlpool;
+
+    [SerializeField]
+    AudioClip mainButton, blop, cash, errorSound, convert;
     private string playerMusic;
 
     void Start()
@@ -109,5 +114,30 @@ public class SoundManager : MonoBehaviour
 
         playerMusic = PlayerPrefs.GetString("pmusic", "A Little Ghost");
         PlayMusic(playerMusic);
+    }
+
+    public void MainButtonSound()
+    {
+        effect.PlayOneShot(mainButton);
+    }
+
+    public void BlopSound()
+    {
+        effect.PlayOneShot(blop);
+    }
+
+    public void CashSound()
+    {
+        effect.PlayOneShot(cash);
+    }
+
+    public void ErrorSound()
+    {
+        effect.PlayOneShot(errorSound);
+    }
+
+    public void ConvertSound()
+    {
+        effect.PlayOneShot(convert);
     }
 }

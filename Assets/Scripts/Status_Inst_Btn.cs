@@ -132,7 +132,6 @@ public class Status_Inst_Btn : MonoBehaviour
 
     public void SelectChoose()
     {
-        if (btnImage.sprite == instEnabled) return;
         choosePopup.SetActive(false);
 
         PlayerPrefs.SetString("pi", btnName);
