@@ -18,8 +18,8 @@ public class MainPlayerInst : MonoBehaviour
 
     public void ChangeSprite()
     {
-        string instName = PlayerPrefs.GetString("pi", "꽹과리");
-        instName = "플루트";
+        string instName = PlayerPrefs.GetString("pi", "캐스터네츠");
+        //instName = "플루트";
         switch (instName)
         {
             case "캐스터네츠":

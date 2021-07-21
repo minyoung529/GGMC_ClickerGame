@@ -65,7 +65,6 @@ public class GameManager : MonoBehaviour
     private List<Image> btnObjs = new List<Image>();
 
     private int oneClickMoney;
-    private int clickCnt = 0;
     public int playerMoney;
     private int popular;
     private int timeMoney;
@@ -82,6 +81,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Screen.SetResolution(1440, 2960, true);
         player = FindObjectOfType<Player>();
         statusPlayerInst = FindObjectOfType<StatusPlayerInst>();
         mainPlayerInst = FindObjectOfType<MainPlayerInst>();
@@ -114,7 +114,7 @@ public class GameManager : MonoBehaviour
     public void UpdateUI()
     {
         oneClickMoney = PlayerPrefs.GetInt("onc2", 1);
-        timeMoney = PlayerPrefs.GetInt("micPS", 1) + PlayerPrefs.GetInt("instPS", 1) + PlayerPrefs.GetInt("musicPS", 1);
+        timeMoney = PlayerPrefs.GetInt("micPS", 0) + PlayerPrefs.GetInt("instPS", 1) + PlayerPrefs.GetInt("musicPS", 1);
         playerInstrument = PlayerPrefs.GetString("pi", "캐스터네츠");
         popular = PlayerPrefs.GetInt("p1", 0);
 
