@@ -9,11 +9,13 @@ public class GameManager : MonoBehaviour
     #region
     public static GameManager Instance;
     public Player player;
-    public string playerInstrument;
+    private string playerInstrument;
 
-    [Header("텍스트")]
     [SerializeField]
-    private Text moneyText, timeText, statusText, oneClickText, plusMoneyText, playerStatusText;
+    Image auditionPopup;
+
+    [SerializeField]
+    private Text moneyText, timeText, statusText, oneClickText, playerStatusText;
 
     [SerializeField]
     Camera mainCamera, statusCamera, storeCamera, settingCamera;
@@ -262,10 +264,6 @@ public class GameManager : MonoBehaviour
     {
         choosePopup.SetActive(false);
     }
-    public void OnClickAudition()
-    {
-        SceneManager.LoadScene("Audition");
-    }
 
     private void SetBtnList()
     {
@@ -372,7 +370,22 @@ public class GameManager : MonoBehaviour
     {
         float randomX;
 
-        for (int i = 0; i < timeMoney / 5; i++)
+        timeMoney = PlayerPrefs.GetInt("micPS", 0) + PlayerPrefs.GetInt("instPS", 1) + PlayerPrefs.GetInt("musicPS", 1);
+
+        if (timeMoney > 500)
+        {
+            for (int i = 0; i < timeMoney / 100; i++)
+            {
+                randomX = Random.Range(-20.3f, -19.6f);
+                Instantiate(coinPrefab);
+                coinPrefab.gameObject.transform.position = new Vector2(randomX, 4f);
+                yield return new WaitForSeconds(0.01f);
+            }
+            SoundManager.instance.CashSound();
+            yield break;
+        }
+
+        for (int i = 0; i < timeMoney / 10; i++)
         {
             randomX = Random.Range(-20.3f, -19.6f);
             Instantiate(coinPrefab);
@@ -382,5 +395,57 @@ public class GameManager : MonoBehaviour
 
         SoundManager.instance.CashSound();
         yield break;
+    }
+
+    public void AuditionPopup(bool isTrue)
+    {
+        int cnt = PlayerPrefs.GetInt("audition", 1);
+        auditionPopup.gameObject.SetActive(isTrue);
+
+        if(isTrue)
+        {
+            Text auditionInfo = auditionPopup.gameObject.transform.GetChild(0).GetComponentInChildren<Text>();
+
+            auditionInfo.text = string.Format("::제 {0}차 오디션 도전::\n\n이 오디션에 도전하려면\n{1}원이 필요합니다.", cnt, AuditionMoney(cnt));
+        }
+    }
+
+    private int AuditionMoney(int cnt)
+    {
+        switch(cnt)
+        {
+            case 1:
+                return 100000;
+            case 2:
+                return 1000000;
+            case 3:
+                return 5500000;
+            case 4:
+                return 10000000;
+            case 5:
+                return 100000000;
+            case 6:
+                return 1000000000;
+            default:
+                return 0;
+        }
+    }
+
+    public void GotoAudition()
+    {
+        int cnt = PlayerPrefs.GetInt("audition", 1);
+
+        if (playerMoney - AuditionMoney(cnt) < 0)
+        {
+            SoundManager.instance.ErrorSound();
+            return;
+        }
+
+        else
+        {
+            playerMoney -= AuditionMoney(cnt);
+            PlayerPrefs.SetInt("Money", playerMoney);
+            SceneManager.LoadScene("Audition");
+        }
     }
 }
