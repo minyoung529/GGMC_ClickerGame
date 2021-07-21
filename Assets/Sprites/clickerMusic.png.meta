@@ -62,6 +62,9 @@ TextureImporter:
   - first:
       213: -1128959177627092297
     second: clickerMusic_19
+  - first:
+      213: -5628839947484302397
+    second: clickerMusic_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -187,7 +190,7 @@ TextureImporter:
       name: clickerMusic_1
       rect:
         serializedVersion: 2
-        x: 353
+        x: 357
         y: 905
         width: 313
         height: 312
@@ -209,7 +212,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 687
-        y: 905
+        y: 907
         width: 314
         height: 312
       alignment: 0
@@ -229,9 +232,9 @@ TextureImporter:
       name: clickerMusic_3
       rect:
         serializedVersion: 2
-        x: 1017
+        x: 1021
         y: 906
-        width: 311
+        width: 308
         height: 311
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -250,10 +253,10 @@ TextureImporter:
       name: clickerMusic_4
       rect:
         serializedVersion: 2
-        x: 1340
-        y: 906
-        width: 314
-        height: 311
+        x: 1341
+        y: 905
+        width: 313
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,10 +295,10 @@ TextureImporter:
       name: clickerMusic_6
       rect:
         serializedVersion: 2
-        x: 19
-        y: 580
-        width: 313
-        height: 314
+        x: 20
+        y: 581
+        width: 312
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,10 +316,10 @@ TextureImporter:
       name: clickerMusic_9
       rect:
         serializedVersion: 2
-        x: 352
+        x: 354
         y: 580
-        width: 314
-        height: 314
+        width: 313
+        height: 313
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,7 +361,7 @@ TextureImporter:
         x: 1017
         y: 581
         width: 311
-        height: 313
+        height: 312
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,10 +379,10 @@ TextureImporter:
       name: clickerMusic_12
       rect:
         serializedVersion: 2
-        x: 1340
+        x: 1341
         y: 581
-        width: 314
-        height: 313
+        width: 313
+        height: 312
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,6 +455,27 @@ TextureImporter:
       bones: []
       spriteID: 7babe930c912550f0800000000000000
       internalID: -1128959177627092297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clickerMusic_20
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 250
+        width: 313
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c37ba004e752e1b0800000000000000
+      internalID: -5628839947484302397
       vertices: []
       indices: 
       edges: []

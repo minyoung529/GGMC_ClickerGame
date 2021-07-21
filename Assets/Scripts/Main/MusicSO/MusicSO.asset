@@ -68,9 +68,9 @@ MonoBehaviour:
     moneyPerSec: 1500
     popular: 5
     info: "\uAC8C\uC784 \uC18D\uC73C\uB85C \uB4E4\uC5B4\uC628 \uB290\uB08C\uC758
-      \uC74C\uC545\uC774\uB2E4."
+      \uC74C\uC545\uC774\uB2E4. \uC9C4\uC9DC \uB4E4\uC5B4\uC628 \uAC78\uAE4C?"
   - musicName: Exploration
-    musicSprite: {fileID: -1081228034578605154, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
+    musicSprite: {fileID: -5628839947484302397, guid: bf0d943014a061344889d4d8bebfd942, type: 3}
     money: 10000000
     moneyPerSec: 1500
     popular: 5

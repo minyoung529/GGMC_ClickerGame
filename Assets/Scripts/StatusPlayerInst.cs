@@ -27,6 +27,10 @@ public class StatusPlayerInst : MonoBehaviour
                 image.sprite = tam;
                 break;
 
+            case "깽과리":
+                image.sprite = ggang;
+                break;
+
             case "기타":
                 image.sprite = gui;
                 break;
@@ -35,8 +39,20 @@ public class StatusPlayerInst : MonoBehaviour
                 image.sprite = egui;
                 break;
 
+            case "바이올린":
+                image.sprite = vi;
+                break;
+
+            case "첼로":
+                image.sprite = cel;
+                break;
+
             case "디지털 피아노":
                 image.sprite = epia;
+                break;
+
+            case "가야금":
+                image.sprite = gaya;
                 break;
 
             case "신디사이저":
@@ -45,6 +61,34 @@ public class StatusPlayerInst : MonoBehaviour
 
             case "드럼":
                 image.sprite = drum;
+                break;
+
+            case "하프":
+                image.sprite = harp;
+                break;
+
+            case "호른":
+                image.sprite = cel;
+                break;
+
+            case "박수":
+                image.sprite = epia;
+                break;
+
+            case "플루트":
+                image.sprite = gaya;
+                break;
+
+            case "EasyOne":
+                image.sprite = cel;
+                break;
+
+            case "Young's HanD":
+                image.sprite = epia;
+                break;
+
+            case "레이디 테넌트":
+                image.sprite = gaya;
                 break;
         }
     }
