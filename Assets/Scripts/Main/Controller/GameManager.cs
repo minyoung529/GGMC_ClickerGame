@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
     private int oneClickMoney;
     private int clickCnt = 0;
     public int playerMoney;
-    private int popular;
+    public int popular;
     private int timeMoney;
     private string playerStatus = "거지음악가";
     private string playerMusic;
