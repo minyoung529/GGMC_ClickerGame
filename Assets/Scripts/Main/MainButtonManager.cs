@@ -183,29 +183,38 @@ public class MainButtonManager : MonoBehaviour
     {
         for (int i = 0; i < storeInst.Count; i++)
         {
-            var statusInstBtn = statusInstPos.transform.GetChild(i);
             var storeInstBtn = storeInstPos.transform.GetChild(i);
-
-            statusInstBtn.GetComponent<Status_Inst_Btn>().ChangeSprite();
             storeInstBtn.GetComponent<InstButtons>().CheckData();
+        }
+
+        for (int i = 0; i < statusInst.Count; i++)
+        {
+            var statusInstBtn = statusInstPos.transform.GetChild(i);
+            statusInstBtn.GetComponent<Status_Inst_Btn>().ChangeSprite();
         }
 
         for (int i = 0; i < storeMIC.Count; i++)
         {
-            var statusMICBtn = statusMICPos.transform.GetChild(i);
             var storeMICBtn = storeMICPos.transform.GetChild(i);
-
-            statusMICBtn.GetComponent<Status_MIC_Btn>().ChangeSprite();
             storeMICBtn.GetComponent<MICButtons>().CheckData();
+        }
+
+        for (int i = 0; i < statusMIC.Count; i++)
+        {
+            var statusMICBtn = statusMICPos.transform.GetChild(i);
+            statusMICBtn.GetComponent<Status_MIC_Btn>().ChangeSprite();
         }
 
         for (int i = 0; i < storeMusic.Count; i++)
         {
-            var statusMusicBtn = statusMusicPos.transform.GetChild(i);
             var storeMusicBtn = storeMusicPos.transform.GetChild(i);
-
-            statusMusicBtn.GetComponent<Status_Music_Btn>().ChangeSprite();
             storeMusicBtn.GetComponent<MusicButtons>().CheckData();
+        }
+
+        for (int i = 0; i < statusMusic.Count; i++)
+        {
+            var statusMusicBtn = statusMusicPos.transform.GetChild(i);
+            statusMusicBtn.GetComponent<Status_Music_Btn>().ChangeSprite();
         }
     }
 }

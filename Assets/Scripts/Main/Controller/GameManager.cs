@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     private string playerInstrument;
 
     [SerializeField]
-    Image auditionPopup;
+    Image auditionPopup, quitPopup;
 
     [SerializeField]
     private Text moneyText, timeText, statusText, oneClickText, playerStatusText;
@@ -83,8 +83,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Screen.SetResolution(1440, 2960, true);
-
         player = FindObjectOfType<Player>();
         statusPlayerInst = FindObjectOfType<StatusPlayerInst>();
         mainPlayerInst = FindObjectOfType<MainPlayerInst>();
@@ -111,6 +109,11 @@ public class GameManager : MonoBehaviour
             AddMoney(100000000);
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Quit(true);
+        }
+
         TimePerMoney();
     }
 
@@ -126,7 +129,7 @@ public class GameManager : MonoBehaviour
 
         playerStatusText.text = string.Format("{0}", playerStatus);
         moneyText.text = string.Format("₩:{0}원", playerMoney);
-        statusText.text = string.Format("이름: 이미녕\n클릭당 획든 돈: {0}원\n5초당 획든 돈: {1}원\n자본금: {2}원\n인기도: {3}", oneClickMoney, timeMoney, playerMoney, popular/*, playerStatus*/);
+        statusText.text = string.Format("자본금: {2}원\n클릭당 획든 돈: {0}원\n5초당 획든 돈: {1}원\n인기도: {3}", oneClickMoney, timeMoney, playerMoney, popular/*, playerStatus*/);
         oneClickText.text = string.Format("Click-{0}", oneClickMoney);
         timeText.text = string.Format("5Sec-{0}", timeMoney);
     }
@@ -357,10 +360,10 @@ public class GameManager : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 5)
         {
-            if (main.gameObject.activeSelf && timeMoney > 4)
-            {
-                StartCoroutine(PlusMoney());
-            }
+            //if (main.gameObject.activeSelf && timeMoney > 4)
+            //{
+            //    StartCoroutine(PlusMoney());
+            //}
 
             AddMoney(timeMoney);
             timer = 0;
@@ -403,7 +406,7 @@ public class GameManager : MonoBehaviour
         int cnt = PlayerPrefs.GetInt("audition", 1);
         auditionPopup.gameObject.SetActive(isTrue);
 
-        if(isTrue)
+        if (isTrue)
         {
             Text auditionInfo = auditionPopup.gameObject.transform.GetChild(0).GetComponentInChildren<Text>();
 
@@ -413,7 +416,7 @@ public class GameManager : MonoBehaviour
 
     private int AuditionMoney(int cnt)
     {
-        switch(cnt)
+        switch (cnt)
         {
             case 1:
                 return 100000;
@@ -448,5 +451,15 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("Money", (int)playerMoney);
             SceneManager.LoadScene("Audition");
         }
+    }
+
+    public void Quit(bool isTrue)
+    {
+        quitPopup.gameObject.SetActive(isTrue);
+    }
+
+    public void OnClickQuit()
+    {
+        Application.Quit();
     }
 }

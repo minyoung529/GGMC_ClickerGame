@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class LoadingController : MonoBehaviour
 {
     private float time = 0f;
+    [SerializeField]
+    GameObject player, bar, canvas;
 
     void Start()
     {
@@ -32,6 +34,5 @@ public class LoadingController : MonoBehaviour
 
             yield return null;
         }
-
     }
 }

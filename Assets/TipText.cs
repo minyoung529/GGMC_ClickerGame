@@ -20,7 +20,7 @@ public class TipText : MonoBehaviour
         {
             rand = Random.Range(0, 4);
             RandomText(rand);
-            yield return new WaitForSeconds(2.5f);
+            yield return new WaitForSeconds(3.7f);
         }
     }
 

@@ -70,7 +70,7 @@ MonoBehaviour:
     info: "\uBC29\uC1A1\uC5D0\uC11C\uB9CC \uBCF4\uB358 \uC544\uC774\uB3CC\uB4E4\uC774\r
       \uADC0\uC5D0 \uAF42\uACE0 \uB098\uC624\uB294 \uB9C8\uC774\uD06C\uC774\uB2E4.\r
       \uBAB8\uCE58 \uD0C8\uCD9C\uC778\uAC00..?\r"
-  - micName: "Shiba\u2019s VoicE"
+  - micName: Shiba's VoicE
     micSprite: {fileID: -3594602119323134721, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
     money: 12000000
     moneyPerSec: 70
@@ -86,17 +86,17 @@ MonoBehaviour:
     info: "\uAC00\uC218, \uB798\uD37C \uB4E4\uC774 \uC2A4\uD29C\uB514\uC624\uC5D0\uC11C\r
       \uB179\uC74C\uD560 \uB54C \uC4F0\uB294 \uB9C8\uC774\uD06C.\r \uC810\uC810 \uB300\uAE30\uC5C5\uC774
       \uB3FC\uAC04\uB2E4.\r"
-  - micName: "The Angel\u2019s Ring"
+  - micName: The Angel's Ring
     micSprite: {fileID: 651997100344890996, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
     money: 12000000
     moneyPerSec: 70
     popular: 10
-    info: "\uB3D9\uADF8\uB780 \uB9C1 \uB9C8\uC774\uD06C. \r\uC131\uC545 \uAC19\uC740
+    info: "\uBE14\uB9C1\uBE14\uB9C1 \uB9C8\uC774\uD06C. \r\uC131\uC545 \uAC19\uC740
       \uC5D0\uCF54\uAC00 \uC0DD\uAE30\uACE0\r \uB4E4\uC73C\uBA74 \uACBD\uAC74\uD574\uC9C4\uB2E4.\r"
   - micName: "\uBAA9\uC18C\uB9AC"
     micSprite: {fileID: 134015361769854207, guid: d7d06abf992c64a4aa60faeaea11de81, type: 3}
     money: 151515151
     moneyPerSec: 70
     popular: 15
-    info: "\uB3D9\uADF8\uB780 \uB9C1 \uB9C8\uC774\uD06C. \r\uC131\uC545 \uAC19\uC740
-      \uC5D0\uCF54\uAC00 \uC0DD\uAE30\uACE0\r \uB4E4\uC73C\uBA74 \uACBD\uAC74\uD574\uC9C4\uB2E4.\r"
+    info: "\uC0AC\uB78C\uC758 \uBAA9=\uCD5C\uACE0\uC758 \uC545\uAE30. \r\uB9C8\uC774\uD06C
+      \uB530\uC704 \uC5C6\uC5B4\uB3C4\r \uB098\uC758 \uB178\uB798\uB294 \uCD5C\uACE0\uC774\uB2E4.\r"

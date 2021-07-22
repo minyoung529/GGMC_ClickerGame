@@ -128,6 +128,7 @@ public class MICButtons : MonoBehaviour
                 break;
 
             case "Shiba's VoicE":
+                Debug.Log("sdf");
                 PlayerPrefs.SetString("mic9", "isSold");
                 break;
 

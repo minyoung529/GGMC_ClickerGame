@@ -36,11 +36,12 @@ public class SoundManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         playerMusic = PlayerPrefs.GetString("pmusic", "A Little Ghost");
         PlayMusic(playerMusic);
+        audioSource.loop = true;
     }
 
     public void PlayMusic(string music)
     {
-        audioSource.Stop();
+        if(audioSource.clip != aLittleGhost) audioSource.Stop();
 
         switch (music)
         {
@@ -105,7 +106,7 @@ public class SoundManager : MonoBehaviour
                 break;
         }
 
-        audioSource.PlayOneShot(audioSource.clip);
+        audioSource.Play();
     }
 
     public void StopMusic()
