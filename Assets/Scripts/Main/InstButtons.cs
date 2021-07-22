@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class InstButtons : MonoBehaviour
 {
     private string btnName;
-    private int money;
+    private long money;
     private int popular;
     private int moneyPS;
     private Sprite instSprite;
@@ -128,7 +128,7 @@ public class InstButtons : MonoBehaviour
                 PlayerPrefs.SetString("inst1", "isSold");
                 break;
 
-            case "²¤°ú¸®":
+            case "²Ñ°ú¸®":
                 PlayerPrefs.SetString("inst2", "isSold");
                 break;
 
@@ -185,7 +185,7 @@ public class InstButtons : MonoBehaviour
                 break;
 
             case "Young's HanD":
-                PlayerPrefs.SetString("inst16", "isSell");
+                PlayerPrefs.SetString("inst16", "isSold");
                 break;
 
             case "·¹ÀÌµð Å×³ÍÆ®":
@@ -308,7 +308,7 @@ public class InstButtons : MonoBehaviour
 
         nameText.text = string.Format("{0}", btnName);
         infoText.text = string.Format("{0}", info);
-        detailText.text = string.Format("5ÃÊ´ç È¹µæ µ·: {0}¿ø\nÀÎ±âµµ +{1}¿ø", moneyPS, popular);
+        detailText.text = string.Format("5ÃÊ´ç È¹µæ µ·: {0}¿ø\nÀÎ±âµµ +{1}", moneyPS, popular);
         moneyText.text = string.Format("{0}", money);
         popularText.text = string.Format("{0}", popular);
         instImage.sprite = instSprite;
@@ -316,11 +316,11 @@ public class InstButtons : MonoBehaviour
 
     public void ChooseBuy()
     {
-        int productMoney;
+        long productMoney;
         string productName;
         int productPopular;
 
-        productMoney = int.Parse(moneyText.text);
+        productMoney = long.Parse(moneyText.text);
         productName = nameText.text;
         productPopular = int.Parse(popularText.text);
 
@@ -332,7 +332,7 @@ public class InstButtons : MonoBehaviour
 
         BuyPopup.SetActive(false);
 
-        GameManager.Instance.Min(productMoney);
+        GameManager.Instance.Min((int)productMoney);
         originPopular += productPopular;
         PlayerPrefs.SetInt("p1", originPopular);
 

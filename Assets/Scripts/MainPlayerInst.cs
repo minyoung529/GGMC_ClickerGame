@@ -96,13 +96,13 @@ public class MainPlayerInst : MonoBehaviour
 
             case "호른":
                 spriteRenderer.sprite = horn;
-                transform.localPosition = new Vector2(0.8f, -0.3f);
+                transform.localPosition = new Vector2(-1.15f, -0.3f);
                 transform.localScale = new Vector2(1f, 1f);
                 break;
 
             case "박수":
                 spriteRenderer.sprite = clap;
-                transform.localPosition = new Vector2(0.9f, -0.2f);
+                transform.localPosition = new Vector2(0.17f, -0.2f);
                 transform.localScale = new Vector2(0.6f, 0.6f);
                 break;
 
@@ -113,21 +113,21 @@ public class MainPlayerInst : MonoBehaviour
                 break;
 
             case "EasyOne":
-                spriteRenderer.sprite = cel;
+                spriteRenderer.sprite = easyone;
                 transform.localPosition = new Vector2(1f, -0.3f);
                 transform.localScale = new Vector2(1f, 1f);
                 break;
 
             case "Young's HanD":
-                spriteRenderer.sprite = epia;
-                transform.localPosition = new Vector2(0f, -0.8f);
-                transform.localScale = new Vector2(1.2f, 1.2f);
+                spriteRenderer.sprite = young;
+                transform.localPosition = new Vector2(0.2f, -0.2f);
+                transform.localScale = new Vector2(0.6f, 0.6f);
                 break;
 
             case "레이디 테넌트":
-                spriteRenderer.sprite = gaya;
-                transform.localPosition = new Vector2(0f, -0.8f);
-                transform.localScale = new Vector2(1.2f, 1.2f);
+                spriteRenderer.sprite = lady;
+                transform.localPosition = new Vector2(-0.5f, 0.3f);
+                transform.localScale = new Vector2(1f, 1f);
                 break;
         }
     }

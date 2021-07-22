@@ -68,27 +68,27 @@ public class StatusPlayerInst : MonoBehaviour
                 break;
 
             case "호른":
-                image.sprite = cel;
+                image.sprite = horn;
                 break;
 
             case "박수":
-                image.sprite = epia;
+                image.sprite = clap;
                 break;
 
             case "플루트":
-                image.sprite = gaya;
+                image.sprite = flute;
                 break;
 
             case "EasyOne":
-                image.sprite = cel;
+                image.sprite = easyone;
                 break;
 
             case "Young's HanD":
-                image.sprite = epia;
+                image.sprite = young;
                 break;
 
             case "레이디 테넌트":
-                image.sprite = gaya;
+                image.sprite = lady;
                 break;
         }
     }

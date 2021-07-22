@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     private List<Image> btnObjs = new List<Image>();
 
     private int oneClickMoney;
-    public int playerMoney;
+    public long playerMoney;
     private int popular;
     private int timeMoney;
     private string playerStatus = "거지음악가";
@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Screen.SetResolution(1440, 2960, true);
+
         player = FindObjectOfType<Player>();
         statusPlayerInst = FindObjectOfType<StatusPlayerInst>();
         mainPlayerInst = FindObjectOfType<MainPlayerInst>();
@@ -107,7 +108,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            AddMoney(100000);
+            AddMoney(100000000);
         }
 
         TimePerMoney();
@@ -171,7 +172,7 @@ public class GameManager : MonoBehaviour
     public void AddMoney(int addMoney)
     {
         playerMoney += addMoney;
-        PlayerPrefs.SetInt("Money", playerMoney);
+        PlayerPrefs.SetInt("Money", (int)playerMoney);
         UpdateUI();
     }
 
@@ -290,7 +291,7 @@ public class GameManager : MonoBehaviour
     {
         playerMoney -= minmoney;
         UpdateUI();
-        PlayerPrefs.SetInt("Money", playerMoney);
+        PlayerPrefs.SetInt("Money", (int)playerMoney);
     }
 
     public void BuyPopupActive()
@@ -444,7 +445,7 @@ public class GameManager : MonoBehaviour
         else
         {
             playerMoney -= AuditionMoney(cnt);
-            PlayerPrefs.SetInt("Money", playerMoney);
+            PlayerPrefs.SetInt("Money", (int)playerMoney);
             SceneManager.LoadScene("Audition");
         }
     }

@@ -28,7 +28,7 @@ MonoBehaviour:
     popular: 1
     info: "\uB178\uB798\uBC29\uC5D0\uC11C \uC2DC\uB044\uB7EC\uC6C0\uC744\r \uB2F4\uB2F9\uD558\uB294
       \uC8FC\uC694 \uC545\uAE30.\r"
-  - instName: "\uAE7D\uACFC\uB9AC"
+  - instName: "\uAF79\uACFC\uB9AC"
     instSprite: {fileID: 3962615822470558121, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
     money: 800000
     moneyPerSec: 70
@@ -71,7 +71,7 @@ MonoBehaviour:
     info: "\uD53C\uC544\uB178\uB294 \uCE58\uAE30\uB9CC \uD574\uB3C4\r \uC0AC\uB78C\uC774
       \uBA4B\uC788\uC5B4\uC9C4\uB2E4.\r"
   - instName: "\uAC00\uC57C\uAE08"
-    instSprite: {fileID: -7416992765819113948, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
+    instSprite: {fileID: -1559932232829703081, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
     money: 8530000
     moneyPerSec: 70
     popular: 5
@@ -141,9 +141,9 @@ MonoBehaviour:
       \uBD84\uC57C\uC5D0\uC11C \uCD5C\uACE0\uAC00 \uB41C\uB2E4.\r"
   - instName: "\uB808\uC774\uB514 \uD14C\uB10C\uD2B8"
     instSprite: {fileID: -1418001009523880046, guid: 3f0f127ff0d66d6479b3ff08b9149efe, type: 3}
-    money: 2147483647
+    money: 5555555555
     moneyPerSec: 70
-    popular: 20
+    popular: 150
     info: "\uC138\uACC4\uC5D0\uC11C \uC81C\uC77C \uBE44\uC2FC \uC545\uAE30.\r \uC774
       \uC545\uAE30\uB97C \uAC00\uC9C4\uB2E4\uBA74\r \uC138\uC0C1\uC744 \uB2E4 \uAC00\uC9C4
       \uAE30\uBD84\uC77C \uAC83\uC774\uB2E4.\r"

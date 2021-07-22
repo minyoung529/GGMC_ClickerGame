@@ -2170,7 +2170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00011826, y: 616.7}
+  m_AnchoredPosition: {x: -0.00011826, y: 149.86}
   m_SizeDelta: {x: 1079.5, y: 619.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &184098479
@@ -19366,11 +19366,11 @@ MonoBehaviour:
   drum: {fileID: 5935230560568011069, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
   harp: {fileID: 2422829337417144575, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
   horn: {fileID: 6655579088160837792, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
-  clap: {fileID: 1622594213440371536, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
-  flute: {fileID: 3435381304714780517, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
-  easyone: {fileID: 0}
-  young: {fileID: 0}
-  lady: {fileID: 0}
+  clap: {fileID: -5736405327583434237, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
+  flute: {fileID: -8829035523089635654, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
+  easyone: {fileID: 1362114296245427570, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
+  young: {fileID: 3060101897828138694, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
+  lady: {fileID: -2052535230103059216, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
 --- !u!1 &1357378938
 GameObject:
   m_ObjectHideFlags: 0
@@ -19447,8 +19447,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300.94992, y: 87.4}
-  m_SizeDelta: {x: 583, y: 258.9}
+  m_AnchoredPosition: {x: 300.94992, y: 46.79999}
+  m_SizeDelta: {x: 583, y: 340.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1367189303
 GameObject:
@@ -21819,7 +21819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1487515617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24536,11 +24536,11 @@ MonoBehaviour:
   drum: {fileID: 5935230560568011069, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
   harp: {fileID: 2422829337417144575, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
   horn: {fileID: 6655579088160837792, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
-  clap: {fileID: 1622594213440371536, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
-  flute: {fileID: 3435381304714780517, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
-  easyone: {fileID: 0}
-  young: {fileID: 0}
-  lady: {fileID: 0}
+  clap: {fileID: -5736405327583434237, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
+  flute: {fileID: -8829035523089635654, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
+  easyone: {fileID: 1362114296245427570, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
+  young: {fileID: 3060101897828138694, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
+  lady: {fileID: -2052535230103059216, guid: 68eedb5f64d214c439aa76cbdea1a3a3, type: 3}
 --- !u!222 &1688889029
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class Status_Inst_Btn : MonoBehaviour
     SpriteRenderer playerInst;
 
     private string btnName;
-    private int money;
+    private long money;
     private int popular;
     private int moneyPS;
     private Sprite instSprite;
@@ -49,7 +49,7 @@ public class Status_Inst_Btn : MonoBehaviour
             btnImage.sprite = instSprite;
         }
 
-        else if (btnName == "²¤°ú¸®" && PlayerPrefs.GetString("inst2") == "isSold")
+        else if (btnName == "²Ñ°ú¸®" && PlayerPrefs.GetString("inst2") == "isSold")
         {
             btnImage.sprite = instSprite;
         }

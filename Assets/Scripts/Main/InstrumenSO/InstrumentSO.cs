@@ -8,7 +8,7 @@ public class Instrument
 {
     public string instName;
     public Sprite instSprite;
-    public int money;
+    public long money;
     public int moneyPerSec;
     public int popular;
     [TextArea] public string info;
