@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     private string playerInstrument;
 
     [SerializeField]
-    Image auditionPopup, quitPopup;
+    Image auditionPopup, quitPopup, noPopup;
 
     [SerializeField]
     private Text moneyText, timeText, statusText, oneClickText, playerStatusText;
@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
     private StatusPlayerMIC statusPlayerMIC;
     private MainPlayerMIC mainPlayerMIC;
     private StatusPlayerMusic statusPlayerMusic;
+    private MainMusicCD mainMusicCD;
 
     [SerializeField]
     private Image mainBtnimage, statusBtnimage, storeBtnimage, settingBtnimage;
@@ -83,12 +84,15 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        #region
         player = FindObjectOfType<Player>();
         statusPlayerInst = FindObjectOfType<StatusPlayerInst>();
         mainPlayerInst = FindObjectOfType<MainPlayerInst>();
         statusPlayerMIC = FindObjectOfType<StatusPlayerMIC>();
         mainPlayerMIC = FindObjectOfType<MainPlayerMIC>();
         statusPlayerMusic = FindObjectOfType<StatusPlayerMusic>();
+        mainMusicCD = FindObjectOfType<MainMusicCD>();
+        #endregion
 
         timeMoney = PlayerPrefs.GetInt("tm", 1);
         playerMoney = PlayerPrefs.GetInt("Money", 0);
@@ -228,6 +232,7 @@ public class GameManager : MonoBehaviour
     {
         PlayerMusic();
         MainButton(main, mainCamera, mainBtnimage);
+        mainMusicCD.ChangeSprite();
 
         player.PlayerActive();
     }
@@ -461,5 +466,18 @@ public class GameManager : MonoBehaviour
     public void OnClickQuit()
     {
         Application.Quit();
+    }
+
+    private IEnumerator No()
+    {
+        noPopup.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        noPopup.gameObject.SetActive(false);
+        yield break;
+    }
+
+    public void NoService()
+    {
+        StartCoroutine(No());
     }
 }

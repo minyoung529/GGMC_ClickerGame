@@ -27,7 +27,7 @@ public class StatusPlayerInst : MonoBehaviour
                 image.sprite = tam;
                 break;
 
-            case "²¤°ú¸®":
+            case "²Ñ°ú¸®":
                 image.sprite = ggang;
                 break;
 
