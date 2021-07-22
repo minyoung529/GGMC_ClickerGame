@@ -562,10 +562,10 @@ TextureImporter:
       name: MICsImage_18
       rect:
         serializedVersion: 2
-        x: 310
-        y: 198
-        width: 312
-        height: 312
+        x: 361
+        y: 168
+        width: 176
+        height: 280
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

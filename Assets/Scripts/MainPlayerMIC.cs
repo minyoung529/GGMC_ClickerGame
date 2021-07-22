@@ -40,8 +40,8 @@ public class MainPlayerMIC : MonoBehaviour
 
             case "매우 중고 마이크":
                 spriteRenderer.sprite = used;
-                transform.localPosition = new Vector2(-0.37f, -0.28f);
-                transform.localScale = new Vector2(0.7f, 0.7f);
+                transform.localPosition = new Vector2(-0.7f, -0.7f);
+                transform.localScale = new Vector2(0.8f, 0.8f);
                 break;
 
             case "좀 좋아 보이는 마이크":
@@ -58,6 +58,8 @@ public class MainPlayerMIC : MonoBehaviour
 
             case "방송용 마이크":
                 spriteRenderer.sprite = broad;
+                transform.localPosition = new Vector2(-1f, -0.5f);
+                transform.localScale = new Vector2(0.85f, 0.85f);
                 break;
 
             case "아이돌이 쓸 법한 마이크":
@@ -74,6 +76,8 @@ public class MainPlayerMIC : MonoBehaviour
 
             case "스튜디오 마이크":
                 spriteRenderer.sprite = studio;
+                transform.localPosition = new Vector2(-0.67f, -0.4f);
+                transform.localScale = new Vector2(0.9f, 0.9f);
                 break;
 
             case "The Angel's Ring":

@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class MainMusicCD : MonoBehaviour
 {
     private string playerMusic;
+    [SerializeField]
     private Image image;
     [SerializeField]
     private MusicSO musicSO;
 
     void Start()
     {
-        image = GetComponent<Image>();
         playerMusic = PlayerPrefs.GetString("pmusic", "A Little Ghost");
         ChangeSprite();
     }
