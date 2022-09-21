@@ -262,6 +262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
       value: 0
@@ -1175,6 +1179,10 @@ PrefabInstance:
     - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Name
       value: StatusMusicBtn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
@@ -4197,6 +4205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
       value: 0
@@ -4809,6 +4821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
       value: 0
@@ -4973,6 +4989,10 @@ PrefabInstance:
     - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Name
       value: StatusMusicBtn (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
@@ -5369,6 +5389,10 @@ PrefabInstance:
     - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Name
       value: MusicButton (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2292995665865120187, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Pivot.x
@@ -5941,6 +5965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
       value: 0
@@ -6168,6 +6196,10 @@ PrefabInstance:
     - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Name
       value: MusicButton (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2292995665865120187, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Pivot.x
@@ -6561,6 +6593,10 @@ PrefabInstance:
     - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Name
       value: MusicButton (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2292995665865120187, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Pivot.x
@@ -9760,6 +9796,10 @@ PrefabInstance:
     - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Name
       value: MusicButton (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2292995665865120187, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Pivot.x
@@ -13884,6 +13924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
       value: 0
@@ -17317,6 +17361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
       value: 0
@@ -19797,7 +19845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 155, y: -422.77002}
+  m_AnchoredPosition: {x: 155, y: -422.7705}
   m_SizeDelta: {x: 202.74, y: 202.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1270979189
@@ -20789,6 +20837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicButton (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2292995665865120187, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -20971,6 +21023,10 @@ PrefabInstance:
     - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Name
       value: MusicButton (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2292995665865120187, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Pivot.x
@@ -21281,6 +21337,10 @@ PrefabInstance:
     - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Name
       value: StatusMusicBtn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
@@ -22032,6 +22092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
       value: 0
@@ -22683,6 +22747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicButton (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2292995665865120187, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -23219,6 +23287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StatusMusicBtn (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
       value: 0
@@ -23463,6 +23535,10 @@ PrefabInstance:
     - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Name
       value: StatusMusicBtn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317619038728797990, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317619038728797995, guid: f73c8e21449944848bbf81b04e6d19f8, type: 3}
       propertyPath: m_Type
@@ -23906,6 +23982,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicButton (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2292995665865120187, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -24110,6 +24190,10 @@ PrefabInstance:
     - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Name
       value: MusicButton (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2292995665865120187, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Pivot.x
@@ -26203,9 +26287,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 738.4, y: -5995.048}
+  m_AnchoredPosition: {x: 711.5285, y: 0.00048828125}
   m_SizeDelta: {x: 1343.54, y: 1335.2}
-  m_Pivot: {x: 0.52, y: -3.49}
+  m_Pivot: {x: 0.50000006, y: 1}
 --- !u!114 &1748145266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26242,7 +26326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
+  m_HorizontalFit: 0
   m_VerticalFit: 2
 --- !u!114 &1748145268
 MonoBehaviour:
@@ -27621,6 +27705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicButton (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2292995665865120187, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -28972,6 +29060,10 @@ PrefabInstance:
     - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Name
       value: MusicButton (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292995665865120186, guid: 100949c2d388e884b826780b3d77f730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2292995665865120187, guid: 100949c2d388e884b826780b3d77f730, type: 3}
       propertyPath: m_Pivot.x
