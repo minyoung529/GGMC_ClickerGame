@@ -87,6 +87,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -96,8 +97,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -490,6 +491,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      clickerMusic_5: 7068111010347736146
+      clickerMusic_18: 8399360979176129189
+      clickerMusic_13: 7599929035448622475
+      clickerMusic_3: 2590768977765981754
+      clickerMusic_0: 1039681172911205126
+      clickerMusic_1: 2991754045379606626
+      clickerMusic_4: -8626025547351061095
+      clickerMusic_9: -1081228034578605154
+      clickerMusic_20: -5628839947484302397
+      clickerMusic_19: -1128959177627092297
+      clickerMusic_11: -3329448094145830518
+      clickerMusic_12: -6327625639062496434
+      clickerMusic_10: 4941399713725237743
+      clickerMusic_2: 800261244044264288
+      clickerMusic_6: -3080130535296305851
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

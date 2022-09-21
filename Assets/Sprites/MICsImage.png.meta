@@ -102,6 +102,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -111,8 +112,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -694,6 +695,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      MICsImage_2: 4972750709050344076
+      MICsImage_21: 261060446605683124
+      MICsImage_11: 134015361769854207
+      MICsImage_6: -309648276017634612
+      MICsImage_0: 8452619466554995066
+      MICsImage_18: -8674472599486819103
+      MICsImage_9: -9205479780241013318
+      MICsImage_14: -6101027730200432999
+      MICsImage_17: -519084282935820168
+      MICsImage_19: 8020175282342488646
+      MICsImage_22: -4581999820379556875
+      MICsImage_16: 3431953007613203745
+      MICsImage_20: 1462177881964835967
+      MICsImage_4: 280514421296183019
+      MICsImage_3: 2787171706449710577
+      MICsImage_13: 4687909350802096016
+      MICsImage_12: -8028262458217307566
+      MICsImage_15: -1588373183740577175
+      MICsImage_23: -1588011318126071372
+      MICsImage_8: -3594602119323134721
+      MICsImage_10: 651997100344890996
+      MICsImage_1: 7451204014267456462
+      MICsImage_5: 8624745011601708625
+      MICsImage_7: -356786629041237231
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
